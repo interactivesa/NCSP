@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="_1" data-name="1" transform="translate(-373 -45)">
+    <rect id="Circle" width="36" height="36" rx="18" transform="translate(373 45)" fill="#fff"/>
+    <path id="Icon" d="M398.5,58.5A1.5,1.5,0,0,0,397,57H385a1.5,1.5,0,0,0-1.5,1.5v9A1.5,1.5,0,0,0,385,69h12a1.5,1.5,0,0,0,1.5-1.5Zm-1.5,0-6,3.75-6-3.75Zm0,9H385V60l6,3.75L397,60Z" fill="#145fff"/>
+  </g>
+</svg>

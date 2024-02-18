@@ -1,0 +1,91 @@
+
+// Small Sizes 
+@media (max-width: 767.68px) {
+    // Main Menu
+    .main-Nav {
+        display: none;       
+    }
+
+    // HomeBanner 
+    .banner {
+        // Banners 
+        .container-fluid {
+        .item {
+            .imgbox1 {
+            .content {
+                padding: 20px;
+                position: relative;
+                top: 25%;
+                width: 100%;
+                h2 {
+                font-size: 20px;
+                }
+                p {
+                font-size: 14px;
+                }
+                .more {
+                font-size: 11px;
+                }
+            }
+            }
+        }
+        }
+    }
+
+    // News
+    .bgNews {
+        height: 800px;
+    
+        // Card 
+        .cardNews {
+            height: 530px;
+        }
+    }
+
+    // Partners
+    .partners {
+        padding: 50px;
+    
+        .item {
+            width: 251px;
+            height: 100px;
+        }
+
+        .owl-theme {
+            .owl-nav {
+              [class*="owl-"] {
+                width: 30px;
+                height: 30px;
+              }
+            }
+            .owl-next {
+              #{$end-direction}: -25px;
+              #{$start-direction}: auto ;
+            }
+            .owl-prev {
+              #{$start-direction}: -25px;
+              #{$end-direction}: auto ;
+            }
+          }
+    }
+    
+    // Footer 
+    footer {
+        // Top 
+        .top-footer {   
+            padding-right: 30px;    
+            .social-media {
+                margin-bottom: 20px;
+            }
+        }
+
+        // Bottom 
+        .bottom-footer {
+            .copyright{
+                p {
+                text-align: center;
+                }
+            }  
+        }
+    }
+}

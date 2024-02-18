@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="330.997" height="318.024" viewBox="0 0 330.997 318.024">
+  <defs>
+    <filter id="Dark" x="13.332" y="0" width="317.665" height="317.665" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light" x="0" y="0.359" width="317.665" height="317.665" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_48856" data-name="Group 48856" transform="translate(148.834 104.062)">
+    <g transform="matrix(1, 0, 0, 1, -148.83, -104.06)" filter="url(#Dark)">
+      <path id="Dark-2" data-name="Dark" d="M5,0H21.687a0,0,0,0,1,0,0V2.537a5,5,0,0,1-5,5H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(167.16 148.5) rotate(45)" fill="#145fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -148.83, -104.06)" filter="url(#Light)">
+      <path id="Light-2" data-name="Light" d="M5,0H21.687a0,0,0,0,1,0,0V2.537a5,5,0,0,1-5,5H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(153.83 148.86) rotate(45)" fill="#35ccde"/>
+    </g>
+  </g>
+</svg>

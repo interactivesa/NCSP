@@ -1,0 +1,358 @@
+// Swiper 
+body {
+  .owl-theme {
+    .owl-nav {
+      [class*="owl-"] {
+        width: 40px;
+        height: 40px;
+        background: $blue;
+        border-radius: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        &:hover {
+          background: $dark-blue;
+        }
+      }
+    }
+    .owl-next {
+      #{$end-direction}: -73px;
+      #{$start-direction}: auto ;
+    }
+    .owl-prev {
+      #{$start-direction}: -73px;
+      #{$end-direction}: auto ;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+/************************************************
+                                                       index map
+*************************************************/
+
+
+
+
+
+.interactive-map{
+  // margin-top: -140px;
+  // background: #f8f8f8;
+  // padding-bottom: 20px;
+  .map-cont{
+    position: relative;
+  
+      // box-shadow: 4px 15px 30px -22px  rgba(0, 0, 0, 0.2);
+    
+      // background: rgb(249,249,249);
+      // background: url(../images/map/map-pattern.svg), radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(225,232,238,1) 65%);
+      // // background-image: url(../images/map/map-pattern.svg);
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      // border-radius: 26px;
+      // // overflow: hidden;
+      // height: 610px;
+      // padding-top: 75px;
+
+
+      .main-content{
+          // margin-#{$start-direction}: 110px;
+          margin-top: 80px;
+          h2{
+              font-size: 40px;
+              font-family: "NCSP-Bold";
+              color: $white;
+              position: relative;
+              margin-bottom: 55px;
+          }
+      }
+      .navigation-links{
+          // margin-#{$start-direction}: 110px;
+          // width:245px ;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          a{
+              // width: auto;
+              // height: 30px;
+              margin-bottom: 10px;
+              background-color: transparent;
+              color: $white;
+              font-size: 16px;
+              font-family: "NCSP-Regular";
+              padding: 5px 10px;
+              border: 1px solid $white;
+              border-radius: 15px;
+              margin-#{$end-direction}: 5px;
+              transition: 500ms;
+              &.active{
+                  background-color: $dark-blue;
+                  position: relative;
+                  border: none;
+              }
+          }
+      }
+      .tags-content{
+        margin-top: 50px;
+        h3{
+          font-size: 50px;
+          font-family: "NCSP-Medium";
+          color: $white;
+          margin-bottom: 65px;
+        }
+        .details{
+          border: 1.5px solid $white;
+          border-radius: 16px;
+          background-color: transparent;
+          padding: 25px 28px;
+          width: 340px;
+          h5{
+            font-size: 20px;
+            font-family: "NCSP-Regular";
+            color: $white;
+            margin-bottom: 18px;
+          }
+          ul{
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            list-style: none;
+            li{
+              font-size: 20px;
+              font-family: "NCSP-Regular";
+              color: $white;
+              margin-#{$end-direction}: 25px;
+              padding-#{$start-direction}: 15px;
+              position: relative;
+              &::before{
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                top: 40%;
+                border-radius: 50%;
+                #{$start-direction}:0;
+                background-color: $white;
+              }
+            }
+          }
+          .numbers-data{
+            display: flex;
+            flex-direction: row;
+            > div{
+              .number{
+                display: block;
+                font-size: 45px;
+                color: $white;
+                margin-bottom: 8px;
+              }
+              span{
+                display: block;
+                font-size: 20px;
+                font-family: "NCSP-Regular";
+                color: $white;
+              }
+              &:first-of-type{
+                padding-#{$end-direction}: 25px;
+                margin-#{$end-direction}: 25px;
+                position: relative;
+                &::before{
+                  content: "";
+                  position: absolute;
+                  width: 2px;
+                  height: 60%;
+                  top: 30%;
+                  #{$end-direction}:0;
+                  background-color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+      .svg-map{
+          margin-#{$start-direction}: -50px;
+          position: relative;
+          margin-top: 115px;
+          svg{
+              width: 95%;
+              #Map-Areas{
+                  path{
+                      transition: 500ms;
+                      &:hover{
+                          fill: #4C9151;
+                      }
+                    }
+                   
+              }
+          }
+      }
+  }
+}
+.active-sec{
+  fill: rgba($color: #FFFFFF, $alpha: 0.35);
+}
+.marker-with-popup{
+  position: absolute;
+  // right: 415px;
+  // top: 215px;
+  .marker{
+      position: relative;
+  }
+
+  .map-popup{
+      width: auto;
+      min-height: 32px;
+      background-color: $dark-blue;
+      border-radius: 16px;
+      position: absolute;
+      top: -52px;
+      #{$start-direction}: -55px;
+      z-index: 9;
+      &::after{
+          content: "";
+          position: absolute;
+          width: 25px;
+          height: 13px;
+          #{$start-direction}:49%;
+          top: 98%;
+          z-index: -1;
+          background-image: url(../images/map/map-Polygon.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          transform: translate(50%);
+  
+      }
+  
+      .content-box{
+        padding: 5px 17px;
+          a.close-pop {
+              float: #{$end-direction};
+              margin-top: -10px;
+              margin-#{$end-direction}: -20px;
+          }
+          
+          p{
+              font-size: 16px;
+              font-family: "NCSP-Regular";
+              color: $white;
+              margin-bottom: 0;
+              white-space: nowrap;
+
+          }
+      }
+  }
+  &.reyadh{
+     right: 305px;
+      top: 415px;
+  }
+  &.makkah{
+    right: 450px;
+    top: 430px;
+  }
+  &.madinah{
+    right: 490px;
+    top: 340px;
+  }
+  &.tabuk{
+    right: 560px;
+    top: 225px;
+  }
+  &.haael{
+    right: 430px;
+    top: 245px;
+  }
+  &.qasim{
+    right: 365px;
+    top: 295px;
+  }
+  &.gouf{
+    right: 505px;
+    top: 175px;
+  }
+  &.shamalia{
+    right: 380px;
+    top: 180px;
+  }
+  &.sharqia{
+    right: 140px;
+    top: 400px;
+  }
+  &.nagran{
+    right: 300px;
+    top: 555px;
+  }
+  &.asser{
+    right: 395px;
+    top: 520px;
+  }
+  &.gazan{
+    right: 402px;
+    top: 587px;
+  }
+  &.baaha{
+    right: 442px;
+    top: 490px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map-area{
+  position: relative;
+  height: 960px;
+  .map-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    #{$start-direction}:0;
+    top: 0;
+    z-index: -5;
+
+    &::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      #{$start-direction}:0;
+      top: 0;
+      background: rgb(0,51,145);
+      background: linear-gradient(301deg, rgba(0,51,145,1) 0%, rgba(17,89,240,0.1516981792717087) 50%, rgba(255,255,255,0) 100%);
+      z-index: 2;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      #{$start-direction}:0;
+      top: 0;
+      background-color: #000000;
+      opacity: .4;
+      z-index: 1;
+    }
+  }
+}

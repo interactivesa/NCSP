@@ -1,0 +1,17 @@
+// Fonts 
+@font-face {
+    font-family: "NCSP-Light";
+    src: url($font-path + "NeoSansArabicLight.ttf")
+  }
+@font-face {
+    font-family: "NCSP-Regular";
+    src: url($font-path + "NeoSansArabicRegular.ttf");
+  }
+@font-face {
+    font-family: "NCSP-Medium";
+    src: url($font-path + "NeoSansArabicMedium.ttf")
+  }
+@font-face {
+    font-family: "NCSP-Bold";
+    src: url($font-path + "NeoSansArabicBold.ttf")
+  }
