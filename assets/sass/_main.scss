@@ -33,7 +33,14 @@ ul {
       align-items: center;
 
       .a-logo {
-        display: none;
+        display: block;
+        margin-#{$start-direction}: 60px;
+        .logo-color{
+          display: none;
+        }
+        .logo-white{
+          display: block;
+        }
       }
 
       // Top Links 
@@ -44,6 +51,7 @@ ul {
         padding-left: 10px;
         font-size: 16px;
         color: $white;
+        margin-bottom: 14px;
         .search-toggle {
           background-image: url("../images/shared/Search.svg");
           background-repeat: no-repeat;
@@ -202,6 +210,12 @@ ul {
         .a-logo {
           display: block;
           margin-#{$start-direction}: 60px;
+          .logo-white{
+            display: none;
+          }
+          .logo-color{
+            display: block;
+          }
         }
         // Top Links 
         .top-links {
@@ -374,21 +388,24 @@ ul {
 .about {
   background-repeat: no-repeat;
   background-image: url(../images/pattern-color.svg);
-
+  background-position: 220px 71px;
+  background-size: 40%;
+  padding: 150px 0;
   .container {
-    padding: 40px 0;
+    // padding: 40px 0;
     .content {
       padding: 120px 40px;
+      padding-#{$start-direction}:0 ;
       // Title 
       .section-header {
-        width: 17%;
-        font-size: 26px;
+        width: 23%;
+        font-size: 30px;
         font-family: "NCSP-Medium";
         color: $dark-blue;
         position: relative;
         padding-bottom: 15px;
         border-bottom: 2px solid $medium-grey;
-
+        margin-bottom: 60px;
         &::before, &::after {
           content: '';
           width: 22px;
@@ -410,21 +427,25 @@ ul {
         }
       }
       p {
-        font-size: 18px; 
+        font-size: 25px; 
         font-family: "NCSP-Light";
         color: $dark-text;
-        padding-top: 20px;
-        line-height: 2;
-        text-align: justify;
+        line-height: 1.5;
+        // padding-top: 20px;
+        // text-align: justify;
       }
     }
 
     // Image
     .imgBox{
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
       img {
         width: 80%;
         float: left;
-        margin-left: 40px;
+        // margin-left: 40px;
       }
     }
   }
@@ -432,18 +453,19 @@ ul {
 
 // Gallery 
 .gallery {
-  padding: 50px 0;
+  padding: 60px 0 150px;
   background-color: $bg-color;
-
+  height: 1240px;
   // Title
   .section-header {
-    width: 12%;
-    font-size: 26px;
+    width: 15%;
+    font-size: 30px;
     font-family: "NCSP-Medium";
     color: $dark-blue;
     position: relative;
     padding-bottom: 15px;
     border-bottom: 2px solid $medium-grey;
+    text-align: center;
 
     &::before, &::after {
       content: '';
@@ -469,32 +491,36 @@ ul {
   .centered {
     left: 50%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     position: inherit;
   }
 
   .container {
     .tabsImage {
-      padding: 20px 0;
+      // padding: 20px 0;
       
       .imgbox {
         width: 100%;
-        height: 150px;
+        height: 200px;
         margin-bottom: 20px;
         border-radius: 20px;
         position: relative;
         background-image: url(../images/gallery/gallery1.png);
-        background-size: cover;
+        // background-size: cover;
         background-position: center;
+        transition: 300ms;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
       }
       .imgbox:nth-child(2) {
         background-image: url(../images/gallery/gallery2.png);
-        background-size: cover;
+        // background-size: cover;
         background-position: center;
       }
       .imgbox:nth-child(3) {
         background-image: url(../images/gallery/gallery3.png);
-        background-size: cover;
+        // background-size: cover;
         background-position: center;
       }
 
@@ -502,19 +528,19 @@ ul {
       h4 {
         padding: 30px;
         color: $white;
-        font-size: 24px;
+        font-size: 35px;
         font-family: "NCSP-Medium";
         span {
           padding-left: 10px;
           color: $white;
-          font-size: 18p;
+          font-size: 30px;
           font-family: "NCSP-Light";
         }
       }
       p {
         padding: 30px; 
         color: $white; 
-        font-size: 16px;
+        font-size: 25px;
         position: absolute; 
         bottom: 2%;
         opacity: 0;
@@ -522,7 +548,7 @@ ul {
 
       .imgbox:hover {
         width: 100%;
-        height: 400px;
+        height: 505px;
         cursor: pointer;        
         p {
           opacity: 1;
@@ -534,7 +560,7 @@ ul {
 
 // Numbers 
 .Numbers{
-  padding: 30px 0;
+  padding: 80px 0 130px;
   background-color: $medium-blue;
   background-image: url(../images/pattern-no.svg);
   background-position: -85px center;
@@ -542,14 +568,15 @@ ul {
 
   // Title
   .section-header {
-    width: 12%;
-    font-size: 22px;
+    width: 15%;
+    font-size: 30px;
     font-family: "NCSP-Medium";
     color: $aqua;
     position: relative;
     padding-bottom: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 65px !important;
     border-bottom: 2px solid $medium-grey;
+    text-align: center;
 
     &::before, &::after {
       content: '';
@@ -588,14 +615,14 @@ ul {
 
       // Shapes 
       .content-box {
-        width: 130px;
+        width: 170px;
         .centered {
           position: absolute;
           top: 45%;
-          left: 50%;
+          left: 45%;
           transform: translate(-50%, -50%);
           h4 {
-            font-size: 20px;
+            font-size: 25px;
             font-family: "NCSP-Medium";
             color: $dark-blue;
             direction: ltr;
@@ -607,11 +634,12 @@ ul {
           }
         }
         img {
-          width: 120px;
-          padding-left: 10px;
+          width: 165px;
+          // padding-left: 10px;
         }
         p {
-          font-size: 16px;
+          font-size: 20px;
+          font-family: "NCSP-Medium";
           color: $white;
           text-align: center;
           padding-top: 10px;
@@ -736,26 +764,28 @@ ul {
 
 // News
 .bgNews {
-  height: 730px;
+  // height: 730px;
   background-image: url("../images/pattern.svg");
-  background-color: $medium-blue;
+  // background-color: $medium-blue;
   background-repeat: no-repeat;
+  background: rgb(0,51,145);
+  background: linear-gradient(180deg, rgba(0,51,145,1) 0%, rgba(20,95,255,1) 100%);
 
   // Tabs  
   .news-tabs{
-    margin-top: 50px;
+    margin-top: 70px;
     ul.nav {
       color: $white;
       width: max-content;
       margin: 0 auto;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
       padding: 0;
       background-color: transparent;     
 
       // Items 
       li {
-        width: 120px;
-        height: 40px;
+        width: 150px;
+        height: 50px;
         margin-#{$end-direction}: 10px;
         background-color: transparent;
         font-size: 14px;
@@ -765,7 +795,8 @@ ul {
         button{
           width: 100%;
           height: 100%;
-          font-size: inherit;
+          font-size: 16px;
+          font-family: "NCSP-Medium";
           font-weight: inherit;
           color: inherit;
           transition: 300ms;
@@ -785,14 +816,20 @@ ul {
       }
     }
     .more {      
-      width: auto;
+      width: 150px;
+      height: 50px;
       color: $white;
-      font-size: 13px;
+      font-size: 16px;
+      font-family: "NCSP-Medium";
       background-color: transparent;
       border: 1px solid $white;
-      border-radius: 20px;   
+      border-radius: 25px;   
       padding: 5px 20px;
       text-align: center;
+      margin-bottom: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         background-color: $dark-blue;
@@ -804,10 +841,23 @@ ul {
   .cardNews {
     transition: 0.3s;
     height: 480px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
     border-radius: 20px;
-    background-color: $purple;
+    // background-color: $purple;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 96%;
+      height: 50%;
+      bottom: 5px;
+      #{$start-direction}: -3px;
+      border-radius: 50px;
+      background-color: $purple;
+      z-index: -1;
+      transform: rotate(-6deg);
+    }
     
     // Link 
     .forClick {
@@ -845,32 +895,41 @@ ul {
 
       .title {
         color: $dark-blue;
-        font-size: 18px;
+        font-size: 16px;
         font-family: "NCSP-Medium";
         margin-bottom: 15px;
-        line-height: 1.5;
+        line-height: 27px;
+        height: calc(27px * 2);
       }
       .date {
         margin-bottom: 6px;
         display: flex;
+        line-height: 18px;
+        height: calc(18px * 1);
         span {
           color: $blue;
           font-size: 12px;
-          font-family: "NCSP-Medium";
+          font-family: "NCSP-Regular";
           padding-#{$start-direction}: 5px;
+          line-height: 18px;
+          height: calc(18px * 1);
         }
         img {
           max-width: 16px;
         }
       }
       .paraghCard {
-        font-size: 14px;
+        font-size: 15px;
+        font-family: "NCSP-Light";
         color: $dark-text;
+        line-height: 21px;
+        height: calc(21px * 4);
       }
     }    
   }
   .centered {
     left: 50%;
+    transform: translateX(-50%);
     margin: auto;
     margin-bottom: 20px;
     position: inherit;
@@ -880,11 +939,11 @@ ul {
 // Partners
 .partners {
   background-color: $white;
-  padding: 50px;
+  padding: 60px 0 90px;
 
   // Title
   .section-header {
-    width: 7.5%;
+    width: 10%;
     font-size: 26px;
     font-family: "NCSP-Medium";
     color: $dark-blue;
@@ -892,6 +951,7 @@ ul {
     padding-bottom: 15px;
     margin-bottom: 40px;
     border-bottom: 2px solid $medium-grey;
+    text-align: center;
 
     &::before, &::after {
       content: '';
@@ -918,7 +978,8 @@ ul {
     left: 50%;
     margin: auto;
     position: sticky;
-    margin-bottom: 50px;
+    margin-bottom: 95px;
+    transform: translateX(-50%);
   }
 
   .item {
@@ -993,6 +1054,16 @@ footer {
       }
     }
     .contactUs {
+      ul{
+        li{
+          &:nth-child(2){
+            a{
+              direction: ltr;
+              display: inline-block;
+            }
+          }
+        }
+      }
       img {
         width: 32px;
         margin-left: 5px;

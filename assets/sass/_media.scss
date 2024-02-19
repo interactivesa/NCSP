@@ -1,3 +1,234 @@
+@media(min-width:1400px){
+    .custom-cont{
+        max-width: 1640px;
+    }
+}
+
+
+@media (max-width: 1399.68px) {
+
+    .marker-with-popup.reyadh {
+        right: 260px;
+        top: 389px;
+    }
+    .marker-with-popup.shamalia {
+        right: 325px;
+        top: 205px;
+    }
+    .marker-with-popup.gouf {
+        right: 425px;
+        top: 195px;
+    }
+    .marker-with-popup.tabuk {
+        right: 480px;
+        top: 241px;
+    }
+    .marker-with-popup.madinah {
+        right: 420px;
+        top: 350px;
+    }
+    .marker-with-popup.makkah {
+        right: 385px;
+        top: 430px;
+    }
+    .marker-with-popup.gazan {
+        right: 350px;
+        top: 553px;
+    }
+    .marker-with-popup.nagran {
+        right: 265px;
+        top: 525px;
+    }
+    .marker-with-popup.haael {
+        right: 370px;
+        top: 270px;
+    }
+    .marker-with-popup.qasim {
+        right: 325px;
+        top: 300px;
+    }
+    .marker-with-popup.asser {
+        right: 340px;
+        top: 500px;
+    }
+    .marker-with-popup.baaha {
+        right: 383px;
+        top: 473px;
+    }
+
+    .interactive-map .map-cont .main-content h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .interactive-map .map-cont .tags-content {
+        margin-top: 35px;
+    }
+    .interactive-map .map-cont .tags-content h3 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .interactive-map .map-cont .tags-content .details .numbers-data > div .number{
+        font-size: 35px;
+    }
+    .interactive-map .map-cont .tags-content .details .numbers-data > div span ,
+    .interactive-map .map-cont .tags-content .details ul li ,
+    .interactive-map .map-cont .tags-content .details h5
+    {
+        font-size: 18px;
+    }
+    .interactive-map .map-cont .svg-map{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1199.68px){
+    .marker-with-popup.sharqia {
+        right: 110px;
+        top: 395px;
+    }
+    .marker-with-popup.shamalia {
+        right: 285px;
+        top: 223px;
+    }
+    .marker-with-popup.gouf {
+        right: 365px;
+        top: 215px;
+    }
+    .marker-with-popup.tabuk {
+        right: 415px;
+        top: 255px;
+    }
+    .marker-with-popup.haael {
+        right: 315px;
+        top: 270px;
+    }
+    .marker-with-popup.madinah {
+        right: 360px;
+        top: 335px;
+    }
+    .marker-with-popup.makkah {
+        right: 326px;
+        top: 415px;
+    }
+    .marker-with-popup.reyadh {
+        right: 225px;
+        top: 389px;
+    }
+    .marker-with-popup.nagran {
+        right: 222px;
+        top: 500px;
+    }
+    .marker-with-popup.asser {
+        right: 290px;
+        top: 480px;
+    }
+    .marker-with-popup.baaha {
+        right: 323px;
+        top: 455px;
+    }
+    .marker-with-popup.gazan {
+        right: 292px;
+        top: 521px;
+    }
+    .marker-with-popup.qasim {
+        right: 275px;
+        top: 311px;
+    }
+}
+
+@media (max-width: 991.68px){
+    .map-area{
+        height: auto;
+    }
+    .interactive-map .map-cont .main-content h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .interactive-map .map-cont .navigation-links a{
+        font-size: 14px;
+    }
+    .interactive-map .map-cont .tags-content {
+        margin-top: 20px;
+    }
+    .interactive-map .map-cont .tags-content h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .interactive-map .map-cont .tags-content .details .numbers-data > div span,
+    .interactive-map .map-cont .tags-content .details ul li,
+    .interactive-map .map-cont .tags-content .details h5 {
+        font-size: 14px;
+    }
+    .interactive-map .map-cont .tags-content .details h5{
+        margin-bottom: 10px;
+    }
+    .interactive-map .map-cont .tags-content .details ul li{
+        margin-#{$end-direction}: 20px;
+    }
+    .interactive-map .map-cont .tags-content .details .numbers-data > div .number {
+        font-size: 25px;
+    }
+    .interactive-map .map-cont .svg-map{
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+
+    .marker-with-popup.sharqia {
+        right: 145px;
+        top: 395px;
+    }
+    .marker-with-popup.shamalia {
+        right: 360px;
+        top: 185px;
+    }
+    .marker-with-popup.gouf {
+        right: 490px;
+        top: 165px;
+    }
+    .marker-with-popup.tabuk {
+        right: 572px;
+        top: 232px;
+    }
+    .marker-with-popup.haael {
+        right: 415px;
+        top: 256px;
+    }
+    .marker-with-popup.qasim {
+        right: 375px;
+        top: 297px;
+    }
+    .marker-with-popup.madinah {
+        right: 480px;
+        top: 335px;
+    }
+    .marker-with-popup.reyadh {
+        right: 300px;
+        top: 389px;
+    }
+    .marker-with-popup.makkah {
+        right: 437px;
+        top: 435px;
+    }
+    .marker-with-popup.baaha {
+        right: 436px;
+        top: 489px;
+    }
+    .marker-with-popup.asser {
+        right: 386px;
+        top: 513px;
+    }
+    .marker-with-popup.nagran {
+        right: 300px;
+        top: 552px;
+    }
+    .marker-with-popup.gazan {
+        right: 400px;
+        top: 584px;
+    }
+}
+
+
 
 // Small Sizes 
 @media (max-width: 767.68px) {
@@ -87,5 +318,160 @@
                 }
             }  
         }
+    }
+}
+
+
+
+
+
+
+@media (max-width: 574.68px) {
+.interactive-map .map-cont .svg-map svg{
+    width: 100%;
+    height: 400px;
+}
+
+.marker-with-popup.reyadh {
+    right: 180px;
+    top: 225px;
+}
+.marker-with-popup.sharqia {
+    right: 84px;
+    top: 240px;
+}
+.marker-with-popup.shamalia {
+    right: 223px;
+    top: 90px;
+}
+.marker-with-popup.gouf {
+    right: 290px;
+    top: 85px;
+}
+.marker-with-popup.tabuk {
+    right: 316px;
+    top: 118px;
+}
+.marker-with-popup.haael {
+    right: 244px;
+    top: 137px;
+}
+.marker-with-popup.qasim {
+    right: 216px;
+    top: 162px;
+}
+.marker-with-popup.madinah {
+    right: 280px;
+    top: 190px;
+}
+.marker-with-popup.makkah {
+    right: 255px;
+    top: 235px;
+}
+.marker-with-popup.nagran {
+    right: 180px;
+    top: 310px;
+}
+.marker-with-popup.asser {
+    right: 231px;
+    top: 291px;
+}
+.marker-with-popup.baaha {
+    right: 256px;
+    top: 275px;
+}
+.marker-with-popup.gazan {
+    right: 234px;
+    top: 329px;
+}
+.interactive-map .map-cont .main-content{
+    margin-top: 30px;
+}
+.interactive-map .map-cont .tags-content{
+    margin-top: 10px;
+}
+.interactive-map .map-cont .main-content h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.interactive-map .map-cont .tags-content h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+}
+
+
+@media (max-width: 399.68px) {
+    .marker-with-popup .marker img{
+        width: 8px;
+        height: 8px;
+    }
+    .marker-with-popup .map-popup .content-box p{
+        font-size: 12px;
+    }
+    .marker-with-popup .map-popup::after{
+        width: 17px;
+        height: 8px;
+        top: 95%;
+    }
+    .marker-with-popup .map-popup{
+        top: -43px;
+        right: -50px;
+    }
+
+
+
+    .marker-with-popup.reyadh {
+        right: 156px;
+        top: 210px;
+    }
+    .marker-with-popup.sharqia {
+        right: 84px;
+        top: 220px;
+    }
+    .marker-with-popup.shamalia {
+        right: 190px;
+        top: 109px;
+    }
+    .marker-with-popup.gouf {
+        right: 255px;
+        top: 99px;
+    }
+    .marker-with-popup.haael {
+        right: 216px;
+        top: 143px;
+    }
+    .marker-with-popup.qasim {
+        right: 188px;
+        top: 168px;
+    }
+    .marker-with-popup.tabuk {
+        right: 282px;
+        top: 130px;
+    }
+    .marker-with-popup.madinah {
+        right: 241px;
+        top: 190px;
+    }
+    .marker-with-popup.makkah {
+        right: 227px;
+        top: 235px;
+    }
+    .marker-with-popup.asser {
+        right: 200px;
+        top: 277px;
+    }
+    .marker-with-popup.nagran {
+        right: 156px;
+        top: 299px;
+    }
+    .marker-with-popup.baaha {
+        right: 224px;
+        top: 267px;
+    }
+    .marker-with-popup.gazan {
+        right: 203px;
+        top: 314px;
     }
 }
