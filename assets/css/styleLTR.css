@@ -996,6 +996,54 @@ footer .bottom-footer .copyright p {
   color: #145FFF;
 }
 
+.breadcrumb {
+  height: 200px;
+  background-color: #7A6AF7;
+  background-image: url(../images/bread-pattern.svg);
+  background-size: cover;
+  margin-bottom: 0;
+}
+.breadcrumb .items {
+  margin: 0;
+  height: 60px;
+  align-items: center;
+  display: flex;
+}
+.breadcrumb .items li .home img {
+  width: 16px;
+}
+.breadcrumb .items li a {
+  font-size: 13px;
+  font-family: "NCSP-Regular";
+  color: #FFFFFF;
+  margin-right: 5px;
+  position: relative;
+  padding-right: 20px;
+}
+.breadcrumb .items li a::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 10px;
+  width: 5px;
+  background-image: url(../images/shared/Arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.breadcrumb .items li span {
+  font-size: 13px;
+  font-family: "NCSP-Regular";
+  color: #FFFFFF;
+}
+.breadcrumb .pageTitle {
+  font-size: 26px;
+  font-family: "NCSP-Regular";
+  color: #FFFFFF;
+  padding-top: 30px;
+  padding-right: 40px;
+}
+
 .inContent {
   height: auto;
   background-color: #F4F4F4;
@@ -1014,6 +1062,152 @@ footer .bottom-footer .copyright p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.inContent .container {
+  padding: 40px 0;
+}
+.inContent .container .box-white {
+  padding: 50px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.01);
+}
+.inContent .container .box-white ul.nav {
+  color: #FFFFFF;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 0;
+  background-color: transparent;
+}
+.inContent .container .box-white ul.nav li {
+  width: auto;
+  height: 50px;
+  margin-right: 10px;
+  background-color: transparent;
+  font-family: "NCSP-Medium";
+  border-radius: 25px;
+}
+.inContent .container .box-white ul.nav li button {
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  font-family: "NCSP-Medium";
+  font-weight: inherit;
+  color: #145FFF;
+  transition: 300ms;
+  border-radius: 25px;
+  border: 1px solid #145FFF;
+  padding: 0 30px;
+}
+.inContent .container .box-white ul.nav li button.active {
+  color: #FFFFFF;
+  border: 0px solid;
+  background: linear-gradient(90deg, #7A6AF7 0%, #35CCDE 0%, #145FFF 100%);
+}
+.inContent .container .box-white ul.nav li:last-child {
+  margin-right: 0;
+}
+.inContent .container .box-white .content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  padding: 40px;
+}
+.inContent .container .box-white .content-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 35px;
+  height: 25px;
+  background-image: url(../images/internal/bxs-quote-alt-start.svg);
+  background-repeat: no-repeat;
+}
+.inContent .container .box-white .content-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35px;
+  height: 25px;
+  background-image: url(../images/internal/bxs-quote-alt-end.svg);
+  background-repeat: no-repeat;
+}
+.inContent .container .box-white .content-box .word-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+.inContent .container .box-white .content-box .word-content h4 {
+  font-size: 16px;
+  font-family: "NCSP-Medium";
+  color: #001F5E;
+  text-align: center;
+}
+.inContent .container .box-white .content-box .word-content p {
+  font-size: 15px;
+  font-family: "NCSP-Regular";
+  color: #333333;
+  margin-bottom: 0px;
+}
+.inContent .container .box-white .content-box .word-content p:last-child {
+  margin-bottom: 0;
+}
+.inContent .container .box-white .content-box .word-content h6 {
+  font-size: 14px;
+  color: #001F5E;
+  text-align: center;
+}
+.inContent .container .box-white .content-box .signature {
+  text-align: center;
+  color: #001F5E;
+  margin-bottom: 0;
+  align-self: flex-end;
+}
+.inContent .container .box-white .content-box .signature h6 {
+  font-size: 14px;
+}
+.inContent .container .box-white .content-box .signature h4 {
+  font-size: 15px;
+  font-family: "NCSP-Medium";
+}
+.inContent .share {
+  background: #FFFFFF;
+  width: 280px;
+  height: 60px;
+  margin-top: 40px;
+}
+.inContent .share h4 {
+  font-size: 16px;
+  font-family: "NCSP-Medium";
+  color: #145FFF;
+  height: 55px;
+  display: inline-block;
+  padding: 20px;
+  border-left: 1px solid #CDD2D9;
+}
+.inContent .share h4 img {
+  margin-right: 6px;
+}
+.inContent .share a {
+  width: 48px;
+  height: 60px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms;
+  background-color: transparent;
+}
+.inContent .share a:hover {
+  background-color: #145FFF;
+}
+.inContent .share a:hover img {
+  filter: contrast(0) brightness(2);
 }
 
 @font-face {
