@@ -392,9 +392,8 @@ ul {
   background-size: 40%;
   padding: 150px 0;
   .container {
-    // padding: 40px 0;
     .content {
-      padding: 120px 40px;
+      padding: 60px 40px;
       padding-#{$start-direction}:0 ;
       // Title 
       .section-header {
@@ -405,7 +404,7 @@ ul {
         position: relative;
         padding-bottom: 15px;
         border-bottom: 2px solid $medium-grey;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         &::before, &::after {
           content: '';
           width: 22px;
@@ -427,12 +426,11 @@ ul {
         }
       }
       p {
-        font-size: 25px; 
+        font-size: 20px; 
         font-family: "NCSP-Light";
         color: $dark-text;
-        line-height: 1.5;
-        // padding-top: 20px;
-        // text-align: justify;
+        line-height: 2;
+        text-align: justify;
       }
     }
 
@@ -562,7 +560,7 @@ ul {
 .Numbers{
   padding: 80px 0 130px;
   background-color: $medium-blue;
-  background-image: url(../images/pattern-no.svg);
+  background-image: url(../images/pattern.svg);
   background-position: -85px center;
   background-repeat: no-repeat;
 
@@ -635,7 +633,6 @@ ul {
         }
         img {
           width: 165px;
-          // padding-left: 10px;
         }
         p {
           font-size: 20px;
@@ -764,9 +761,7 @@ ul {
 
 // News
 .bgNews {
-  // height: 730px;
   background-image: url("../images/pattern.svg");
-  // background-color: $medium-blue;
   background-repeat: no-repeat;
   background: rgb(0,51,145);
   background: linear-gradient(180deg, rgba(0,51,145,1) 0%, rgba(20,95,255,1) 100%);
@@ -844,7 +839,6 @@ ul {
     margin-bottom: 50px;
     position: relative;
     border-radius: 20px;
-    // background-color: $purple;
     position: relative;
     &::before{
       content: "";
@@ -1160,23 +1154,199 @@ footer {
   }  
 }
 
-// Content 
+// Breadcrumb 
+.breadcrumb {
+  height: 200px;
+  background-color: $purple;
+  background-image: url(../images/bread-pattern.svg);
+  background-size: cover;
+  margin-bottom: 0;
+
+  .items {
+    margin: 0;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    li {
+      .home {
+        img {
+          width: 16px;
+        }
+      }
+      a {
+        font-size: 13px;
+        font-family: "NCSP-Regular";
+        color: $white;
+        margin-#{$end-direction}: 5px;
+        position: relative;
+        padding-#{$end-direction}: 20px;
+        // Arrow
+        &::after{
+          content: "";
+          position: absolute;
+          #{$end-direction}:5px;
+          top: 5px;
+          height: 10px;
+          width: 5px;
+          background-image: url(../images/shared/Arrow.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      span{
+        font-size: 13px;
+        font-family: "NCSP-Regular";
+        color: $white;
+      }
+    }
+  }
+
+  .pageTitle {
+    font-size: 26px;
+    font-family: "NCSP-Regular";
+    color: $white;
+    padding-top: 30px;
+    padding-right: 40px;
+  }
+}
+
+// Inner Pages Content 
 .inContent {
   height: auto;
   background-color: $bg-color; 
-  h2 {
-    text-align: center;
-    font-size: 40px;
-    font-family: "NCSP-Medium";
-    color: $medium-blue;
-    padding: 50px 0;
+
+  // Coming Soon
+  .soon {
+    h2 {
+      text-align: center;
+      font-size: 40px;
+      font-family: "NCSP-Medium";
+      color: $medium-blue;
+      padding: 50px 0;
+    }
+    img {
+      max-height: 500px;
+      width: auto;
+      padding-bottom: 50px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-  img {
-    max-height: 500px;
-    width: auto;
-    padding-bottom: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+  // Board Members
+  .container {
+    padding: 40px 0;
+    .box-white {
+      padding: 50px;
+      background-color: $white;
+      box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.01);
+
+      // Tabs  
+      ul.nav {
+        color: $white;
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        padding: 0;
+        background-color: transparent;     
+
+        // Items 
+        li {
+          width: auto;
+          height: 50px;
+          margin-#{$end-direction}: 10px;
+          background-color: transparent;
+          font-size: 14px;
+          font-family: "NCSP-Medium";
+          border-radius: 25px;
+
+          button {
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            font-family: "NCSP-Medium";
+            font-weight: inherit;
+            color: $blue;
+            transition: 300ms;
+            border-radius: 25px;
+            border: 1px solid $blue;
+            padding: 0 30px;
+
+            // Active 
+            &.active {
+              color: $white;
+              border: 0px solid;
+              background: linear-gradient(90deg, $purple 0%, $aqua 0%, $blue 100%);
+            }
+          }
+
+          &:last-child {
+            margin-#{$end-direction}: 0;
+          }
+        }
+      }
+
+      // Word 
+      .content-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        position: relative;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-#{$start-direction}: 10px;
+
+        &::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          #{$start-direction}:10px;
+          width: 35px;
+          height: 25px;
+          background-image: url(../images/internal/bxs-quote-alt-start.svg);
+          background-repeat: no-repeat;          
+        }
+        &::after{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          #{$end-direction}:0;
+          width: 35px;
+          height: 25px;
+          background-image: url(../images/internal/bxs-quote-alt-end.svg);
+          background-repeat: no-repeat;          
+        }
+
+        // Text 
+        .word-content {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          justify-content: space-around;
+          h4 {
+            font-size: 17px;
+            font-family: "NCSP-Medium";
+            color: $dark-blue;
+            text-align: center;
+          }
+          p {
+            font-size: 17px;
+            color: $blue;
+            margin-bottom: 0px;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+        }
+        .signature{
+          font-size: 16px;
+          color: $blue;
+          margin-bottom: 0;
+          align-self: flex-end;
+        }
+      }
+    }
   }
 }
