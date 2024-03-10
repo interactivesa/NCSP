@@ -1076,13 +1076,13 @@ footer .bottom-footer .copyright p {
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   padding: 0;
   background-color: transparent;
 }
 .inContent .container .box-white ul.nav li {
   width: auto;
-  height: 50px;
+  height: 40px;
   margin-left: 10px;
   background-color: transparent;
   font-family: "NCSP-Medium";
@@ -1174,6 +1174,125 @@ footer .bottom-footer .copyright p {
 .inContent .container .box-white .content-box .signature h4 {
   font-size: 15px;
   font-family: "NCSP-Medium";
+}
+.inContent .container .box-white .search-top {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.inContent .container .box-white .search-top input {
+  height: 44px;
+  border: 1.5px solid #CDD2D9;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: 300ms;
+}
+.inContent .container .box-white .search-top input:focus {
+  border-color: #145FFF;
+}
+.inContent .container .box-white .search-top input[type=text] {
+  padding: 10px 20px;
+  width: 300px;
+  background-image: url(../images/shared/Search-b.svg);
+  background-repeat: no-repeat;
+  background-position: 13px 13px;
+  background-size: 20px;
+}
+.inContent .container .box-white .search-top select {
+  height: 44px;
+  border: 1.5px solid #CDD2D9;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 200px;
+  margin-right: 10px;
+  display: inline-block;
+  background-image: url(../images/shared/nav-arrow-b.svg);
+  background-position: 10px 20px;
+  background-size: 10px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.inContent .container .box-white .search-top select:focus {
+  border-color: #145FFF;
+  box-shadow: none;
+}
+.inContent .container .box-white .search-top option {
+  font-size: 14px;
+  font-family: "NCSP-Regular";
+}
+.inContent .container .box-white .search-top button {
+  font-family: "NCSP-Medium";
+  font-size: 13px;
+  color: #FFFFFF;
+  padding: 10px 25px;
+  border: 0px solid;
+  border-radius: 4px;
+  background-color: #145FFF;
+  margin-right: 10px;
+}
+.inContent .container .box-white .serviceBox {
+  height: 200px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid rgba(205, 210, 217, 0.5);
+  border-radius: 10px;
+  border-bottom: 8px solid #145FFF;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+.inContent .container .box-white .serviceBox:hover {
+  background: #001F5E;
+}
+.inContent .container .box-white .serviceBox:hover .SrvLogo {
+  opacity: 0.15;
+}
+.inContent .container .box-white .serviceBox:hover .detailsHidden {
+  display: block;
+  top: 20px;
+  position: absolute;
+}
+.inContent .container .box-white .serviceBox:hover .detailsHidden p {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: "NCSP-Medium";
+  padding: 5px 20px;
+}
+.inContent .container .box-white .serviceBox:hover .detailsHidden button {
+  background-color: #35CCDE;
+  border: 0px solid;
+  border-radius: 30px;
+  height: 40px;
+  color: #001F5E;
+  font-size: 14px;
+  font-family: "NCSP-Medium";
+  padding: 0px 25px;
+}
+.inContent .container .box-white .serviceBox .detailsHidden {
+  display: none;
+}
+.inContent .container .box-white .srvTitle h4 {
+  font-size: 15px;
+  font-family: "NCSP-Medium";
+  color: #001F5E;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.inContent .container .box-white .pagination .page-link {
+  position: relative;
+  display: block;
+  color: #333333;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+  border: 0px solid;
+  border-radius: 50%;
+  padding: 11px 18px;
+  margin-left: 10px;
+  width: 44px;
+  height: 44px;
+  font-size: 14px;
+}
+.inContent .container .box-white .pagination .page-link:hover, .inContent .container .box-white .pagination .page-link.active {
+  background: #145FFF;
+  color: #FFFFFF;
 }
 .inContent .share {
   background: #FFFFFF;

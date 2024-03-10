@@ -157,36 +157,258 @@
         <div class="box-white">
           <div class="row">
             <div class="col-lg-12">
-              <ul class="nav nav-pills " id="pills-tab" role="tablist">
+              <ul class="nav nav-pills " id="pills-tab" role="tablist" data-aos="fade-up" data-aos-delay="200">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="tab1" data-bs-toggle="pill" data-bs-target="#Tab1" type="button" role="tab" aria-controls="" aria-selected="true">
+                  <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#All" type="button" role="tab" aria-controls="All" aria-selected="true">
                    الكـل
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="tab2" data-bs-toggle="pill" data-bs-target="#Tab2" type="button" role="tab" aria-controls="" aria-selected="false">
+                  <button class="nav-link" id="owner-tab" data-bs-toggle="pill" data-bs-target="#Owner" type="button" role="tab" aria-controls="Owner" aria-selected="false">
                     صاحب عمل  
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="tab3" data-bs-toggle="pill" data-bs-target="#Tab3" type="button" role="tab" aria-controls="" aria-selected="false">
+                  <button class="nav-link" id="student-tab" data-bs-toggle="pill" data-bs-target="#Student" type="button" role="tab" aria-controls="Student" aria-selected="false">
                     طالب  
                   </button>
                 </li>
               </ul>
             </div>
             <div class="col-lg-12">
+              <div class="search-top" data-aos="fade-up" data-aos-delay="400">
+                <input type="text" placeholder="البحث في المنشآت التدريبية">
+                
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>
+                    من فضلك اختر التخصص
+                  </option>
+                  <option value="1">
+                    اسم التخصص
+                  </option>
+                  <option value="2">
+                    اسم التخصص
+                  </option>
+                  <option value="3">
+                    اسم التخصص 
+                  </option>
+                </select>
+  
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>
+                    عدد سنوات الخبرة
+                  </option>
+                  <option value="1">
+                      1
+                  </option>
+                  <option value="2">
+                      2
+                  </option>
+                  <option value="3">
+                      3
+                  </option>
+                </select>
+
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>
+                      من فضلك اختر المدينة
+                  </option>
+                  <option value="1">
+                      الرياض
+                  </option>
+                  <option value="2">
+                      جدة
+                  </option>
+                  <option value="3">
+                      مكة المكرمة
+                  </option>
+                </select>
+
+                <button href="#" class="search-area-a">
+                  بحث
+                </button>                
+              </div>
+            </div>            
+            <div class="col-lg-12">
               <div class="tab-content" id="pills-tabContent">
                 <!-- Tab 1 Content -->
-                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="">
+                <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="all-tab">
                   <div class="row">
-                    
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                      <div class="serviceBox">
+                        <div class="SrvLogo">
+                          <img src="../assets/images/internal/institutes/inst1.png" alt="">
+                        </div>
+                        <div class="detailsHidden">
+                          <p>
+                            تعد كلية نياجرا الكندية من أكبر الكليات الرائدة لأصحاب العمل في كندا، حيث تأسست في عام 1967م والتي تقدم ما يزيد عن 100 برنامج تدريب تطبيقي يستفيد منه أكثر من 10,500 طالب في ثلاث جامعات كندية. 
+                          </p>
+                          <button>عرض المزيد</button>
+                        </div>
+                      </div>
+                      <div class="srvTitle">
+                        <h4>كلية نياجرا</h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                      <div class="serviceBox">
+                        <div class="SrvLogo">
+                          <img src="../assets/images/internal/institutes/inst2.png" alt="">
+                        </div>
+                        <div class="detailsHidden">
+                          <p>
+                            تعد كلية لينكولن من الكليات العريقة والرائدة في مجال التدريب التطبيقي في المملكة المتحدة، حيث تقوم بتدريب أكثر من 8,000 طالب في ثلاث مدن داخل المملكة المتحدة.
+                          </p>
+                          <button>عرض المزيد</button>
+                        </div>
+                      </div>
+                      <div class="srvTitle">
+                        <h4>كلية لينكولن</h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                      <div class="serviceBox">
+                        <div class="SrvLogo">
+                          <img src="../assets/images/internal/institutes/inst3.png" alt="">
+                        </div>
+                        <div class="detailsHidden">
+                          <p>
+                            أحد أشهر الكليات العالمية في علوم الطيران، أسستها الحكومة الأسترالية عام 2001م لدعم وتطوير صناعة الطيران، وتقديم التدريب التطبيقي في هندسة الطيران، وتدريب الأطقم الملاحية.
+                          </p>
+                          <button>عرض المزيد</button>
+                        </div>
+                      </div>
+                      <div class="srvTitle">
+                        <h4>الكلية الأسترالية لعلوم الطيران</h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                      <div class="serviceBox">
+                        <div class="SrvLogo">
+                          <img src="../assets/images/internal/institutes/inst2.png" alt="">
+                        </div>
+                        <div class="detailsHidden">
+                          <p>
+                            تعد كلية لينكولن من الكليات العريقة والرائدة في مجال التدريب التطبيقي في المملكة المتحدة، حيث تقوم بتدريب أكثر من 8,000 طالب في ثلاث مدن داخل المملكة المتحدة.
+                          </p>
+                          <button>عرض المزيد</button>
+                        </div>
+                      </div>
+                      <div class="srvTitle">
+                        <h4>كلية لينكولن</h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                      <div class="serviceBox">
+                        <div class="SrvLogo">
+                          <img src="../assets/images/internal/institutes/inst3.png" alt="">
+                        </div>
+                        <div class="detailsHidden">
+                          <p>
+                            أحد أشهر الكليات العالمية في علوم الطيران، أسستها الحكومة الأسترالية عام 2001م لدعم وتطوير صناعة الطيران، وتقديم التدريب التطبيقي في هندسة الطيران، وتدريب الأطقم الملاحية.
+                          </p>
+                          <button>عرض المزيد</button>
+                        </div>
+                      </div>
+                      <div class="srvTitle">
+                        <h4>الكلية الأسترالية لعلوم الطيران</h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                      <div class="serviceBox">
+                        <div class="SrvLogo">
+                          <img src="../assets/images/internal/institutes/inst1.png" alt="">
+                        </div>
+                        <div class="detailsHidden">
+                          <p>
+                            تعد كلية نياجرا الكندية من أكبر الكليات الرائدة لأصحاب العمل في كندا، حيث تأسست في عام 1967م والتي تقدم ما يزيد عن 100 برنامج تدريب تطبيقي يستفيد منه أكثر من 10,500 طالب في ثلاث جامعات كندية. 
+                          </p>
+                          <button>عرض المزيد</button>
+                        </div>
+                      </div>
+                      <div class="srvTitle">
+                        <h4>كلية نياجرا</h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                      <div class="serviceBox">
+                        <div class="SrvLogo">
+                          <img src="../assets/images/internal/institutes/inst3.png" alt="">
+                        </div>
+                        <div class="detailsHidden">
+                          <p>
+                            أحد أشهر الكليات العالمية في علوم الطيران، أسستها الحكومة الأسترالية عام 2001م لدعم وتطوير صناعة الطيران، وتقديم التدريب التطبيقي في هندسة الطيران، وتدريب الأطقم الملاحية.
+                          </p>
+                          <button>عرض المزيد</button>
+                        </div>
+                      </div>
+                      <div class="srvTitle">
+                        <h4>الكلية الأسترالية لعلوم الطيران</h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                      <div class="serviceBox">
+                        <div class="SrvLogo">
+                          <img src="../assets/images/internal/institutes/inst1.png" alt="">
+                        </div>
+                        <div class="detailsHidden">
+                          <p>
+                            تعد كلية نياجرا الكندية من أكبر الكليات الرائدة لأصحاب العمل في كندا، حيث تأسست في عام 1967م والتي تقدم ما يزيد عن 100 برنامج تدريب تطبيقي يستفيد منه أكثر من 10,500 طالب في ثلاث جامعات كندية. 
+                          </p>
+                          <button>عرض المزيد</button>
+                        </div>
+                      </div>
+                      <div class="srvTitle">
+                        <h4>كلية نياجرا</h4>
+                      </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                      <div class="serviceBox">
+                        <div class="SrvLogo">
+                          <img src="../assets/images/internal/institutes/inst2.png" alt="">
+                        </div>
+                        <div class="detailsHidden">
+                          <p>
+                            تعد كلية لينكولن من الكليات العريقة والرائدة في مجال التدريب التطبيقي في المملكة المتحدة، حيث تقوم بتدريب أكثر من 8,000 طالب في ثلاث مدن داخل المملكة المتحدة.
+                          </p>
+                          <button>عرض المزيد</button>
+                        </div>
+                      </div>
+                      <div class="srvTitle">
+                        <h4>كلية لينكولن</h4>
+                      </div>
+                    </div>                    
+                    <!-- End Boxes -->
+                  </div>
+                  <div class="row" data-aos="fade-up" data-aos-delay="800">
+                    <nav aria-label="Page navigation">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
                 <!-- Tab 2 Content -->
-                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby=""></div>
+                <div class="tab-pane fade" id="Owner" role="tabpanel" aria-labelledby="owner-tab"></div>
                 <!-- Tab 3 Content -->
-                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby=""></div>
+                <div class="tab-pane fade" id="Student" role="tabpanel" aria-labelledby="student-tab"></div>
               </div>
             </div>
           </div>
