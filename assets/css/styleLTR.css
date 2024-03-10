@@ -1071,6 +1071,41 @@ footer .bottom-footer .copyright p {
   background-color: #FFFFFF;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.01);
 }
+.inContent .container .box-white .boxTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inContent .container .box-white .section-header {
+  width: 10%;
+  font-size: 26px;
+  font-family: "NCSP-Medium";
+  color: #001F5E;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #CDD2D9;
+  text-align: center;
+}
+.inContent .container .box-white .section-header::before, .inContent .container .box-white .section-header::after {
+  content: "";
+  width: 22px;
+  height: 8px;
+  border-radius: 7px 0px 7px 0px;
+  border: 0 solid;
+  position: absolute;
+  transform: rotate(50deg);
+}
+.inContent .container .box-white .section-header::before {
+  left: -33px;
+  bottom: -2px;
+  background: #35CCDE;
+}
+.inContent .container .box-white .section-header::after {
+  left: -20px;
+  bottom: 0px;
+  background: #145FFF;
+}
 .inContent .container .box-white ul.nav {
   color: #FFFFFF;
   width: -moz-max-content;
@@ -1230,13 +1265,13 @@ footer .bottom-footer .copyright p {
   margin-right: 10px;
 }
 .inContent .container .box-white .serviceBox {
-  height: 200px;
+  height: 220px;
   text-align: center;
   background: #FFFFFF;
   border: 1px solid rgba(205, 210, 217, 0.5);
   border-radius: 10px;
   border-bottom: 8px solid #145FFF;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   transition: 0.3s;
 }
 .inContent .container .box-white .serviceBox:hover {
@@ -1245,10 +1280,19 @@ footer .bottom-footer .copyright p {
 .inContent .container .box-white .serviceBox:hover .SrvLogo {
   opacity: 0.15;
 }
+.inContent .container .box-white .serviceBox:hover .SrvIcon {
+  display: none;
+}
 .inContent .container .box-white .serviceBox:hover .detailsHidden {
   display: block;
   top: 20px;
   position: absolute;
+}
+.inContent .container .box-white .serviceBox:hover .detailsHidden h4 {
+  font-size: 16px;
+  font-family: "NCSP-Medium";
+  color: #35CCDE;
+  text-align: center;
 }
 .inContent .container .box-white .serviceBox:hover .detailsHidden p {
   color: #FFFFFF;
@@ -1268,6 +1312,9 @@ footer .bottom-footer .copyright p {
 }
 .inContent .container .box-white .serviceBox .detailsHidden {
   display: none;
+}
+.inContent .container .box-white .serviceBox .SrvIcon {
+  padding: 30px 30px 20px 30px;
 }
 .inContent .container .box-white .srvTitle h4 {
   font-size: 15px;
