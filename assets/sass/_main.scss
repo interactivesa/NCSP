@@ -1325,6 +1325,32 @@ footer {
         }
       }
 
+      // About Us
+      .aboutUs {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        line-height: 2.5;
+
+        h4 {
+          font-size: 20px;
+          font-family: "NCSP-Medium";
+          color: $dark-blue;
+          text-align: center;
+          margin: 20px 0;
+        }
+        p {
+          font-size: 15px;
+          font-family: "NCSP-Regular";
+          color: $dark-text;
+          margin-bottom: 0px;
+          margin-top: 20px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+      
       // Board members Word
       .content-box{
         display: flex;

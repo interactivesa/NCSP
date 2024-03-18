@@ -1143,6 +1143,29 @@ footer .bottom-footer .copyright p {
 .inContent .container .box-white ul.nav li:last-child {
   margin-right: 0;
 }
+.inContent .container .box-white .aboutUs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  line-height: 2.5;
+}
+.inContent .container .box-white .aboutUs h4 {
+  font-size: 20px;
+  font-family: "NCSP-Medium";
+  color: #001F5E;
+  text-align: center;
+  margin: 20px 0;
+}
+.inContent .container .box-white .aboutUs p {
+  font-size: 15px;
+  font-family: "NCSP-Regular";
+  color: #333333;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.inContent .container .box-white .aboutUs p:last-child {
+  margin-bottom: 0;
+}
 .inContent .container .box-white .content-box {
   display: flex;
   flex-direction: column;
