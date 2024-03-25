@@ -1314,6 +1314,61 @@ footer .bottom-footer .copyright p {
   text-align: center;
   margin-bottom: 30px;
 }
+.inContent .container .box-white form .form-control {
+  font-size: 14px;
+  font-family: "NCSP-Regular";
+  color: #6A787F;
+}
+.inContent .container .box-white form label {
+  font-size: 15px;
+  font-family: "NCSP-Medium";
+  color: #333333;
+}
+.inContent .container .box-white form label .red {
+  color: red;
+}
+.inContent .container .box-white form input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1.5px solid #CDD2D9;
+  height: 44px;
+  box-shadow: none;
+}
+.inContent .container .box-white form input:focus {
+  border-color: #145FFF;
+}
+.inContent .container .box-white form select {
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1.5px solid #CDD2D9;
+  height: 44px;
+  box-shadow: none;
+  display: inline-block;
+  background-image: url(../images/shared/nav-arrow-b.svg);
+  background-position: 10px 20px;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.inContent .container .box-white form select:focus {
+  border-color: #145FFF;
+}
+.inContent .container .box-white form Button {
+  font-size: 13px;
+  font-family: "NCSP-Medium";
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  padding: 0 25px;
+  background-color: #145FFF;
+  float: right;
+}
+.inContent .container .box-white form Button:hover {
+  color: #001F5E;
+  background-color: #35CCDE;
+}
 .inContent .container .box-white ul.nav {
   color: #FFFFFF;
   width: -moz-max-content;
@@ -1365,7 +1420,7 @@ footer .bottom-footer .copyright p {
 .inContent .container .box-white .search-top input:focus {
   border-color: #145FFF;
 }
-.inContent .container .box-white .search-top input[type=text] {
+.inContent .container .box-white .search-top input[type=search] {
   padding: 10px 20px;
   width: 300px;
   background-image: url(../images/shared/Search-b.svg);
@@ -1404,6 +1459,10 @@ footer .bottom-footer .copyright p {
   border-radius: 4px;
   background-color: #145FFF;
   margin-right: 10px;
+}
+.inContent .container .box-white .search-top button:hover {
+  color: #001F5E;
+  background-color: #35CCDE;
 }
 .inContent .container .box-white .serviceBox {
   height: 220px;
@@ -1463,6 +1522,70 @@ footer .bottom-footer .copyright p {
   color: #001F5E;
   text-align: center;
   margin-bottom: 40px;
+}
+.inContent .container .box-white .serviceDetails .desc h3 {
+  font-size: 24px;
+  font-family: "NCSP-Regular";
+  color: #145FFF;
+  padding-top: 30px;
+}
+.inContent .container .box-white .serviceDetails .desc p {
+  font-size: 16px;
+  font-family: "NCSP-Regular";
+  line-height: 1.5;
+  text-align: justify;
+}
+.inContent .container .box-white .serviceDetails .srvStart {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+.inContent .container .box-white .serviceDetails .srvStart h3 {
+  font-size: 24px;
+  font-family: "NCSP-Regular";
+  color: #145FFF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.inContent .container .box-white .serviceDetails .srvStart Button {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: "NCSP-Medium";
+  height: 40px;
+  width: 100%;
+  border: 0;
+  padding: 0 25px;
+  background-color: #145FFF;
+}
+.inContent .container .box-white .serviceDetails .srvStart Button:hover {
+  color: #001F5E;
+  background-color: #35CCDE;
+}
+.inContent .container .box-white .serviceDetails .srvList .list h3 {
+  font-size: 24px;
+  font-family: "NCSP-Regular";
+  color: #145FFF;
+  padding-top: 30px;
+}
+.inContent .container .box-white .serviceDetails .srvList .list p {
+  margin-bottom: 12px;
+}
+.inContent .container .box-white .serviceDetails .srvList .list ul {
+  padding-left: 15px;
+  list-style: decimal;
+}
+.inContent .container .box-white .serviceDetails .srvList .list Button {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: "NCSP-Medium";
+  height: 40px;
+  border: 0;
+  padding: 0 25px;
+  background-color: #145FFF;
+}
+.inContent .container .box-white .serviceDetails .srvList .list Button:hover {
+  color: #001F5E;
+  background-color: #35CCDE;
 }
 .inContent .container .box-white .pagination .page-link {
   position: relative;
