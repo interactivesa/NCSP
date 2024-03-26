@@ -1744,7 +1744,7 @@ footer {
           h3 {
             font-size: 24px;
             font-family: "NCSP-Regular";
-            color: $blue;
+            color: $medium-blue;
             padding-top: 30px;
           }
           p {
@@ -1761,7 +1761,7 @@ footer {
           h3 {
             font-size: 24px;
             font-family: "NCSP-Regular";
-            color: $blue;
+            color: $medium-blue;
             text-align: center;
             margin-bottom: 20px;
           }
@@ -1773,7 +1773,7 @@ footer {
             width: 100%;
             border: 0;
             padding: 0 25px;
-            background-color: $blue;
+            background-color: $medium-blue;
             &:hover {
               color: $dark-blue;
               background-color: $aqua;
@@ -1782,19 +1782,67 @@ footer {
         }
         .srvList {
           .list {
-            h3 {
-              font-size: 24px;
-              font-family: "NCSP-Regular";
-              color: $blue;
-              padding-top: 30px;
+            display: flex;
+            flex: 0 0 auto;
+            margin-bottom: 36px;
+
+            .listIcon {
+              width: 36px;
+              margin-#{$end-direction}: 15px;
+              flex-shrink: 0;
             }
-            p {
-              margin-bottom: 12px;
-            }
-            ul {
-              padding-#{$start-direction}: 15px;
-              list-style: decimal;
-            }
+            .listText {
+              h3 {
+                font-size: 24px;
+                font-family: "NCSP-Regular";
+                color: $blue;
+              }
+              p {
+                margin-bottom: 12px;
+              }
+              ul {
+                padding-#{$start-direction}: 15px;
+                list-style: decimal;
+              }
+              .ulIcons {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                padding: 50px;
+                li {
+                  width: 210px;
+                  padding-#{$end-direction}: 45px;
+                  text-align: center;
+                  position: relative;
+                  z-index: 9;
+                  &:last-of-type {
+                    &::after {
+                      display: none;
+                    }
+                  }
+                  &::after {
+                    position: absolute;
+                    content: "";
+                    left: -25px;
+                    top: 67px;
+                    width: 50%;
+                    height: 10px;
+                    background: #eee;
+                    z-index: -1;
+                  }
+                  img {
+                    max-width: 125px;
+                  }
+                  p {
+                    height: 60px;
+                    overflow: hidden;
+                    margin-bottom: 0;
+                    margin-top: 25px;
+                    text-align: center;
+                  }
+                }
+              }
+            }            
             Button {
               color: $white;
               font-size: 15px;

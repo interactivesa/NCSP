@@ -1526,7 +1526,7 @@ footer .bottom-footer .copyright p {
 .inContent .container .box-white .serviceDetails .desc h3 {
   font-size: 24px;
   font-family: "NCSP-Regular";
-  color: #145FFF;
+  color: #003391;
   padding-top: 30px;
 }
 .inContent .container .box-white .serviceDetails .desc p {
@@ -1543,7 +1543,7 @@ footer .bottom-footer .copyright p {
 .inContent .container .box-white .serviceDetails .srvStart h3 {
   font-size: 24px;
   font-family: "NCSP-Regular";
-  color: #145FFF;
+  color: #003391;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1555,24 +1555,69 @@ footer .bottom-footer .copyright p {
   width: 100%;
   border: 0;
   padding: 0 25px;
-  background-color: #145FFF;
+  background-color: #003391;
 }
 .inContent .container .box-white .serviceDetails .srvStart Button:hover {
   color: #001F5E;
   background-color: #35CCDE;
 }
-.inContent .container .box-white .serviceDetails .srvList .list h3 {
+.inContent .container .box-white .serviceDetails .srvList .list {
+  display: flex;
+  flex: 0 0 auto;
+  margin-bottom: 36px;
+}
+.inContent .container .box-white .serviceDetails .srvList .list .listIcon {
+  width: 36px;
+  margin-left: 15px;
+  flex-shrink: 0;
+}
+.inContent .container .box-white .serviceDetails .srvList .list .listText h3 {
   font-size: 24px;
   font-family: "NCSP-Regular";
   color: #145FFF;
-  padding-top: 30px;
 }
-.inContent .container .box-white .serviceDetails .srvList .list p {
+.inContent .container .box-white .serviceDetails .srvList .list .listText p {
   margin-bottom: 12px;
 }
-.inContent .container .box-white .serviceDetails .srvList .list ul {
+.inContent .container .box-white .serviceDetails .srvList .list .listText ul {
   padding-right: 15px;
   list-style: decimal;
+}
+.inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  padding: 50px;
+}
+.inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li {
+  width: 210px;
+  padding-left: 45px;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+}
+.inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li:last-of-type::after {
+  display: none;
+}
+.inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li::after {
+  position: absolute;
+  content: "";
+  left: -25px;
+  top: 67px;
+  width: 50%;
+  height: 10px;
+  background: #eee;
+  z-index: -1;
+}
+.inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li img {
+  max-width: 125px;
+}
+.inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li p {
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 0;
+  margin-top: 25px;
+  text-align: center;
 }
 .inContent .container .box-white .serviceDetails .srvList .list Button {
   color: #FFFFFF;
