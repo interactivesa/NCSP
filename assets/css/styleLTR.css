@@ -1650,6 +1650,87 @@ footer .bottom-footer .copyright p {
   background: #145FFF;
   color: #FFFFFF;
 }
+.inContent .container .box-white .cardNews {
+  transition: 0.3s;
+  height: 480px;
+  margin-bottom: 50px;
+  position: relative;
+  border-radius: 20px;
+  position: relative;
+}
+.inContent .container .box-white .cardNews::before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  height: 50%;
+  bottom: 5px;
+  left: -3px;
+  border-radius: 50px;
+  background-color: #145FFF;
+  z-index: -1;
+  transform: rotate(-6deg);
+}
+.inContent .container .box-white .cardNews .forClick {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.inContent .container .box-white .cardNews .CardImg {
+  height: 240px;
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+.inContent .container .box-white .cardNews .CardImg img {
+  height: 100%;
+  max-width: 100%;
+  transition: 0.3s;
+  width: 100%;
+}
+.inContent .container .box-white .cardNews:hover .CardImg {
+  height: 240px;
+}
+.inContent .container .box-white .cardNews:hover .CardImg img {
+  transform: scale(1.2);
+}
+.inContent .container .box-white .cardNews .cardText {
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+}
+.inContent .container .box-white .cardNews .cardText .title {
+  color: #001F5E;
+  font-size: 16px;
+  font-family: "NCSP-Medium";
+  margin-bottom: 15px;
+  line-height: 27px;
+  height: 54px;
+}
+.inContent .container .box-white .cardNews .cardText .date {
+  margin-bottom: 6px;
+  display: flex;
+  line-height: 18px;
+  height: 18px;
+}
+.inContent .container .box-white .cardNews .cardText .date span {
+  color: #145FFF;
+  font-size: 12px;
+  font-family: "NCSP-Regular";
+  padding-left: 5px;
+  line-height: 18px;
+  height: 18px;
+}
+.inContent .container .box-white .cardNews .cardText .date img {
+  max-width: 16px;
+}
+.inContent .container .box-white .cardNews .cardText .paraghCard {
+  font-size: 15px;
+  font-family: "NCSP-Light";
+  color: #333333;
+  line-height: 21px;
+  height: 84px;
+}
 .inContent .share {
   background: #FFFFFF;
   width: 280px;
