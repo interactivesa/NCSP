@@ -1978,6 +1978,258 @@ footer {
           }
         }    
       }
+      // Details
+      .newsDetails {
+        .newsTitle {
+          font-family: "NCSP-Regular";
+          font-size: 36px;
+          color: $medium-blue;
+        }
+        .newsDate {
+          display: flex;
+          .date {
+            padding-#{$end-direction}: 30px;
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            margin-bottom: 0;
+            img {
+              width: 24px;
+            }
+            span {
+              font-size: 13px;
+              font-family: "NCSP-Medium";
+              color: $blue;
+              padding-#{$start-direction}: 5px;
+            }
+          }
+        }
+        .newsImage {
+          max-height: 600px;
+          width: 100%;
+        }
+        .newsText {
+          padding: 30px 0;
+          p {
+            text-align: justify;
+            margin-bottom: 30px;
+          }
+        }
+        .relateNews {
+          h4 {
+            font-size: 20px;
+            font-family: "NCSP-Medium";
+            color: $medium-blue;
+            padding-bottom: 15px;
+          }
+          .cardNews {
+            height: 310px;
+            // Image
+            .CardImg {
+              height: auto;
+            }
+            // Text 
+            .cardText {
+              padding: 10px 15px;
+              height: 110px;
+              .title {
+                font-size: 14px;
+                text-align: justify;
+              }
+            }    
+          }
+        }
+        .location {
+          padding-bottom: 15px;
+          span {
+            color: $grey;
+          }
+        }
+      }
+
+      // Events
+      .events {
+        .content {
+          position: absolute;
+          padding-right: 5%;
+          padding-top: 10%;
+          width: 70%;
+          h2 {
+            font-size: 32px;
+            font-family: "NCSP-Medium";
+            color: $white;
+            line-height: 1.6;
+          }
+          p {
+            font-size: 16px;
+            font-family: "NCSP-Light";
+            color: $white;
+          }
+          .more {
+            font-size: 13px;
+            font-family: "NCSP-Medium";
+            color: $white; 
+            border-radius: 8px;
+            border: 1px solid $aqua;
+            background-color: $aqua;
+            padding: 10px 20px;
+            margin-top: 20px;
+
+            &:hover {              
+              border: 1px solid $medium-blue;
+              background-color: $medium-blue;
+            }
+          }
+        }
+        .eventBox {
+          display: flex;
+          flex: 0 0 auto;
+          background-color: $white;
+          border: 1px solid #eee;
+          border-radius: 10px;
+          padding: 20px;
+          margin-bottom: 30px;
+
+          .dateShape{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+            background-image: url(../images/internal/events/dateShape.svg);
+            background-size: cover;
+            width: 135px;
+            height: 135px;
+      
+            .days{
+              font-size: 24px;
+              font-family: "NCSP-Medium";
+              color: $blue;
+              padding-#{$end-direction}: 10px;
+            }
+            .month{
+              font-size: 13px;
+              font-family: "NCSP-Medium";
+              color: $blue;
+              padding-#{$end-direction}: 10px;
+            }
+          }
+          .eventText {
+            width: 70%;
+            margin-#{$start-direction}: 15px;
+
+            h3 {
+              color: $medium-blue;
+              font-size: 18px;
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+            .location {
+              padding: 10px 0;
+              span {
+                color: $grey;
+              }
+            }
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      // Media Gallery 
+      .galleryBox {
+        position: relative;
+        margin-bottom: 40px;
+        background: $white;
+        border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
+        border-radius: 10px;
+        border-bottom: 8px solid $blue;        
+
+        // Image
+        .glImage {
+          width: auto;
+          overflow: hidden;
+          position: relative;
+          img {
+            height: 100%;
+            transition: 0.4s;
+            border-radius: 8px 8px 0 0;
+          }
+        }
+        &:hover {
+          .glImage {
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        // Count 
+        .glCount {
+          height: auto;
+          background: $white;
+          position: relative;
+          padding: 25px 10px 15px;
+          a {
+            font-size: 14px;
+            font-family: "NCSP-Medium";
+            color: $blue;
+            background: $white;
+            min-width: 150px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 10px;
+            border-radius: 20px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: -25px;
+            #{$start-direction}: 20px;
+          }
+          h2 {
+            font-size: 15px;
+            font-family: "NCSP-Medium";
+            color: #001F5E;
+            text-align: center;
+          }
+        }
+      }
+      .videoIcon {
+        position: absolute;
+        top: 30%;
+        right: 40%;
+        z-index: 999;
+      }
+
+      // Download Center
+      .downloadCenter {
+        height: auto !important;
+        .SrvLogo {
+          width: 100px;
+          display: inline-flex;
+          padding: 30px 0;
+        }
+        // Hover View
+        &:hover {
+          .detailsHidden {
+            display: block;
+            top: 25%;
+            right: 30%;
+            position: absolute;
+            button {
+              background-color: $aqua;
+              border: 0px solid;
+              border-radius: 30px;
+              height: 40px;
+              color: $dark-blue;
+              font-size: 14px;
+              font-family: "NCSP-Medium";
+              padding: 0px 25px;              
+            }
+          }
+        }
+      }
     }    
   }
 

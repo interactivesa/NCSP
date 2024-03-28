@@ -1737,6 +1737,228 @@ footer .bottom-footer .copyright p {
   line-height: 21px;
   height: 84px;
 }
+.inContent .container .box-white .newsDetails .newsTitle {
+  font-family: "NCSP-Regular";
+  font-size: 36px;
+  color: #003391;
+}
+.inContent .container .box-white .newsDetails .newsDate {
+  display: flex;
+}
+.inContent .container .box-white .newsDetails .newsDate .date {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 0;
+}
+.inContent .container .box-white .newsDetails .newsDate .date img {
+  width: 24px;
+}
+.inContent .container .box-white .newsDetails .newsDate .date span {
+  font-size: 13px;
+  font-family: "NCSP-Medium";
+  color: #145FFF;
+  padding-left: 5px;
+}
+.inContent .container .box-white .newsDetails .newsImage {
+  max-height: 600px;
+  width: 100%;
+}
+.inContent .container .box-white .newsDetails .newsText {
+  padding: 30px 0;
+}
+.inContent .container .box-white .newsDetails .newsText p {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.inContent .container .box-white .newsDetails .relateNews h4 {
+  font-size: 20px;
+  font-family: "NCSP-Medium";
+  color: #003391;
+  padding-bottom: 15px;
+}
+.inContent .container .box-white .newsDetails .relateNews .cardNews {
+  height: 310px;
+}
+.inContent .container .box-white .newsDetails .relateNews .cardNews .CardImg {
+  height: auto;
+}
+.inContent .container .box-white .newsDetails .relateNews .cardNews .cardText {
+  padding: 10px 15px;
+  height: 110px;
+}
+.inContent .container .box-white .newsDetails .relateNews .cardNews .cardText .title {
+  font-size: 14px;
+  text-align: justify;
+}
+.inContent .container .box-white .newsDetails .location {
+  padding-bottom: 15px;
+}
+.inContent .container .box-white .newsDetails .location span {
+  color: #6A787F;
+}
+.inContent .container .box-white .events .content {
+  position: absolute;
+  padding-right: 5%;
+  padding-top: 10%;
+  width: 70%;
+}
+.inContent .container .box-white .events .content h2 {
+  font-size: 32px;
+  font-family: "NCSP-Medium";
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+.inContent .container .box-white .events .content p {
+  font-size: 16px;
+  font-family: "NCSP-Light";
+  color: #FFFFFF;
+}
+.inContent .container .box-white .events .content .more {
+  font-size: 13px;
+  font-family: "NCSP-Medium";
+  color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #35CCDE;
+  background-color: #35CCDE;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.inContent .container .box-white .events .content .more:hover {
+  border: 1px solid #003391;
+  background-color: #003391;
+}
+.inContent .container .box-white .events .eventBox {
+  display: flex;
+  flex: 0 0 auto;
+  background-color: #FFFFFF;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.inContent .container .box-white .events .eventBox .dateShape {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  background-image: url(../images/internal/events/dateShape.svg);
+  background-size: cover;
+  width: 135px;
+  height: 135px;
+}
+.inContent .container .box-white .events .eventBox .dateShape .days {
+  font-size: 24px;
+  font-family: "NCSP-Medium";
+  color: #145FFF;
+  padding-right: 10px;
+}
+.inContent .container .box-white .events .eventBox .dateShape .month {
+  font-size: 13px;
+  font-family: "NCSP-Medium";
+  color: #145FFF;
+  padding-right: 10px;
+}
+.inContent .container .box-white .events .eventBox .eventText {
+  width: 70%;
+  margin-left: 15px;
+}
+.inContent .container .box-white .events .eventBox .eventText h3 {
+  color: #003391;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.inContent .container .box-white .events .eventBox .eventText .location {
+  padding: 10px 0;
+}
+.inContent .container .box-white .events .eventBox .eventText .location span {
+  color: #6A787F;
+}
+.inContent .container .box-white .events .eventBox .eventText p {
+  margin-bottom: 0;
+}
+.inContent .container .box-white .galleryBox {
+  position: relative;
+  margin-bottom: 40px;
+  background: #FFFFFF;
+  border: 1px solid rgba(205, 210, 217, 0.5);
+  border-radius: 10px;
+  border-bottom: 8px solid #145FFF;
+}
+.inContent .container .box-white .galleryBox .glImage {
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+.inContent .container .box-white .galleryBox .glImage img {
+  height: 100%;
+  transition: 0.4s;
+  border-radius: 8px 8px 0 0;
+}
+.inContent .container .box-white .galleryBox:hover .glImage img {
+  transform: scale(1.1);
+}
+.inContent .container .box-white .galleryBox .glCount {
+  height: auto;
+  background: #FFFFFF;
+  position: relative;
+  padding: 25px 10px 15px;
+}
+.inContent .container .box-white .galleryBox .glCount a {
+  font-size: 14px;
+  font-family: "NCSP-Medium";
+  color: #145FFF;
+  background: #FFFFFF;
+  min-width: 150px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -25px;
+  left: 20px;
+}
+.inContent .container .box-white .galleryBox .glCount h2 {
+  font-size: 15px;
+  font-family: "NCSP-Medium";
+  color: #001F5E;
+  text-align: center;
+}
+.inContent .container .box-white .videoIcon {
+  position: absolute;
+  top: 30%;
+  right: 40%;
+  z-index: 999;
+}
+.inContent .container .box-white .downloadCenter {
+  height: auto !important;
+}
+.inContent .container .box-white .downloadCenter .SrvLogo {
+  width: 100px;
+  display: inline-flex;
+  padding: 30px 0;
+}
+.inContent .container .box-white .downloadCenter:hover .detailsHidden {
+  display: block;
+  top: 25%;
+  right: 30%;
+  position: absolute;
+}
+.inContent .container .box-white .downloadCenter:hover .detailsHidden button {
+  background-color: #35CCDE;
+  border: 0px solid;
+  border-radius: 30px;
+  height: 40px;
+  color: #001F5E;
+  font-size: 14px;
+  font-family: "NCSP-Medium";
+  padding: 0px 25px;
+}
 .inContent .share {
   background: #FFFFFF;
   width: 280px;
@@ -1831,6 +2053,10 @@ a:hover {
 
 .mt-30 {
   margin-top: 30px !important;
+}
+
+.ml-10 {
+  margin-left: 10px !important;
 }
 
 .ml-30 {
