@@ -364,3 +364,124 @@ body {
     }
   }
 }
+
+
+
+
+.filterLinks {
+  margin-bottom: 55px;
+  padding-right: 40px;
+}
+.filterLinks .FLlink {
+     box-shadow: 0 3px 6px #00000030;
+  display: inline-block;
+  padding: 15px 24px;
+  border-radius: 5px;
+  margin-left: 10px;
+  border: 1px solid #CCCCCC;
+  color: $medium-blue;
+      margin-bottom: 10px;
+  font-size: 14px;
+}
+.filterLinks .FLlink.active {
+  background: $medium-blue;
+  border: 1px solid $medium-blue;
+  color: #fff;
+}
+
+
+
+
+
+
+
+.innerpages .accordion .card {
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  border: none;
+  /*-webkit-border-radius: @radius;-moz-border-radius: @radius;*/
+  border-radius: 10px;
+  padding: 0 20px;
+}
+.innerpages .accordion .card .card-header {
+  background: #fff;
+  padding: 0;
+}
+.innerpages .accordion .card .card-header h2 {
+  padding: 0;
+  display: block;
+  min-height: 60px;
+}
+.innerpages .accordion .card .card-header h2 .btn-link {
+  width: 100%;
+  background: transparent url(../images/shared/accordion-expanded.svg) left center no-repeat;
+  text-align: right;
+  font-size: 20px;
+  font-family:"NCSP-Regular" ;
+  color: #18754D;
+  text-decoration: none!important;
+  min-height: 60px;
+  padding: 10px 5px;
+  /*-o-transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;*/
+  transition: all 0.3s ease;
+  outline: none!important;
+  border: 0 !important;
+  color: #0091B4 !important
+}
+.innerpages .accordion .card .card-header h2 .btn-link.collapsed {
+  color: #464749;
+  background: transparent url(../images/shared/accordion-collapsed.svg) left center no-repeat;
+ 
+}
+.innerpages .accordion .card .card-body {
+  padding: 20px 0;
+}
+.innerpages .accordion .card .card-header h2 .btn-link.collapsed {
+  color: $medium-blue !important;
+}
+
+
+
+/*
+sitemap
+*/
+
+section.sitemap {
+  margin-top: 20px;
+  padding: 0 20px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 40px #0000001f;
+}
+
+section.sitemap  ul.level-2 {
+  padding: 0;
+}
+
+section.sitemap ul.level-2 > li{
+  display: inline-flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 0 2%;
+}
+section.sitemap  ul.level-2 > li a{
+  font-size: 20px;
+  font-family: "NCSP-Medium";
+  color: #001F5E;
+  margin: 7px 0;
+}
+
+section.sitemap  ul.level-2 > li .level-3{
+  list-style: disc;
+}
+section.sitemap ul.level-2 > li .level-3 li{
+}
+section.sitemap  ul.level-2 > li .level-3 li a{
+  font-size: 18px;
+  font-family: "NCSP-Regular";
+  color: #333333;
+  margin-bottom: 10px;
+  display: block;
+}
