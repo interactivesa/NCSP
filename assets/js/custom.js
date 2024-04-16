@@ -170,7 +170,7 @@
     // Partners Slider 
     $('.owl-carousel-partners').owlCarousel({
       loop: false,
-      margin: 0,
+      margin: 20,
       nav: false,
       dots: true,
       rtl: true,
@@ -192,4 +192,35 @@
     AOS.init({
         duration: 1000,
     });
+
+
+
+
+
+    var swiper = new Swiper(".thumbsSlider", {
+      spaceBetween: 0,
+      slidesPerView: 2,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mainSlider", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+    });
+
+
   });
+
+
+
+   
