@@ -200,11 +200,15 @@
     var swiper = new Swiper(".thumbsSlider", {
       spaceBetween: 0,
       slidesPerView: 2,
-      freeMode: true,
+      freeMode: false,
       watchSlidesProgress: true,
     });
     var swiper2 = new Swiper(".mainSlider", {
       spaceBetween: 10,
+      effect:"fade",
+      // fadeEffect: {
+      //   crossFade: true
+      // },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -214,7 +218,7 @@
       },
       scrollbar: {
         el: ".swiper-scrollbar",
-        hide: true,
+        hide: false,
       },
     });
 
