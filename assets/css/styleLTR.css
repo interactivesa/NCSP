@@ -2091,6 +2091,7 @@ footer .bottom-footer .copyright p {
   margin-bottom: 25px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  position: relative;
 }
 
 .inContent .container .box-white .serviceBox:hover {
@@ -2120,14 +2121,15 @@ footer .bottom-footer .copyright p {
   font-family: "NCSP-Medium";
   color: #35CCDE;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  padding: 0 15px;
 }
 
 .inContent .container .box-white .serviceBox:hover .detailsHidden p {
   color: #FFFFFF;
   font-size: 16px;
   font-family: "NCSP-Regular";
-  padding: 5px 28px;
+  padding: 0px 28px;
   line-height: 2;
 }
 
@@ -2148,6 +2150,35 @@ footer .bottom-footer .copyright p {
 
 .inContent .container .box-white .serviceBox .SrvIcon {
   padding: 30px 30px 20px 30px;
+}
+
+.inContent .container .box-white .serviceBox.servBx2 {
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inContent .container .box-white .serviceBox.servBx2 .srvTitle h4 {
+  font-size: 17px;
+  margin-bottom: 0;
+  padding: 0 15px;
+}
+
+.inContent .container .box-white .serviceBox.servBx2 .detailsHidden p {
+  line-height: 35px;
+  max-height: calc(35px * 3);
+  overflow: hidden;
 }
 
 .inContent .container .box-white .srvTitle h4 {
@@ -2318,7 +2349,7 @@ footer .bottom-footer .copyright p {
 .inContent .container .box-white .cardNews {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  height: 480px;
+  height: 590px;
   margin-bottom: 50px;
   position: relative;
   border-radius: 20px;
@@ -2346,7 +2377,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .box-white .cardNews .CardImg {
-  height: 240px;
+  height: 300px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow: hidden;
@@ -2359,10 +2390,8 @@ footer .bottom-footer .copyright p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
-}
-
-.inContent .container .box-white .cardNews:hover .CardImg {
-  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .inContent .container .box-white .cardNews:hover .CardImg img {
@@ -2371,24 +2400,25 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .box-white .cardNews .cardText {
-  padding: 20px;
+  padding: 30px 20px 20px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 20px 20px;
+  height: 282px;
 }
 
 .inContent .container .box-white .cardNews .cardText .title {
   color: #001F5E;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "NCSP-Medium";
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   line-height: 27px;
   height: calc(27px * 2);
 }
 
 .inContent .container .box-white .cardNews .cardText .date {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2398,7 +2428,7 @@ footer .bottom-footer .copyright p {
 
 .inContent .container .box-white .cardNews .cardText .date span {
   color: #145FFF;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "NCSP-Regular";
   padding-left: 5px;
   line-height: 18px;
@@ -2410,11 +2440,11 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .box-white .cardNews .cardText .paraghCard {
-  font-size: 15px;
-  font-family: "NCSP-Light";
+  font-size: 16px;
   color: #333333;
-  line-height: 21px;
-  height: calc(21px * 4);
+  line-height: 24px;
+  height: calc(24px * 4);
+  overflow: hidden;
 }
 
 .inContent .container .box-white .newsDetails .newsTitle {
@@ -2453,8 +2483,10 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .box-white .newsDetails .newsImage {
-  max-height: 600px;
+  max-height: 700px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .inContent .container .box-white .newsDetails .newsText {
@@ -2474,21 +2506,26 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .box-white .newsDetails .relateNews .cardNews {
-  height: 310px;
+  height: 375px;
+}
+
+.inContent .container .box-white .newsDetails .relateNews .cardNews::before {
+  bottom: 1px;
 }
 
 .inContent .container .box-white .newsDetails .relateNews .cardNews .CardImg {
-  height: auto;
+  height: 240px;
 }
 
 .inContent .container .box-white .newsDetails .relateNews .cardNews .cardText {
   padding: 10px 15px;
-  height: 110px;
+  height: 130px;
 }
 
 .inContent .container .box-white .newsDetails .relateNews .cardNews .cardText .title {
-  font-size: 14px;
-  text-align: justify;
+  font-size: 16px;
+  text-align: left;
+  height: calc(27px* 3);
 }
 
 .inContent .container .box-white .newsDetails .location {
@@ -2499,38 +2536,55 @@ footer .bottom-footer .copyright p {
   color: #6A787F;
 }
 
-.inContent .container .box-white .events .content {
+.inContent .container .box-white .events .event-banner {
+  position: relative;
+}
+
+.inContent .container .box-white .events .event-banner .event-img {
+  width: 100%;
+  height: 585px;
+}
+
+.inContent .container .box-white .events .event-banner .content {
   position: absolute;
-  padding-right: 5%;
+  padding-right: 7%;
   padding-top: 10%;
-  width: 70%;
+  width: 60%;
 }
 
-.inContent .container .box-white .events .content h2 {
-  font-size: 32px;
+.inContent .container .box-white .events .event-banner .content h2 {
+  font-size: 40px;
   font-family: "NCSP-Medium";
   color: #FFFFFF;
-  line-height: 1.6;
+  line-height: 1.4;
+  padding-right: 40px;
+  margin-bottom: 28px;
 }
 
-.inContent .container .box-white .events .content p {
+.inContent .container .box-white .events .event-banner .content p {
   font-size: 16px;
-  font-family: "NCSP-Light";
+  font-family: "NCSP-Regular";
   color: #FFFFFF;
+  margin-bottom: 37px;
 }
 
-.inContent .container .box-white .events .content .more {
-  font-size: 13px;
-  font-family: "NCSP-Medium";
+.inContent .container .box-white .events .event-banner .content .more {
+  font-size: 18px;
+  font-family: "NCSP-Regular";
   color: #FFFFFF;
   border-radius: 8px;
   border: 1px solid #35CCDE;
   background-color: #35CCDE;
   padding: 10px 20px;
-  margin-top: 20px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
-.inContent .container .box-white .events .content .more:hover {
+.inContent .container .box-white .events .event-banner .content .more img {
+  margin-left: 20px;
+}
+
+.inContent .container .box-white .events .event-banner .content .more:hover {
   border: 1px solid #003391;
   background-color: #003391;
 }
@@ -2547,6 +2601,7 @@ footer .bottom-footer .copyright p {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .inContent .container .box-white .events .eventBox .dateShape {
@@ -2585,14 +2640,17 @@ footer .bottom-footer .copyright p {
 
 .inContent .container .box-white .events .eventBox .eventText {
   width: 70%;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
 .inContent .container .box-white .events .eventBox .eventText h3 {
   color: #003391;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-family: "NCSP-Medium";
   margin-bottom: 10px;
+  line-height: 22px;
+  max-height: 44px;
+  overflow: hidden;
 }
 
 .inContent .container .box-white .events .eventBox .eventText .location {
@@ -2601,10 +2659,19 @@ footer .bottom-footer .copyright p {
 
 .inContent .container .box-white .events .eventBox .eventText .location span {
   color: #6A787F;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
 }
 
 .inContent .container .box-white .events .eventBox .eventText p {
+  font-size: 14px;
   margin-bottom: 0;
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
 }
 
 .inContent .container .box-white .galleryBox {
@@ -2614,6 +2681,7 @@ footer .bottom-footer .copyright p {
   border: 1px solid rgba(205, 210, 217, 0.5);
   border-radius: 10px;
   border-bottom: 8px solid #145FFF;
+  overflow: hidden;
 }
 
 .inContent .container .box-white .galleryBox .glImage {
@@ -2626,7 +2694,6 @@ footer .bottom-footer .copyright p {
   height: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-radius: 8px 8px 0 0;
 }
 
 .inContent .container .box-white .galleryBox:hover .glImage img {
@@ -2666,10 +2733,11 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .box-white .galleryBox .glCount h2 {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "NCSP-Medium";
   color: #001F5E;
   text-align: center;
+  line-height: 22px;
 }
 
 .inContent .container .box-white .videoIcon {
@@ -2707,6 +2775,10 @@ footer .bottom-footer .copyright p {
   font-size: 14px;
   font-family: "NCSP-Medium";
   padding: 0px 25px;
+}
+
+.inContent .container .box-white .downloadTitle h4 {
+  font-size: 16px;
 }
 
 .inContent .container .box-white .contactBox h3 {
@@ -3266,6 +3338,39 @@ footer .bottom-footer .copyright p {
 
 .thumbsSlider .swiper-slide-next .img-area::before {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.triShapeBg {
+  width: 100%;
+  height: 100%;
+}
+
+.triShapeBg #imageTriSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.triShapeBg {
+  position: relative;
+  background-image: url(../images/internal/shape2.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.triShapeBg img {
+  width: 100%;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  z-index: -1;
+  position: relative;
+  top: 35px;
+  right: 28%;
+  max-height: 480px;
 }
 
 @font-face {

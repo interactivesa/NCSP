@@ -1851,6 +1851,7 @@ footer {
         border-bottom: 8px solid $blue;
         margin-bottom: 25px;
         transition: 0.3s;
+        position: relative;
         // display: flex;
         // flex-direction: column;
         // align-items: center;
@@ -1878,13 +1879,14 @@ footer {
               font-family: "NCSP-Medium";
               color: $aqua;
               text-align: center;
-              margin-bottom: 20px;
+              margin-bottom: 28px;
+              padding: 0 15px;
             }
             p {
               color: $white;
               font-size: 16px;
               font-family: "NCSP-Regular";
-              padding: 5px 28px;
+              padding: 0px 28px;
               line-height: 2;
             }
             button {
@@ -1905,7 +1907,28 @@ footer {
         }
         .SrvIcon {
           padding: 30px 30px 20px 30px;
-        }           
+        }
+        &.servBx2{
+          height: 260px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .srvTitle {
+            h4{
+              font-size: 17px;
+              margin-bottom: 0;
+              padding: 0 15px;
+            }
+          }
+          .detailsHidden {
+            p{
+              line-height: 35px;
+              max-height: calc(35px * 3);
+              overflow: hidden;
+            }
+          }
+        }   
       }
       .srvTitle {
         h4 {
@@ -2063,7 +2086,7 @@ footer {
       // News
       .cardNews {
         transition: 0.3s;
-        height: 480px;
+        height: 590px;
         margin-bottom: 50px;
         position: relative;
         border-radius: 20px;
@@ -2089,7 +2112,7 @@ footer {
         }
         // Image
         .CardImg {
-          height: 240px;
+          height: 300px;
           transition: 0.3s;
           overflow: hidden;
           border-radius: 20px 20px 0 0;
@@ -2098,12 +2121,13 @@ footer {
             max-width: 100%;
             transition: 0.3s;
             width: 100%;
+            object-fit: cover;
           }
         }
         // Hover 
         &:hover {
           .CardImg {
-            height: 240px; 
+            // height: 240px; 
             img {
               transform: scale(1.2);
             }
@@ -2111,27 +2135,27 @@ footer {
         }
         // Text 
         .cardText {
-          padding: 20px;
+          padding: 30px 20px 20px;
           background-color: $white;
           box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.1);
           border-radius: 0 0 20px 20px;
-
+          height: 282px;
           .title {
             color: $dark-blue;
-            font-size: 16px;
+            font-size: 18px;
             font-family: "NCSP-Medium";
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             line-height: 27px;
             height: calc(27px * 2);
           }
           .date {
-            margin-bottom: 6px;
+            margin-bottom: 10px;
             display: flex;
             line-height: 18px;
             height: calc(18px * 1);
             span {
               color: $blue;
-              font-size: 12px;
+              font-size: 14px;
               font-family: "NCSP-Regular";
               padding-#{$start-direction}: 5px;
               line-height: 18px;
@@ -2142,11 +2166,11 @@ footer {
             }
           }
           .paraghCard {
-            font-size: 15px;
-            font-family: "NCSP-Light";
+            font-size: 16px;
             color: $dark-text;
-            line-height: 21px;
-            height: calc(21px * 4);
+            line-height: 24px;
+            height: calc(24px * 4);
+            overflow: hidden;
           }
         }    
       }
@@ -2177,8 +2201,9 @@ footer {
           }
         }
         .newsImage {
-          max-height: 600px;
+          max-height: 700px;
           width: 100%;
+          object-fit: cover;
         }
         .newsText {
           padding: 30px 0;
@@ -2195,18 +2220,22 @@ footer {
             padding-bottom: 15px;
           }
           .cardNews {
-            height: 310px;
+            height: 375px;
+            &::before{
+              bottom: 1px;
+            }
             // Image
             .CardImg {
-              height: auto;
+              height: 240px;
             }
             // Text 
             .cardText {
               padding: 10px 15px;
-              height: 110px;
+              height: 130px;
               .title {
-                font-size: 14px;
-                text-align: justify;
+                font-size: 16px;
+                text-align: #{$start-direction};
+                height: calc(27px* 3);
               }
             }    
           }
@@ -2221,35 +2250,48 @@ footer {
 
       // Events
       .events {
-        .content {
-          position: absolute;
-          padding-right: 5%;
-          padding-top: 10%;
-          width: 70%;
-          h2 {
-            font-size: 32px;
-            font-family: "NCSP-Medium";
-            color: $white;
-            line-height: 1.6;
+        .event-banner{
+          position: relative;
+          .event-img{
+            width: 100%;
+            height: 585px;
           }
-          p {
-            font-size: 16px;
-            font-family: "NCSP-Light";
-            color: $white;
-          }
-          .more {
-            font-size: 13px;
-            font-family: "NCSP-Medium";
-            color: $white; 
-            border-radius: 8px;
-            border: 1px solid $aqua;
-            background-color: $aqua;
-            padding: 10px 20px;
-            margin-top: 20px;
-
-            &:hover {              
-              border: 1px solid $medium-blue;
-              background-color: $medium-blue;
+          .content {
+            position: absolute;
+            padding-right: 7%;
+            padding-top: 10%;
+            width: 60%;
+            h2 {
+              font-size: 40px;
+              font-family: "NCSP-Medium";
+              color: $white;
+              line-height: 1.4;
+              padding-#{$end-direction}: 40px;
+              margin-bottom: 28px;
+            }
+            p {
+              font-size: 16px;
+              font-family: "NCSP-Regular";
+              color: $white;
+              margin-bottom: 37px;
+            }
+            .more {
+              font-size: 18px;
+              font-family: "NCSP-Regular";
+              color: $white; 
+              border-radius: 8px;
+              border: 1px solid $aqua;
+              background-color: $aqua;
+              padding: 10px 20px;
+              // margin-top: 20px;
+              transition: 300ms;
+              img{
+                margin-#{$start-direction}: 20px;
+              }
+              &:hover {              
+                border: 1px solid $medium-blue;
+                background-color: $medium-blue;
+              }
             }
           }
         }
@@ -2261,7 +2303,7 @@ footer {
           border-radius: 10px;
           padding: 20px;
           margin-bottom: 30px;
-
+          position: relative;
           .dateShape{
             display: flex;
             flex-direction: column;
@@ -2287,22 +2329,34 @@ footer {
           }
           .eventText {
             width: 70%;
-            margin-#{$start-direction}: 15px;
+            margin-#{$start-direction}: 30px;
 
             h3 {
               color: $medium-blue;
-              font-size: 18px;
-              font-weight: bold;
+              font-size: 16px;
+              font-family: "NCSP-Medium";
               margin-bottom: 10px;
+              line-height: 22px;
+              max-height: 44px;
+              overflow: hidden;
             }
             .location {
               padding: 10px 0;
               span {
                 color: $grey;
+                margin-#{$start-direction}: 10px;
+                font-size: 14px;
+                line-height: 20px;
+                max-height: 40px;
+                overflow: hidden;
               }
             }
             p {
+              font-size: 14px;
               margin-bottom: 0;
+              line-height: 20px;
+              max-height: 40px;
+              overflow: hidden;
             }
           }
         }
@@ -2316,6 +2370,7 @@ footer {
         border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
         border-radius: 10px;
         border-bottom: 8px solid $blue;        
+        overflow: hidden;
 
         // Image
         .glImage {
@@ -2325,7 +2380,7 @@ footer {
           img {
             height: 100%;
             transition: 0.4s;
-            border-radius: 8px 8px 0 0;
+            // border-radius: 8px 8px 0 0;
           }
         }
         &:hover {
@@ -2360,10 +2415,12 @@ footer {
             #{$start-direction}: 20px;
           }
           h2 {
-            font-size: 15px;
+            font-size: 16px;
             font-family: "NCSP-Medium";
             color: #001F5E;
             text-align: center;
+            line-height: 22px;
+            // height: 44px;
           }
         }
       }
@@ -2400,6 +2457,11 @@ footer {
               padding: 0px 25px;              
             }
           }
+        }
+      }
+      .downloadTitle{
+        h4{
+          font-size: 16px;
         }
       }
 
@@ -2977,9 +3039,11 @@ footer {
   }
 }
 
-// .triShapeBg{
-//   width: 450px;
-//   height: 600px;
+.triShapeBg{
+  width: 100%;
+  height: 100%;
+//   width: 400px;
+//   height: 550px;
 //   overflow: hidden;
 //   position: relative;
 //   &::after{
@@ -2998,8 +3062,38 @@ footer {
 //     height: 100%;
 //     object-fit: cover;
 //   }
-// }
+  #imageTriSvg{
+    width: 100%;
+    height: 100%;
+    #svgmask1{
+      
+    }
+    #shapedImg{
+
+    }
+  }
+}
 
 
 
 
+
+.triShapeBg{
+  position: relative;
+  background-image: url(../images/internal/shape2.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+    transform: scale(1.6);
+    z-index: -1;
+    position: relative;
+    top: 35px;
+    right: 28%;
+    max-height: 480px;
+  }
+}

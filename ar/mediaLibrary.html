@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="../assets/css/all.min.css" />
     <!--  Font aos CSS -->
     <link rel="stylesheet" href="../assets/css/aos.css" />
+
+    <!--  Font fancybox CSS -->
+    <link rel="stylesheet" href="../assets/css/fancybox.css" />
+
     <!--  Custom style -->
     <link rel="stylesheet" href="../assets/css/styleRTL.css" />
                 
@@ -201,6 +205,7 @@
                   <div class="row">
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                       <div class="galleryBox">
+                        <a class="fancybox"  title="title" href="../assets/images/internal/news/news1.jpg">
                         <div class="glImage">
                           <img src="../assets/images/internal/news/news1.jpg" alt="">
                         </div>
@@ -211,10 +216,12 @@
                           </a>
                           <h2>المؤتمر والمعرض الدولي للتعليم 2022م</h2>
                         </div>
+                        </a>
                       </div>
                     </div>
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                       <div class="galleryBox">
+                        <a class="fancybox"  title="title" href="../assets/images/internal/news/news2.jpg">
                         <div class="glImage">
                           <img src="../assets/images/internal/news/news2.jpg" alt="">
                         </div>
@@ -225,6 +232,7 @@
                           </a>
                           <h2>المؤتمر والمعرض الدولي للتعليم 2022م</h2>
                         </div>
+                        </a>
                       </div>
                     </div>
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
@@ -357,19 +365,26 @@
                   <div class="row">
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                       <div class="galleryBox">
-                        <div class="videoIcon">
-                          <img src="../assets/images/internal/gallery/playIcon.svg" alt="">
-                        </div>
-                        <div class="glImage">
-                          <img src="../assets/images/internal/news/news9.jpg" alt="">
-                        </div>
-                        <div class="glCount">
-                          <h2>المؤتمر والمعرض الدولي للتعليم 2022م</h2>
-                        </div>
+                        <a class="fancyboxVideo" rel="group2" title="title video" href="https://www.youtube.com/embed/C2j3GHKFaxU">
+                          <div class="videoIcon">
+                            <img src="../assets/images/internal/gallery/playIcon.svg" alt="">
+                          </div>
+                          <div class="glImage">
+                            <img src="../assets/images/internal/news/news9.jpg" alt="">
+                          </div>
+                          <div class="glCount">
+                            <a href="#">
+                              <img src="../assets/images/internal/gallery/imgIcon.svg" alt="">
+                              <span>عدد الوسائط 5</span>
+                            </a>
+                            <h2>المؤتمر والمعرض الدولي للتعليم 2022م</h2>
+                          </div>
+                        </a>
                       </div>
                     </div>
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                       <div class="galleryBox">
+                        <a class="fancyboxVideo" rel="group2" title="title video2" href="https://www.youtube.com/embed/C2j3GHKFaxU">
                         <div class="videoIcon">
                           <img src="../assets/images/internal/gallery/playIcon.svg" alt="">
                         </div>
@@ -379,6 +394,7 @@
                         <div class="glCount">
                           <h2>المؤتمر والمعرض الدولي للتعليم 2022م</h2>
                         </div>
+                        </a>
                       </div>
                     </div>
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
@@ -627,7 +643,29 @@
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/fancybox.min.js"></script>
     <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/jquery.counterup.min.js"></script>   
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    
+    <script>
+       $( document ).ready(function() {
+
+        // fancybox
+          $("a.fancybox").fancybox({
+            // openEffect	: 'none',
+            // closeEffect	: 'none'
+            loop: false,
+          });
+          $("a.fancyboxVideo").fancybox({
+            // openEffect	: 'none',
+            // closeEffect	: 'none'
+            type: "iframe",
+            youtube: {
+                autoplay: 1, // enable autoplay
+            }
+          });
+        })
+
+    </script>
   </body>
 </html>
