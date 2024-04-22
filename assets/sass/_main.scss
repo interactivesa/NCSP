@@ -2371,6 +2371,7 @@ footer {
         border-radius: 10px;
         border-bottom: 8px solid $blue;        
         overflow: hidden;
+        height: calc(100% - 40px);
 
         // Image
         .glImage {
@@ -2421,6 +2422,12 @@ footer {
             text-align: center;
             line-height: 22px;
             // height: 44px;
+          }
+          p{
+            font-size: 14px;
+            font-family: "NCSP-Regular";
+            margin-bottom: 0;
+            text-align: center;
           }
         }
       }

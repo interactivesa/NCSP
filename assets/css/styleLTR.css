@@ -2682,6 +2682,7 @@ footer .bottom-footer .copyright p {
   border-radius: 10px;
   border-bottom: 8px solid #145FFF;
   overflow: hidden;
+  height: calc(100% - 40px);
 }
 
 .inContent .container .box-white .galleryBox .glImage {
@@ -2738,6 +2739,13 @@ footer .bottom-footer .copyright p {
   color: #001F5E;
   text-align: center;
   line-height: 22px;
+}
+
+.inContent .container .box-white .galleryBox .glCount p {
+  font-size: 14px;
+  font-family: "NCSP-Regular";
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .inContent .container .box-white .videoIcon {
