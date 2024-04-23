@@ -1,4 +1,4 @@
-@media(min-width:1400px){
+@media(min-width:1650px){
     .container{
         max-width: 1440px;
     }
@@ -91,6 +91,27 @@
     .interactive-map .map-cont .svg-map{
         margin-top: 30px;
     }
+
+    .inContent .container .box-white .serviceDetails .srvList .list .listIcon{
+        width: 25px;
+        margin-#{$end-direction}: 10px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons {
+        padding: 50px 20px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li p{
+        font-size: 14px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li{
+        width: 175px;
+        padding-#{$end-direction}: 30px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li img{
+        max-width: 110px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li::after{
+        top: 55px;
+    }
 }
 
 @media (max-width: 1199.68px){
@@ -146,6 +167,115 @@
         right: 275px;
         top: 311px;
     }
+
+    .inContent .container .box-white {
+        .aboutUs {
+            h4{
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.7;
+                & + p{
+                    margin-top: 40px;
+                }
+            }
+
+        }
+    }
+    // .inContent .container .box-white .serviceBox{
+    //     height: 255px;
+    // }
+    .inContent .container .box-white .serviceBox:hover .detailsHidden h4{
+        margin-bottom: 15px;
+    }
+    .inContent .container .box-white .serviceBox:hover .detailsHidden p{
+        font-size: 14px;
+        padding: 0px 15px;
+    }
+    .inContent .container .box-white .serviceBox:hover .detailsHidden{
+        margin-top: 0;
+    }
+
+    .about .container .content .section-header{
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .about .container .content p{
+        font-size: 16px;
+    }
+    .inContent .container .box-white .section-header2{
+        font-size: 30px;
+    }
+    .inContent .container .box-white .main-p{
+        font-size: 16px;
+    }
+    .inContent .container .box-white .CompetenciesTop{
+        margin: 0 50px 40px;
+    }
+    .inContent .container .box-white .events .event-banner .event-img{
+        height: 470px;
+    }
+    .inContent .container .box-white .events .event-banner .content h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .inContent .container .box-white .events .event-banner .content .more{
+        font-size: 16px;
+    }
+    .inContent .container .box-white .search-top select ,
+    .inContent .container .box-white .search-top imput{
+        margin-bottom: 20px;
+    }
+
+    .inContent .container .box-white .aboutUs h5{
+        font-size: 16px;
+    }
+    .inContent .container .box-white .new-progCard .content-boxx h4{
+        font-size: 20px;
+    }
+    .inContent .container .box-white .new-prog-a a{
+        font-size: 16px;
+        width: auto;
+        height: auto;
+        padding: 16px 30px;
+        img{
+            width: 35px;
+            height: 35px;
+            margin-#{$start-direction}: 30px;
+        }
+    }
+
+    
+    .inContent .container .box-white .cardNews{
+        height: 418px;
+    }
+    .inContent .container .box-white .cardNews .CardImg{
+        height: 220px;
+    }
+    .inContent .container .box-white .cardNews .cardText{
+        height: 190px;
+        padding: 15px 15px 10px;
+    }
+    .inContent .container .box-white .cardNews .cardText .title{
+        font-size: 15px;
+        margin-bottom: 12px;
+        line-height: 24px;
+        height: calc(24px* 2);
+    }
+    .inContent .container .box-white .cardNews .cardText .date span{
+        font-size: 12px;
+    }
+    .inContent .container .box-white .cardNews .cardText .paraghCard{
+        font-size: 14px;
+        line-height: 22px;
+        height: calc(22px* 3);
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons{
+        padding: 50px 0;
+    }
+   
 }
 
 @media (max-width: 991.68px){
@@ -238,6 +368,105 @@
         right: 400px;
         top: 584px;
     }
+
+
+
+    .inContent .container .box-white .headBox .headImg{
+        width: 170px;
+        height: 170px;
+    }
+
+    .banner .container-fluid .item .imgbox1 .content h2{
+        font-size: 27px;
+    }
+    .inContent .container .box-white .CompetenciesTop{
+        margin: 0 15px 30px;
+    }
+    .inContent .container .box-white .contactMap .contactForm{
+        padding: 60px 20px;
+    }
+
+    .inContent .container .box-white .events .event-banner .content{
+        padding-top: 18%;
+        width: 80%;
+    }
+    .inContent .container .box-white .events .event-banner .content h2 {
+        font-size: 25px;
+        padding-#{$end-direction}: 0;
+    }
+    .inContent .container .box-white .new-progCard{
+        margin-bottom: 20px;
+    }
+    .inContent .container .box-white .search-top input{
+        margin-bottom: 15px;
+    }
+    .inContent .container .box-white .newsDetails .newsTitle{
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    .inContent .container .box-white .serviceDetails .srvStart{
+        padding: 25px 15px;
+    }
+    .inContent .container .box-white .serviceDetails .srvStart h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .inContent .container .box-white .serviceDetails .srvStart Button{
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    .inContent .container .box-white .serviceDetails .desc p{
+        font-size: 14px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText h3{
+        font-size: 20px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText p{
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText ul li{
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list{
+        margin-bottom: 25px;
+    }
+
+    
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons {
+        flex-direction: column;
+        width: 100%;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    
+    .listText {
+        width: 100%;
+    }
+    
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li {
+        display: flex;
+        width: auto;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li img{
+        max-width: 120px;
+    }
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li p {
+        margin: 0;
+        margin-#{$start-direction}: 20px;
+        height: auto;
+    }
+    
+    .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li::after {
+        width: 10px;
+        height: 100%;
+        #{$end-direction}: auto;
+        #{$start-direction}: 53px;
+    }
 }
 
 
@@ -245,9 +474,9 @@
 // Small Sizes 
 @media (max-width: 767.68px) {
     // Main Menu
-    .main-Nav {
-        display: none;       
-    }
+    // .main-Nav {
+    //     display: none;       
+    // }
 
     // HomeBanner 
     .banner {
@@ -331,6 +560,122 @@
             }  
         }
     }
+
+
+    .breadcrumb{
+        height: 180px;
+    }
+    .breadcrumb .pageTitle{
+        font-size: 25px;
+        margin-top: 35px;
+    }
+    .contactMap .col-md-6{
+        margin-bottom: 40px;
+    }
+
+    .inContent .container .box-white .search-top input[type=search]{
+        margin-bottom: 20px;
+    }
+    .inContent .container .box-white .search-top .left{
+        float: none;
+    }
+    .inContent .container .box-white .events .event-banner .event-img {
+        height: 425px;
+    }
+
+    .inContent .container .box-white .events .eventBox .dateShape{
+        width: 110px;
+        height: 110px;
+        flex: 0 0 110px;
+    }
+    .inContent .container .box-white .events .eventBox .dateShape .days {
+        font-size: 18px;
+    }
+    .inContent .container .box-white .events .eventBox .dateShape .month {
+        font-size: 10px;
+    }
+
+    .inContent .container .box-white .newsDetails .newsTitle{
+        font-size: 25px;
+    }
+
+    .innerpages .accordion .card .card-header h2 .btn-link{
+        font-size: 16px;
+        padding-#{$end-direction}: 25px;
+    }
+    .innerpages .accordion .card .card-body ul{
+        padding: 0 10px;
+    }
+    .innerpages .accordion .card .card-body ul li{
+        font-size: 14px;
+    }
+    .inContent .container .box-white .aboutUs h5 {
+        font-size: 14px;
+    }
+    .inContent .container .box-white .aboutUs span img {
+        width: 20px;
+        margin-#{$end-direction}: 8px;
+    }
+    .inContent .container .box-white .section-header{
+        font-size: 25px;
+    }
+    .inContent .container .box-white .new-progCard .content-boxx h4 {
+        font-size: 16px;
+    }
+    .inContent .container .box-white .new-progCard{
+        height: 150px;
+    }
+    .inContent .container .box-white .new-prog-a{
+        margin-top: 50px;
+    }
+    .inContent .container .box-white .new-prog-a a{
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+    .inContent .container .box-white .new-prog-a a img{
+        margin-#{$start-direction}:15px ;
+    }
+    .inContent .container .box-white form .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .inContent .container .box-white form .row.mt-30 {
+        margin-top: 0 !important;
+    }
+    .inContent .container .box-white form label{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .inContent .container .box-white form .form-control{
+        font-size: 14px !important;
+    }
+    .inContent .container .box-white form select{
+        background-size: 25px;
+    }
+    .inContent .container .box-white form select,
+    .inContent .container .box-white form input{
+        height: 50px;
+    }
+    .inContent .container .box-white form Button{
+        padding: 0 25px;
+    }
+    .inContent .container .box-white .newsDetails .newsText p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .inContent .container .box-white .newsDetails .relateNews .cardNews{
+        height: 325px;
+    }
+    .inContent .container .box-white .newsDetails .relateNews .cardNews .cardText{
+        height: 81px;
+    }
+    .inContent .container .box-white .newsDetails .relateNews .cardNews .cardText .title{
+        height: calc(27px* 2);
+    }
+
+    .inContent .container .box-white .serviceDetails .srvStart{
+        margin: 30px 0;
+    }
 }
 
 
@@ -409,6 +754,78 @@
 .interactive-map .map-cont .tags-content h3 {
     font-size: 25px;
     margin-bottom: 15px;
+}
+
+.inContent .container .box-white .aboutUs h4 {
+    font-size: 20px;
+}
+.inContent .container .box-white .aboutUs p{
+    font-size: 14px;
+}
+.about .container .content .section-header{
+    font-size: 22px;
+}
+.about .container .content p{
+    font-size: 14px;
+}
+
+.inContent .container .box-white .CompetenciesTop{
+   flex-direction: column;
+   padding: 30px 20px;
+}
+.inContent .container .box-white .CompetenciesTop select{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.inContent .container .box-white{
+    padding: 70px 25px 65px;
+}
+.inContent .container .box-white .contactBox .address{
+    font-size: 14px;
+}
+.inContent .container .box-white .contactBox .address span img {
+    width: 25px;
+}
+
+.inContent .container .box-white .events .event-banner .content h2 {
+    font-size: 20px;
+}
+.inContent .container .box-white .events .event-banner .content p {
+    font-size: 14px;
+}
+.inContent .container .box-white .events .event-banner .content .more {
+    font-size: 14px;
+}
+.inContent .container .box-white .newsDetails .newsText p{
+    font-size: 14px;
+}
+
+.pagination {
+    padding: 0;
+    flex-wrap: wrap;
+}
+.inContent .container .box-white .pagination .page-link{
+    padding: 5px 11px;
+    margin-#{$end-direction}: 4px;
+    width: 32px;
+    height: 32px;
+}
+.breadcrumb .items li a{
+    font-size: 14px;
+    padding-left: 20px;
+}
+.breadcrumb .items li a::after{
+    #{$end-direction}: 5px;
+    top: 5px;
+    height: 10px;
+    width: 6px;
+}
+
+.inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li img{
+    max-width: 85px;
+}
+.inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li::after{
+    #{$start-direction}:38px
 }
 
 }
