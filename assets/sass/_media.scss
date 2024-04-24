@@ -112,6 +112,14 @@
     .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li::after{
         top: 55px;
     }
+    .about .container .content p{
+        font-size: 22px;
+    }
+    .gallery .section-header,
+    .Numbers .section-header{
+        width: max-content;
+        padding: 0 20px 15px;
+    }
 }
 
 @media (max-width: 1199.68px){
@@ -275,7 +283,37 @@
     .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons{
         padding: 50px 0;
     }
-   
+
+    .mainSlider .content-area{
+        #{$start-direction}: 115px;
+        top: 280px;
+        max-width: 450px;
+    }
+    .mainSlider .content-area h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .mainSlider .content-area a {
+        width: 175px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .thumbsSlider .content-area h2{
+        font-size: 12px;
+    }
+    .mainSlider .swiper-scrollbar{
+        #{$start-direction}: 140px;
+    }
+    .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .nav-item .nav-link{
+        font-size: 14px;
+    }
+    .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .nav-item{
+        margin-#{$end-direction}:20px ;
+    }
+    .main-Nav .bgNav .topNav .top-links a {
+        font-size: 14px;
+        padding-#{$start-direction}: 20px;
+    }
 }
 
 @media (max-width: 991.68px){
@@ -467,6 +505,154 @@
         #{$end-direction}: auto;
         #{$start-direction}: 53px;
     }
+
+    section.sitemap ul.level-2 > li a{
+        font-size: 18px;
+    }
+    section.sitemap ul.level-2 > li .level-3 li a {
+        font-size: 16px;
+    }
+    .inContent .container .box-white .content-box .word-content h4{
+        font-size: 20px;
+    }
+    .inContent .container .box-white .content-box .word-content p{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .inContent .container .box-white .content-box .signature h6{
+        font-size: 16px;
+    }
+    .inContent .container .box-white .content-box .signature h4{
+        font-size: 18px;
+    }
+
+
+
+    .mainSlider .content-area{
+            #{$start-direction}: 70px;
+            max-width: 380px;
+    }
+    .mainSlider .content-area h2 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+    .mainSlider .swiper-scrollbar {
+        #{$start-direction}: 70px;
+    }
+    .about .container .imgBox {
+        height: 450px;
+    }
+    
+    .about .container .imgBox img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .gallery .container .tabsImage h4{
+        font-size: 25px;
+    }
+    .gallery .container .tabsImage p{
+        font-size: 18px;
+    }
+
+    footer .top-footer .footer-logo{
+        text-align: center;
+    }
+    footer .top-footer .social-media{
+        justify-content: center;
+    }
+    footer .top-footer h5{
+        text-align: center;
+        margin-top: 25px;
+    }
+    footer .top-footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .top-footer .contactUs ul li{
+        min-width: 190px;
+    }
+    .main-Nav .bgNav .topNav{
+        padding: 20px 20px 10px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .main-Nav.fixedTop .bgNav .topNav .a-logo,
+    .main-Nav .bgNav .topNav .a-logo{
+        margin: 0;
+        max-width: 135px;
+    }
+    .main-Nav .bgNav .topNav .top-links a {
+        font-size: 12px;
+        padding-#{$start-direction}: 10px;
+    }
+    .main-Nav .bgNav .topNav .top-links .lang,
+    .main-Nav.fixedTop .bgNav .topNav .top-links .lang{
+        padding-#{$end-direction}: 0;
+        background-image: none;
+    }
+    .main-Nav .bgNav .topNav .top-links .search-toggle{
+        background-position: center;
+    }
+    .mainSlider .swiper-button-prev, .mainSlider.swiper-rtl .swiper-button-next{
+        bottom: 200px;
+        #{$end-direction}:60px
+    }
+    .mainSlider .swiper-button-next, .mainSlider.swiper-rtl .swiper-button-prev{
+        bottom: 125px;
+        #{$end-direction}:60px
+    }
+
+    .navbar-light .navbar-toggler{
+        background-color: #fff;
+        position: absolute;
+        #{$end-direction}: 0;
+        top: 0;
+        z-index: 5;
+    }
+    .main-Nav .bgNav .topNav {
+        height: 100px;
+    }
+    .main-Nav .bgNav .topNav .main-navbar{
+        position: absolute;
+        width: 100%;
+        #{$end-direction}: 0;
+        top: 50px;
+    }
+    .main-Nav .bgNav .topNav .main-navbar .navbar{
+        float: none;
+        padding: 0;
+    }
+    .navbar-collapse {
+        background-color: #fff;
+        top: 40px;
+        position: absolute;
+        width: 100%;
+        #{$end-direction}: 0;
+        border-radius: 4px;
+        box-shadow: 0 20px 20px #0000003d;
+    }
+    .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .nav-item .nav-link {
+        color: #333333;
+    }
+    
+    .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .nav-item {
+        margin-#{$end-direction}: 0;
+    }
+    
+    .navbar-nav {
+        padding: 0 25px 20px;
+    }
+    
+    .main-Nav .bgNav .topNav {
+        height: 100px;
+    }
+    .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .nav-item .nav-link::after{
+        background-image: url(../images/shared/nav-arrow-b.svg);
+    }
+
+
 }
 
 
@@ -545,7 +731,7 @@
     footer {
         // Top 
         .top-footer {   
-            padding-right: 30px;    
+            padding-#{$end-direction}: 30px;    
             .social-media {
                 margin-bottom: 20px;
             }
@@ -676,6 +862,87 @@
     .inContent .container .box-white .serviceDetails .srvStart{
         margin: 30px 0;
     }
+    section.sitemap ul.level-2 > li {
+        width: 100%;
+    }
+
+
+    .mainSlider .swiper-scrollbar{
+        #{$start-direction}:30px
+    }
+    .mainSlider .content-area {
+        #{$start-direction}: 30px;
+        max-width: 200px;
+    }
+    .mainSlider .content-area h2 {
+        font-size: 20px;
+    }
+    .mainSlider .content-area p{
+        font-size: 14px;
+        line-height: 22px;
+        height: 44px;
+    }
+    .mainSlider .content-area a {
+        width: 150px;
+        height: 39px;
+        font-size: 14px;
+    }
+    .mainSlider .content-area a img{
+        margin-#{$start-direction}: 10px;
+        max-width: 12px;
+    }
+
+    .thumbsSlider .content-area{
+        padding: 0 5px;
+    }
+    .thumbsSlider .content-area h2 {
+        font-size: 10px;
+    }
+    .about{
+        padding: 85px 0;
+    }
+    .about .container .content .section-header{
+        width: max-content;
+        padding: 0 15px 15px;
+        font-size: 20px;
+    }
+    .about .container .imgBox {
+        height: 365px;
+    }
+    .gallery .section-header, .Numbers .section-header{
+        font-size: 20px;
+    }
+
+    .gallery .container .tabsImage h4 {
+        font-size: 18px;
+    }
+    .gallery .container .tabsImage h4 span{
+        font-size: 18px;
+        padding-#{$end-direction}: 15px;
+    }
+    .gallery .container .tabsImage p {
+        font-size: 14px;
+    }
+    .gallery .container .tabsImage .imgbox{
+        height: 150px;
+    }
+    .gallery .container .tabsImage .imgbox:hover{
+        height: 380px;
+    }
+    .gallery{
+        height: 935px;
+    }
+    .bgNews{
+        height: auto;
+    }
+    .partners .section-header{
+        width: max-content;
+        padding: 0 15px 15px;
+        font-size: 20px;
+    }
+    .main-Nav .bgNav .topNav .top-links{
+        padding: 0;
+    }
 }
 
 
@@ -762,9 +1029,9 @@
 .inContent .container .box-white .aboutUs p{
     font-size: 14px;
 }
-.about .container .content .section-header{
-    font-size: 22px;
-}
+// .about .container .content .section-header{
+//     font-size: 22px;
+// }
 .about .container .content p{
     font-size: 14px;
 }
@@ -812,7 +1079,7 @@
 }
 .breadcrumb .items li a{
     font-size: 14px;
-    padding-left: 20px;
+    padding-#{$end-direction}: 20px;
 }
 .breadcrumb .items li a::after{
     #{$end-direction}: 5px;
@@ -902,5 +1169,11 @@
     .marker-with-popup.gazan {
         right: 203px;
         top: 314px;
+    }
+    .main-Nav .bgNav .topNav .top-links a {
+        font-size: 10px;
+    }
+    .interactive-map .map-cont .tags-content .details{
+        width: auto;
     }
 }

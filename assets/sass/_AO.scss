@@ -283,16 +283,16 @@ body {
     top: 225px;
   }
   &.haael{
-    right: 430px;
+    right: 450px;
     top: 245px;
   }
   &.qasim{
-    right: 365px;
+    right: 410px;
     top: 295px;
   }
   &.gouf{
-    right: 505px;
-    top: 175px;
+    right: 540px;
+    top: 160px;
   }
   &.shamalia{
     right: 380px;
@@ -303,20 +303,20 @@ body {
     top: 400px;
   }
   &.nagran{
-    right: 300px;
-    top: 555px;
+    right: 325px;
+    top: 570px;
   }
   &.asser{
-    right: 395px;
-    top: 520px;
+    right: 420px;
+    top: 530px;
   }
   &.gazan{
-    right: 402px;
-    top: 587px;
+    right: 435px;
+    top: 605px;
   }
   &.baaha{
-    right: 442px;
-    top: 490px;
+    right: 475px;
+    top: 500px;
   }
 }
 
@@ -386,14 +386,14 @@ body {
 
 .filterLinks {
   margin-bottom: 55px;
-  padding-right: 40px;
+  padding-#{$start-direction}: 40px;
 }
 .filterLinks .FLlink {
      box-shadow: 0 3px 6px #00000030;
   display: inline-block;
   padding: 15px 24px;
   border-radius: 5px;
-  margin-left: 10px;
+  margin-#{$end-direction}: 10px;
   border: 1px solid #CCCCCC;
   color: $medium-blue;
       margin-bottom: 10px;
@@ -431,7 +431,7 @@ body {
 .innerpages .accordion .card .card-header h2 .btn-link {
   width: 100%;
   background: transparent url(../images/shared/accordion-expanded.svg) left center no-repeat;
-  text-align: right;
+  text-align: #{$start-direction};
   font-size: 20px;
   font-family:"NCSP-Regular" ;
   color: #18754D;
@@ -463,13 +463,13 @@ sitemap
 */
 
 section.sitemap {
-  margin-top: 20px;
-  padding: 0 20px;
-  padding-top: 30px;
-  padding-bottom: 25px;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 5px 40px #0000001f;
+  // margin-top: 20px;
+  // padding: 0 20px;
+  // padding-top: 30px;
+  // padding-bottom: 25px;
+  // background-color: #fff;
+  // border-radius: 4px;
+  // box-shadow: 0 5px 40px #0000001f;
 }
 
 section.sitemap  ul.level-2 {

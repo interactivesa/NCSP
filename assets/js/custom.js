@@ -112,6 +112,9 @@
       margin:20,
       rtl: true,
       responsive:{
+        0:{
+          items:1
+        },
         375:{
           items:2
         },
