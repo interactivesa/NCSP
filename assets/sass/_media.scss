@@ -314,6 +314,9 @@
         font-size: 14px;
         padding-#{$start-direction}: 20px;
     }
+    .org-chart {
+        zoom: .6;
+    }
 }
 
 @media (max-width: 991.68px){
