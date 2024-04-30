@@ -317,6 +317,14 @@
     .org-chart {
         zoom: .6;
     }
+
+    .inContent .container .box-white .aboutUs ul li {
+        font-size: 18px;
+    }
+    .breadcrumb .pageTitle{
+       font-size: 30px;
+    }
+
 }
 
 @media (max-width: 991.68px){
@@ -946,6 +954,17 @@
     .main-Nav .bgNav .topNav .top-links{
         padding: 0;
     }
+
+
+    .breadcrumb {
+        min-height: 180px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .partners .item {
+        width: 100%;
+        height: 150px;
+    }
 }
 
 
@@ -1097,6 +1116,42 @@
 .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li::after{
     #{$start-direction}:38px
 }
+
+
+
+.bgNews .cardNews .cardText {
+    overflow: hidden;
+}
+
+.bgNews .cardNews .cardText .praghCard {
+    font-size: 13px;
+    line-height: 18px;
+    height: calc(18px* 6);
+    overflow: hidden;
+}
+
+
+
+.bgNews .owl-theme .owl-nav [class*="owl-"] {
+    top: 90%;
+}
+
+.bgNews .cardNews::before {
+    bottom: 55px;
+}
+
+.bgNews .owl-theme .owl-prev {
+    #{$start-direction}: 40%;
+    #{$end-direction}: auto;
+}
+
+.bgNews .owl-theme .owl-next {
+    #{$end-direction}: 40%;
+    #{$start-direction}: auto;
+}
+
+
+
 
 }
 

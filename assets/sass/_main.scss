@@ -389,7 +389,7 @@ ul {
   background-repeat: no-repeat;
   background-image: url(../images/pattern-color.svg);
   background-position: 155px 0px;
-  background-size: 48%;
+  background-size: 44%;
   padding: 150px 0;
   .container {
     .content {
@@ -1297,6 +1297,11 @@ footer {
           &:last-child{
             margin-bottom: 0;
           }          
+        }
+        ul {
+          li {
+            font-size: 22px;
+          }
         }
         span img {
           width: 27px;
@@ -3347,5 +3352,148 @@ footer {
       }
 
     }
+  }
+}
+
+
+
+
+/*
+  staging fixxxxx
+*/
+.inContent .container .box-white .imgBox  {
+  text-align:center
+}
+section.inContent.merge .box-white .serviceBox .SrvIcon img {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+/*
+  EN version
+*/
+
+html[lang="en"]{
+
+  .main-Nav .bgNav .topNav .top-links .lang{
+    background-position: 100%;
+  }
+  .mainSlider .swiper-button-prev, .mainSlider.swiper-rtl .swiper-button-next {
+      #{$start-direction}: auto;
+  }
+  .about .container .imgBox img {
+      transform: scaleX(-1);
+  }
+  .bgNews .cardNews .cardText .date{
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+  }
+  .owl-carousel-news .owl-nav [class*="owl-"] {
+      transform: scaleX(-1) !important;
+  }
+  
+  
+  .Numbers .section-header ,
+  .gallery .section-header ,
+  .partners .section-header{
+      width: max-content;
+      padding: 0 15px 15px;
+  }
+  .partners .centered{
+      #{$start-direction}: 0;
+      #{$end-direction}: auto;
+      transform: none;
+  }
+  
+  .bgNews .centered{
+      #{$start-direction}: 0;
+      #{$end-direction}: auto;
+      transform: none;
+  }
+  
+  .about{
+    background-image: url(../images/pattern-color-en.svg);
+    background-position: 84% 0;
+  }
+  
+  .about .container .content .section-header::before, .about .container .content .section-header::after,
+  .gallery .section-header::before, .gallery .section-header::after ,
+  .Numbers .section-header::before, .Numbers .section-header::after ,
+  .partners .section-header::before, .partners .section-header::after,
+  .inContent .container .box-white .section-header::before , .inContent .container .box-white .section-header::after{
+      transform: rotate(-45deg) scaleX(-1);
+  }
+  .about .container .content .section-header::after,
+  .gallery .section-header::after ,
+  .Numbers .section-header::after ,
+  .partners .section-header::after,
+  .inContent .container .box-white .section-header::after{
+          #{$end-direction}: -21px;
+  }
+  
+  .inContent .container .box-white .content-box::before , .inContent .container .box-white .content-box::after {
+      transform: scaleX(-1);
+      background-size: contain;
+  }
+  
+  .inContent .container .box-white .search-top input[type=search] {
+      background-position: 97%;
+  }
+  
+  .inContent .container .box-white .search-top select {
+      padding: 0 10px;
+      background-position: 95%;
+  }
+  
+  .inContent .container .box-white .events .event-banner .content .more img {
+      transform: scaleX(-1);
+  }
+  
+  .inContent .container .box-white .events .eventBox .dateShape {
+      transform: scaleX(-1);
+      align-items: flex-start;
+  }
+  
+  .inContent .container .box-white .events .eventBox .dateShape .days , .inContent .container .box-white .events .eventBox .dateShape .month {
+      transform: scaleX(-1);
+  }
+  
+  .inContent .container .box-white .events .eventBox .dateShape .month {
+      font-size: 11px;
+  }
+  .Numbers .item .numCard .content-box .centered {
+      #{$start-direction}: 45%;
+      #{$end-direction}: auto;
+  }
+  
+  .interactive-map .map-cont .tags-content .details ul li {
+      font-size: 18px;
+  }
+  
+  .interactive-map .map-cont .tags-content .details ul {
+      flex-wrap: wrap;
+  }
+  
+  .interactive-map .map-cont .svg-map {
+      margin-left: 0;
+  }
+  .marker-with-popup .map-popup::after {
+      transform: none;
+  }
+  
+  .breadcrumb .items li a::after {
+      transform: scaleX(-1);
+  }
+  .mainSlider .content-area a img{
+    transform: scaleX(-1);
+  }
+  .banner .container-fluid .item .imgbox1 .content .more img{
+    transform: scaleX(-1);
+    margin-#{$start-direction}: 8px;
   }
 }

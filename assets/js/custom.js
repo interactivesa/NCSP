@@ -180,8 +180,11 @@
       autoplay: true,
       autoplayTimeout:2000,
       responsive:{
-        375:{
+        0:{
           items:1
+        },
+        575:{
+          items:2
         },
         1000:{
           items:3

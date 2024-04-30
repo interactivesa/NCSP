@@ -424,7 +424,7 @@ ul {
   background-repeat: no-repeat;
   background-image: url(../images/pattern-color.svg);
   background-position: 155px 0px;
-  background-size: 48%;
+  background-size: 44%;
   padding: 150px 0;
 }
 
@@ -1423,6 +1423,10 @@ footer .bottom-footer .copyright p {
 
 .inContent .container .box-white .aboutUs p:last-child {
   margin-bottom: 0;
+}
+
+.inContent .container .box-white .aboutUs ul li {
+  font-size: 22px;
 }
 
 .inContent .container .box-white .aboutUs span img {
@@ -3636,6 +3640,172 @@ footer .bottom-footer .copyright p {
   right: 1166px;
 }
 
+/*
+  staging fixxxxx
+*/
+.inContent .container .box-white .imgBox {
+  text-align: center;
+}
+
+section.inContent.merge .box-white .serviceBox .SrvIcon img {
+  height: 190px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*
+  EN version
+*/
+html[lang="en"] .main-Nav .bgNav .topNav .top-links .lang {
+  background-position: 100%;
+}
+
+html[lang="en"] .mainSlider .swiper-button-prev, html[lang="en"] .mainSlider.swiper-rtl .swiper-button-next {
+  right: auto;
+}
+
+html[lang="en"] .about .container .imgBox img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .bgNews .cardNews .cardText .date {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+html[lang="en"] .owl-carousel-news .owl-nav [class*="owl-"] {
+  -webkit-transform: scaleX(-1) !important;
+          transform: scaleX(-1) !important;
+}
+
+html[lang="en"] .Numbers .section-header,
+html[lang="en"] .gallery .section-header,
+html[lang="en"] .partners .section-header {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 15px 15px;
+}
+
+html[lang="en"] .partners .centered {
+  right: 0;
+  left: auto;
+  -webkit-transform: none;
+          transform: none;
+}
+
+html[lang="en"] .bgNews .centered {
+  right: 0;
+  left: auto;
+  -webkit-transform: none;
+          transform: none;
+}
+
+html[lang="en"] .about {
+  background-image: url(../images/pattern-color-en.svg);
+  background-position: 84% 0;
+}
+
+html[lang="en"] .about .container .content .section-header::before, html[lang="en"] .about .container .content .section-header::after,
+html[lang="en"] .gallery .section-header::before, html[lang="en"] .gallery .section-header::after,
+html[lang="en"] .Numbers .section-header::before, html[lang="en"] .Numbers .section-header::after,
+html[lang="en"] .partners .section-header::before, html[lang="en"] .partners .section-header::after,
+html[lang="en"] .inContent .container .box-white .section-header::before, html[lang="en"] .inContent .container .box-white .section-header::after {
+  -webkit-transform: rotate(-45deg) scaleX(-1);
+          transform: rotate(-45deg) scaleX(-1);
+}
+
+html[lang="en"] .about .container .content .section-header::after,
+html[lang="en"] .gallery .section-header::after,
+html[lang="en"] .Numbers .section-header::after,
+html[lang="en"] .partners .section-header::after,
+html[lang="en"] .inContent .container .box-white .section-header::after {
+  left: -21px;
+}
+
+html[lang="en"] .inContent .container .box-white .content-box::before, html[lang="en"] .inContent .container .box-white .content-box::after {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-size: contain;
+}
+
+html[lang="en"] .inContent .container .box-white .search-top input[type=search] {
+  background-position: 97%;
+}
+
+html[lang="en"] .inContent .container .box-white .search-top select {
+  padding: 0 10px;
+  background-position: 95%;
+}
+
+html[lang="en"] .inContent .container .box-white .events .event-banner .content .more img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .days, html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .month {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .month {
+  font-size: 11px;
+}
+
+html[lang="en"] .Numbers .item .numCard .content-box .centered {
+  right: 45%;
+  left: auto;
+}
+
+html[lang="en"] .interactive-map .map-cont .tags-content .details ul li {
+  font-size: 18px;
+}
+
+html[lang="en"] .interactive-map .map-cont .tags-content .details ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html[lang="en"] .interactive-map .map-cont .svg-map {
+  margin-left: 0;
+}
+
+html[lang="en"] .marker-with-popup .map-popup::after {
+  -webkit-transform: none;
+          transform: none;
+}
+
+html[lang="en"] .breadcrumb .items li a::after {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .mainSlider .content-area a img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  margin-right: 8px;
+}
+
 @font-face {
   font-family: "NCSP-Light";
   src: url("../fonts/NeoSansArabicLight.ttf");
@@ -4552,6 +4722,12 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .org-chart {
     zoom: .6;
   }
+  .inContent .container .box-white .aboutUs ul li {
+    font-size: 18px;
+  }
+  .breadcrumb .pageTitle {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 991.68px) {
@@ -5132,6 +5308,15 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .main-Nav .bgNav .topNav .top-links {
     padding: 0;
   }
+  .breadcrumb {
+    min-height: 180px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .partners .item {
+    width: 100%;
+    height: 150px;
+  }
 }
 
 @media (max-width: 574.68px) {
@@ -5272,6 +5457,29 @@ section.sitemap ul.level-2 > li .level-3 li a {
   }
   .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons li::after {
     right: 38px;
+  }
+  .bgNews .cardNews .cardText {
+    overflow: hidden;
+  }
+  .bgNews .cardNews .cardText .praghCard {
+    font-size: 13px;
+    line-height: 18px;
+    height: calc(18px* 6);
+    overflow: hidden;
+  }
+  .bgNews .owl-theme .owl-nav [class*="owl-"] {
+    top: 90%;
+  }
+  .bgNews .cardNews::before {
+    bottom: 55px;
+  }
+  .bgNews .owl-theme .owl-prev {
+    right: 40%;
+    left: auto;
+  }
+  .bgNews .owl-theme .owl-next {
+    left: 40%;
+    right: auto;
   }
 }
 
