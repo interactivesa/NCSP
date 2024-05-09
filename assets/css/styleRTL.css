@@ -4539,6 +4539,13 @@ section.sitemap ul.level-2 > li .level-3 li a {
     width: max-content;
     padding: 0 20px 15px;
   }
+  .inContent .container .box-white .search-top select,
+  .inContent .container .box-white .search-top imput {
+    margin-bottom: 0;
+  }
+  .inContent .container .box-white .search-top .left {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 1199.68px) {
@@ -5118,7 +5125,8 @@ section.sitemap ul.level-2 > li .level-3 li a {
     text-align: center;
   }
   .breadcrumb {
-    height: 180px;
+    min-height: 180px;
+    height: auto;
   }
   .breadcrumb .pageTitle {
     font-size: 25px;
@@ -5316,6 +5324,16 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .partners .item {
     width: 100%;
     height: 150px;
+  }
+  .mainSlider .content-area [data-aos^=fade][data-aos^=fade].aos-init {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  .thumbsSlider .content-area [data-aos^=fade][data-aos^=fade].aos-init {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
   }
 }
 
