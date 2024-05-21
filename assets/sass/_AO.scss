@@ -501,3 +501,28 @@ section.sitemap  ul.level-2 > li .level-3 li a{
   margin-bottom: 10px;
   display: block;
 }
+
+
+
+
+
+
+
+
+.thumbsSlider:hover {
+  width: 26%;
+  transition: .5s;
+}
+
+.thumbsSlider .swiper-slide {
+  width: 50% !important;
+}
+
+.thumbsSlider:hover .swiper-slide {
+  width: 48% !important;
+  transition:.3s
+}
+
+.thumbsSlider:hover .swiper-slide:hover {
+   width: 55% !important;
+} 

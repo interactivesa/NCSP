@@ -206,15 +206,36 @@
     var swiper = new Swiper(".thumbsSlider", {
       spaceBetween: 0,
       slidesPerView: 2,
+      initialSlide:1,
       freeMode: false,
-      watchSlidesProgress: true,
-    });
+    
+    
+  });
+
+
     var swiper2 = new Swiper(".mainSlider", {
-      spaceBetween: 10,
-      effect:"fade",
+      // spaceBetween: 10,
+      // effect:"fade",
       // fadeEffect: {
-      //   crossFade: true
+      //   crossFade: false
       // },
+
+     
+      
+      effect: 'creative',
+      creativeEffect: {
+        prev: {
+          // will set `translateZ(-400px)` on previous slides
+          translate: ['100%', 0, -100],
+          opacity:0.5
+        },
+        next: {
+          // will set `translateX(100%)` on next slides
+          translate: ['-100%', 0, -100],
+          opacity:0.5
+        },
+      },
+      
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -229,8 +250,10 @@
     });
 
 
+
+
+
   });
 
 
 
-   
