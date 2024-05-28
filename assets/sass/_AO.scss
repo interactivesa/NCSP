@@ -526,3 +526,14 @@ section.sitemap  ul.level-2 > li .level-3 li a{
 .thumbsSlider:hover .swiper-slide:hover {
    width: 55% !important;
 } 
+.thumbsSlider .swiper-slide.full-width-Slide{
+  width: 100% !important;
+}
+.thumbsSlider .swiper-slide.full-width-Slide:hover{
+  width: 100% !important;
+}
+
+.thumbsSlider .swiper-slide.full-width-Slide .content-area{
+  #{$start-direction}: 50%;
+  transform: translateX(50%);
+}

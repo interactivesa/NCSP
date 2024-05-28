@@ -179,18 +179,25 @@
       rtl: true,
       autoplay: true,
       autoplayTimeout:2000,
+      autoplayHoverPause:true,
       responsive:{
         0:{
-          items:1
+          items:1,
+          slideBy:1,
         },
         575:{
-          items:2
+          items:2,
+          slideBy:2,
         },
         1000:{
-          items:3
+          items:3,
+          slideBy:3,
+          margin: 15,
         },
         1400:{
-          items:4
+          items:5,
+          slideBy:5,
+          
         }
       }
     })
@@ -251,9 +258,35 @@
 
 
 
-
+    // console.log(swiper.slides.length,"swiper.slides.length");
+    // if(swiper.slides.length <= 1 ){
+    //   console.log("slides  less than 1 " );
+    //   $(".thumbsSlider .swiper-slide ").addClass("full-width-Slide")
+    // }
+    // else {
+    //   console.log("slides  bigger than 1 ");
+    // }
 
   });
 
 
 
+
+
+
+
+
+  /*
+  fullpage home pahe scroll plugin
+  */ 
+
+
+  // new fullpage('#fullpage', {
+  //   navigation: true,
+  //   responsiveWidth: 700,
+  //   anchors: ['home', 'about-us', 'contact'],
+  //   parallax: true,
+  //   onLeave: function(origin, destination, direction){
+  //       console.log("Leaving section" + origin.index);
+  //   },
+  //   });
