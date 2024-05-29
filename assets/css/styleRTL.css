@@ -3135,6 +3135,7 @@ footer .bottom-footer .copyright p {
 .Main-Banner {
   height: 100vh;
   position: relative;
+  background-color: #001F5E;
 }
 
 .Main-Banner .slide-down {
@@ -3371,6 +3372,10 @@ footer .bottom-footer .copyright p {
 
 .thumbsSlider .swiper-slide {
   cursor: pointer;
+}
+
+.thumbsSlider .swiper-slide.hide {
+  display: none;
 }
 
 .org-chart {

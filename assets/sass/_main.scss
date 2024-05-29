@@ -2852,6 +2852,7 @@ footer {
 .Main-Banner{
   height: 100vh;
   position: relative;
+  background-color: $dark-blue;
   .slide-down{
     position: absolute;
     width: 36px;
@@ -3066,6 +3067,9 @@ footer {
   }
   .swiper-slide{
     cursor: pointer;
+    &.hide{
+      display: none;
+    }
   }
 }
 

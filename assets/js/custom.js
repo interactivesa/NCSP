@@ -209,53 +209,58 @@
 
 
 
-
     var swiper = new Swiper(".thumbsSlider", {
       spaceBetween: 0,
       slidesPerView: 2,
-      initialSlide:1,
+      initialSlide: 1,
       freeMode: false,
-    
-    
   });
-
-
-    var swiper2 = new Swiper(".mainSlider", {
+   
+  var swiper2 = new Swiper(".mainSlider", {
       // spaceBetween: 10,
       // effect:"fade",
       // fadeEffect: {
       //   crossFade: false
       // },
-
-     
-      
+   
       effect: 'creative',
       creativeEffect: {
-        prev: {
-          // will set `translateZ(-400px)` on previous slides
-          translate: ['100%', 0, -100],
-          opacity:0.5
-        },
-        next: {
-          // will set `translateX(100%)` on next slides
-          translate: ['-100%', 0, -100],
-          opacity:0.5
-        },
+          prev: {
+              // will set `translateZ(-400px)` on previous slides
+              translate: ['100%', 0, 0],
+              opacity: 0.5
+          },
+          next: {
+              // will set `translateX(100%)` on next slides
+              translate: ['-100%', 0, 0],
+              opacity: 0.5
+          },
       },
-      
+   
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
       },
       thumbs: {
-        swiper: swiper,
+          swiper: swiper,
       },
       scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: false,
+          el: ".swiper-scrollbar",
+          hide: false,
       },
-    });
-
+  });
+   
+  swiper = new Swiper(".thumbsSlider", {
+      spaceBetween: 0,
+      slidesPerView: 2,
+      initialSlide: 3,
+      freeMode: false,
+  });
+   
+  $(".thumbsSlider .swiper-slide").click(function () {
+      $(".thumbsSlider .swiper-slide").removeClass("hide");
+      $(this).addClass("hide");
+  });
 
 
     // console.log(swiper.slides.length,"swiper.slides.length");
