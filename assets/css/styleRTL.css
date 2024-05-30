@@ -384,11 +384,11 @@ ul {
 .gallery {
   padding: 60px 0 150px;
   background-color: #F4F4F4;
-  height: 1240px;
+  height: 750px;
 }
 .gallery .section-header {
-  width: 15%;
-  font-size: 30px;
+  width: 13%;
+  font-size: 26px;
   font-family: "NCSP-Medium";
   color: #001F5E;
   position: relative;
@@ -396,24 +396,13 @@ ul {
   border-bottom: 2px solid #CDD2D9;
   text-align: center;
 }
-.gallery .section-header::before, .gallery .section-header::after {
-  content: "";
-  width: 22px;
-  height: 8px;
-  border-radius: 7px 0px 7px 0px;
-  border: 0 solid;
-  position: absolute;
-  transform: rotate(50deg);
-}
-.gallery .section-header::before {
-  left: -33px;
-  bottom: -2px;
-  background: #35CCDE;
-}
 .gallery .section-header::after {
-  left: -20px;
-  bottom: 0px;
-  background: #145FFF;
+  content: url("../images/TitleArrow.png");
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 30px;
+  left: -15px;
 }
 .gallery .centered {
   left: 50%;
@@ -445,21 +434,21 @@ ul {
 .gallery .container .tabsImage h4 {
   padding: 30px;
   color: #FFFFFF;
-  font-size: 35px;
+  font-size: 28px;
   font-family: "NCSP-Medium";
 }
 .gallery .container .tabsImage h4 span {
   padding-left: 40px;
   color: #FFFFFF;
-  font-size: 30px;
+  font-size: 28px;
   font-family: "NCSP-Regular";
 }
 .gallery .container .tabsImage p {
   padding: 30px;
   color: #FFFFFF;
-  font-size: 25px;
+  font-size: 22px;
   position: absolute;
-  bottom: 2%;
+  top: 30%;
   opacity: 0;
   margin-bottom: 0;
 }
