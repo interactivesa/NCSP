@@ -399,40 +399,28 @@ ul {
       height: 100%;
       // Title 
       .section-header {
-        width: 23%;
-        font-size: 30px;
+        width: 18%;
+        font-size: 26px;
         font-family: "NCSP-Medium";
         color: $dark-blue;
         position: relative;
         padding-bottom: 15px;
         border-bottom: 2px solid $medium-grey;
-        margin-bottom: 60px;
-        &::before, &::after {
-          content: '';
-          width: 22px;
-          height: 8px;
-          border-radius: 7px 0px 7px 0px;
-          border: 0 solid;
-          position: absolute;
-          transform: rotate(50deg);
-        }
-        &::before {
-          #{$end-direction}: -33px;
-          bottom: -2px;
-          background: $aqua;
-        }
+        margin-bottom: 40px;
         &::after {
-          #{$end-direction}: -20px;
-          bottom: 0px;
-          background: $blue;
+          content: url("../images/TitleArrow.png");
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          top: 30px;
+          left: -15px;
         }
       }
       p {
-        font-size: 25px; 
+        font-size: 21px; 
         font-family: "NCSP-Light";
         color: $dark-text;
-        // line-height: 2;
-        // text-align: justify;
+        text-align: justify;
       }
     }
 

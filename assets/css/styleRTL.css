@@ -347,38 +347,28 @@ ul {
   height: 100%;
 }
 .about .container .content .section-header {
-  width: 23%;
-  font-size: 30px;
+  width: 18%;
+  font-size: 26px;
   font-family: "NCSP-Medium";
   color: #001F5E;
   position: relative;
   padding-bottom: 15px;
   border-bottom: 2px solid #CDD2D9;
-  margin-bottom: 60px;
-}
-.about .container .content .section-header::before, .about .container .content .section-header::after {
-  content: "";
-  width: 22px;
-  height: 8px;
-  border-radius: 7px 0px 7px 0px;
-  border: 0 solid;
-  position: absolute;
-  transform: rotate(50deg);
-}
-.about .container .content .section-header::before {
-  left: -33px;
-  bottom: -2px;
-  background: #35CCDE;
+  margin-bottom: 40px;
 }
 .about .container .content .section-header::after {
-  left: -20px;
-  bottom: 0px;
-  background: #145FFF;
+  content: url("../images/TitleArrow.png");
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 30px;
+  left: -15px;
 }
 .about .container .content p {
-  font-size: 25px;
+  font-size: 21px;
   font-family: "NCSP-Light";
   color: #333333;
+  text-align: justify;
 }
 .about .container .imgBox {
   height: 100%;
