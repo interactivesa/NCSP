@@ -40,7 +40,7 @@ ul {
         .logo-white{
           display: block;
           height: 60px;
-          margin-top: 10px;
+          margin-top: 15px;
         }
       }
 
@@ -49,7 +49,7 @@ ul {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 14px;
-        padding-top: 10px;
+        padding-top: 5px;
         
         .search-toggle {
           width: 44px;
@@ -388,7 +388,7 @@ ul {
   background-image: url(../images/pattern-color.svg);
   background-position: 155px 0px;
   background-size: 44%;
-  padding: 150px 0;
+  padding: 50px 0;
   .container {
     .content {
       padding: 0px 40px;
@@ -1035,6 +1035,12 @@ footer {
         width: 32px;
         margin-#{$end-direction}: 10px;
       }
+      .logos {
+        img {
+          width: 100px;
+          padding-top: 10px;
+        }
+      }
     }
   }
   // Bottom 
@@ -1072,23 +1078,26 @@ footer {
     box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.05);
     .bgNav {
       .topNav {
-        padding-top: 30px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         .a-logo {
           display: block;
           margin-#{$start-direction}: 60px;
         }
         // Top Links 
-        .top-links {
+        .left-Icons {
           color: $dark-text;
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 14px;
+          padding-top: 5px;
           .search-toggle {
-            background-image: url("../images/shared/Search-b.svg");
-            background-repeat: no-repeat;
+            width: 44px;
+            filter: none;
           }
           .lang {            
-            background-image: url("../images/shared/lang-b.svg");
-            background-repeat: no-repeat;
-            padding-#{$end-direction}: 30px;
+            width: 44px;
+            filter: none;
           }
           a {
             &:hover {

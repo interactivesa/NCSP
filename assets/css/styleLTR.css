@@ -42,13 +42,13 @@ ul {
 .main-Nav .bgNav .topNav .a-logo .logo-white {
   display: block;
   height: 60px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .main-Nav .bgNav .topNav .left-Icons {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 14px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .main-Nav .bgNav .topNav .left-Icons .search-toggle {
   width: 44px;
@@ -336,7 +336,7 @@ ul {
   background-image: url(../images/pattern-color.svg);
   background-position: 155px 0px;
   background-size: 44%;
-  padding: 150px 0;
+  padding: 50px 0;
 }
 .about .container .content {
   padding: 0px 40px;
@@ -903,6 +903,10 @@ footer .top-footer .contactUs img {
   width: 32px;
   margin-right: 10px;
 }
+footer .top-footer .contactUs .logos img {
+  width: 100px;
+  padding-top: 10px;
+}
 footer .bottom-footer {
   background-color: #001F5E;
 }
@@ -934,29 +938,32 @@ footer .bottom-footer .copyright p {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
 }
 .inner .main-Nav .bgNav .topNav {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .inner .main-Nav .bgNav .topNav .a-logo {
   display: block;
   margin-left: 60px;
 }
-.inner .main-Nav .bgNav .topNav .top-links {
+.inner .main-Nav .bgNav .topNav .left-Icons {
   color: #333333;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+  padding-top: 5px;
 }
-.inner .main-Nav .bgNav .topNav .top-links .search-toggle {
-  background-image: url("../images/shared/Search-b.svg");
-  background-repeat: no-repeat;
+.inner .main-Nav .bgNav .topNav .left-Icons .search-toggle {
+  width: 44px;
+  filter: none;
 }
-.inner .main-Nav .bgNav .topNav .top-links .lang {
-  background-image: url("../images/shared/lang-b.svg");
-  background-repeat: no-repeat;
-  padding-right: 30px;
+.inner .main-Nav .bgNav .topNav .left-Icons .lang {
+  width: 44px;
+  filter: none;
 }
-.inner .main-Nav .bgNav .topNav .top-links a:hover {
+.inner .main-Nav .bgNav .topNav .left-Icons a:hover {
   color: #145FFF;
 }
-.inner .main-Nav .bgNav .topNav .top-links .search-box .search-full-area input[type=text] {
+.inner .main-Nav .bgNav .topNav .left-Icons .search-box .search-full-area input[type=text] {
   background-color: rgba(0, 51, 145, 0.5);
 }
 .inner .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .nav-item .nav-link {
