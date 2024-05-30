@@ -44,19 +44,9 @@ body {
 
 
 
-
-
-
-
-
-
 /************************************************
-                                                       index map
+                  index map
 *************************************************/
-
-
-
-
 
 .interactive-map{
   // margin-top: -140px;
@@ -215,7 +205,6 @@ body {
       }
   }
 }
-
 .marker-with-popup{
   position: absolute;
   // right: 415px;
@@ -319,23 +308,6 @@ body {
     top: 500px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .map-area{
   position: relative;
   height: 960px;
@@ -382,8 +354,6 @@ body {
 }
 
 
-
-
 .filterLinks {
   margin-bottom: 55px;
   padding-#{$start-direction}: 40px;
@@ -404,11 +374,6 @@ body {
   border: 1px solid $medium-blue;
   color: #fff;
 }
-
-
-
-
-
 
 
 .innerpages .accordion .card {
@@ -457,7 +422,6 @@ body {
 }
 
 
-
 /*
 sitemap
 */
@@ -471,11 +435,9 @@ section.sitemap {
   // border-radius: 4px;
   // box-shadow: 0 5px 40px #0000001f;
 }
-
 section.sitemap  ul.level-2 {
   padding: 0;
 }
-
 section.sitemap ul.level-2 > li{
   display: inline-flex;
   flex-direction: column;
@@ -488,7 +450,6 @@ section.sitemap  ul.level-2 > li a{
   color: #001F5E;
   margin: 7px 0;
 }
-
 section.sitemap  ul.level-2 > li .level-3{
   list-style: disc;
 }
@@ -503,26 +464,17 @@ section.sitemap  ul.level-2 > li .level-3 li a{
 }
 
 
-
-
-
-
-
-
 .thumbsSlider:hover {
   width: 26%;
   transition: .5s;
 }
-
 .thumbsSlider .swiper-slide {
   width: 50% !important;
 }
-
 .thumbsSlider:hover .swiper-slide {
   width: 48% !important;
   transition:.3s
 }
-
 .thumbsSlider:hover .swiper-slide:hover {
    width: 55% !important;
 } 
@@ -532,7 +484,6 @@ section.sitemap  ul.level-2 > li .level-3 li a{
 .thumbsSlider .swiper-slide.full-width-Slide:hover{
   width: 100% !important;
 }
-
 .thumbsSlider .swiper-slide.full-width-Slide .content-area{
   #{$start-direction}: 50%;
   transform: translateX(50%);

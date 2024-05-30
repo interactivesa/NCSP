@@ -2,7 +2,6 @@
     .container{
         max-width: 1440px;
     }
-
    .home{
        .container{
            max-width: 1640px;
@@ -15,7 +14,6 @@
        }
    }
 }
-
 
 @media (max-width: 1399.68px) {
 
@@ -126,8 +124,7 @@
     }
     .inContent .container .box-white .search-top .left {
         margin-bottom: 20px;
-    }
-    
+    }    
 }
 
 @media (max-width: 1199.68px){
@@ -262,7 +259,6 @@
             margin-#{$start-direction}: 30px;
         }
     }
-
     
     .inContent .container .box-white .cardNews{
         height: 418px;
@@ -332,7 +328,6 @@
     .breadcrumb .pageTitle{
        font-size: 30px;
     }
-
 }
 
 @media (max-width: 991.68px){
@@ -371,7 +366,6 @@
         margin-right: 0;
         margin-top: 0;
     }
-
 
     .marker-with-popup.sharqia {
         right: 145px;
@@ -425,8 +419,6 @@
         right: 400px;
         top: 584px;
     }
-
-
 
     .inContent .container .box-white .headBox .headImg{
         width: 170px;
@@ -490,7 +482,6 @@
     .inContent .container .box-white .serviceDetails .srvList .list{
         margin-bottom: 25px;
     }
-
     
     .inContent .container .box-white .serviceDetails .srvList .list .listText .ulIcons {
         flex-direction: column;
@@ -544,8 +535,6 @@
     .inContent .container .box-white .content-box .signature h4{
         font-size: 18px;
     }
-
-
 
     .mainSlider .content-area{
             #{$start-direction}: 70px;
@@ -670,11 +659,7 @@
     .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .nav-item .nav-link::after{
         background-image: url(../images/shared/nav-arrow-b.svg);
     }
-
-
 }
-
-
 
 // Small Sizes 
 @media (max-width: 767.68px) {
@@ -886,7 +871,6 @@
         width: 100%;
     }
 
-
     .mainSlider .swiper-scrollbar{
         #{$start-direction}:30px
     }
@@ -964,7 +948,6 @@
         padding: 0;
     }
 
-
     .breadcrumb {
         min-height: 180px;
         height: auto;
@@ -974,11 +957,6 @@
         width: 100%;
         height: 150px;
     }
-
-
-
-
-
 
     // main slider issue azure
     .mainSlider .content-area [data-aos^=fade][data-aos^=fade].aos-init {
@@ -991,17 +969,11 @@
     }
 }
 
-
-
-
-
-
 @media (max-width: 574.68px) {
 .interactive-map .map-cont .svg-map svg{
     width: 100%;
     height: 400px;
 }
-
 .marker-with-popup.reyadh {
     right: 180px;
     top: 225px;
@@ -1141,8 +1113,6 @@
     #{$start-direction}:38px
 }
 
-
-
 .bgNews .cardNews .cardText {
     overflow: hidden;
 }
@@ -1153,8 +1123,6 @@
     height: calc(18px* 6);
     overflow: hidden;
 }
-
-
 
 .bgNews .owl-theme .owl-nav [class*="owl-"] {
     top: 90%;
@@ -1174,11 +1142,7 @@
     #{$start-direction}: auto;
 }
 
-
-
-
 }
-
 
 @media (max-width: 399.68px) {
     .marker-with-popup .marker img{
@@ -1197,8 +1161,6 @@
         top: -43px;
         right: -50px;
     }
-
-
 
     .marker-with-popup.reyadh {
         right: 156px;
