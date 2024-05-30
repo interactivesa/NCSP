@@ -409,11 +409,9 @@ ul {
         margin-bottom: 40px;
         &::after {
           content: url("../images/TitleArrow.png");
-          width: 18px;
-          height: 18px;
           position: absolute;
           top: 30px;
-          left: -15px;
+          left: -25px;
         }
       }
       p {
@@ -457,11 +455,9 @@ ul {
 
     &::after {
       content: url("../images/TitleArrow.png");
-      width: 18px;
-      height: 18px;
       position: absolute;
-      top: 30px;
-      left: -15px;
+      top: 31px;
+      left: -25px;
     }
   }
 
@@ -547,33 +543,21 @@ ul {
   // Title
   .section-header {
     width: 15%;
-    font-size: 30px;
+    font-size: 26px;
     font-family: "NCSP-Medium";
     color: $aqua;
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 13px;
     margin-bottom: 65px !important;
-    border-bottom: 2px solid $medium-grey;
+    border-bottom: 1px solid $medium-grey;
     text-align: center;
 
-    &::before, &::after {
-      content: '';
-      width: 22px;
-      height: 8px;
-      border-radius: 7px 0px 7px 0px;
-      border: 0 solid;
-      position: absolute;
-      transform: rotate(50deg);
-    }
-    &::before {
-      #{$end-direction}: -33px;
-      bottom: -2px;
-      background: $aqua;
-    }
     &::after {
-      #{$end-direction}: -20px;
-      bottom: 0px;
-      background: $white;
+      content: url("../images/TitleArrow.png");
+      filter: brightness(0) invert(1);
+      position: absolute;
+      top: 28px;
+      left: -26px;
     }
   }
   .centered {
@@ -920,8 +904,8 @@ ul {
 
   // Title
   .section-header {
-    width: 12%;
-    font-size: 30px;
+    width: 10%;
+    font-size: 26px;
     font-family: "NCSP-Medium";
     color: $dark-blue;
     position: relative;
@@ -930,24 +914,11 @@ ul {
     border-bottom: 2px solid $medium-grey;
     text-align: center;
 
-    &::before, &::after {
-      content: '';
-      width: 22px;
-      height: 8px;
-      border-radius: 7px 0px 7px 0px;
-      border: 0 solid;
-      position: absolute;
-      transform: rotate(50deg);
-    }
-    &::before {
-      #{$end-direction}: -33px;
-      bottom: -2px;
-      background: $aqua;
-    }
     &::after {
-      #{$end-direction}: -20px;
-      bottom: 0px;
-      background: $blue;
+      content: url("../images/TitleArrow.png");
+      position: absolute;
+      top: 31px;
+      left: -24px;
     }
   }
 

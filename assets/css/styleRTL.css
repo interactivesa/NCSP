@@ -358,11 +358,9 @@ ul {
 }
 .about .container .content .section-header::after {
   content: url("../images/TitleArrow.png");
-  width: 18px;
-  height: 18px;
   position: absolute;
   top: 30px;
-  left: -15px;
+  left: -25px;
 }
 .about .container .content p {
   font-size: 21px;
@@ -398,11 +396,9 @@ ul {
 }
 .gallery .section-header::after {
   content: url("../images/TitleArrow.png");
-  width: 18px;
-  height: 18px;
   position: absolute;
-  top: 30px;
-  left: -15px;
+  top: 31px;
+  left: -25px;
 }
 .gallery .centered {
   left: 50%;
@@ -470,33 +466,21 @@ ul {
 }
 .Numbers .section-header {
   width: 15%;
-  font-size: 30px;
+  font-size: 26px;
   font-family: "NCSP-Medium";
   color: #35CCDE;
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 13px;
   margin-bottom: 65px !important;
-  border-bottom: 2px solid #CDD2D9;
+  border-bottom: 1px solid #CDD2D9;
   text-align: center;
 }
-.Numbers .section-header::before, .Numbers .section-header::after {
-  content: "";
-  width: 22px;
-  height: 8px;
-  border-radius: 7px 0px 7px 0px;
-  border: 0 solid;
-  position: absolute;
-  transform: rotate(50deg);
-}
-.Numbers .section-header::before {
-  left: -33px;
-  bottom: -2px;
-  background: #35CCDE;
-}
 .Numbers .section-header::after {
-  left: -20px;
-  bottom: 0px;
-  background: #FFFFFF;
+  content: url("../images/TitleArrow.png");
+  filter: brightness(0) invert(1);
+  position: absolute;
+  top: 28px;
+  left: -26px;
 }
 .Numbers .centered {
   left: 50%;
@@ -803,8 +787,8 @@ ul {
   padding: 60px 0 90px;
 }
 .partners .section-header {
-  width: 12%;
-  font-size: 30px;
+  width: 10%;
+  font-size: 26px;
   font-family: "NCSP-Medium";
   color: #001F5E;
   position: relative;
@@ -813,24 +797,11 @@ ul {
   border-bottom: 2px solid #CDD2D9;
   text-align: center;
 }
-.partners .section-header::before, .partners .section-header::after {
-  content: "";
-  width: 22px;
-  height: 8px;
-  border-radius: 7px 0px 7px 0px;
-  border: 0 solid;
-  position: absolute;
-  transform: rotate(50deg);
-}
-.partners .section-header::before {
-  left: -33px;
-  bottom: -2px;
-  background: #35CCDE;
-}
 .partners .section-header::after {
-  left: -20px;
-  bottom: 0px;
-  background: #145FFF;
+  content: url("../images/TitleArrow.png");
+  position: absolute;
+  top: 31px;
+  left: -24px;
 }
 .partners .centered {
   left: 50%;
