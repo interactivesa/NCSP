@@ -9,6 +9,23 @@
     });
   });
 
+  var scrollTo = function (sectionEl = "", callback = function () {}) {
+    $("html, body").animate(
+      {
+        scrollTop: sectionEl ? calculateOffset(sectionEl) : 0,
+      },
+      300,
+      "swing",
+      callback()
+    );
+  };
+
+  var calculateOffset = function (el) {
+    if ($(el).length == 0) return;
+    if ($(window).width() >= 980) return Math.floor($(el).offset().top - 69);
+    return Math.floor($(el).offset().top);
+  };
+
   // Main Menu
   $(function () {
     if (window.innerWidth >= 1200) {
@@ -56,6 +73,59 @@
           $(".search-toggle").removeClass("d-none");
         }
       }
+
+
+
+      /*
+        navigator
+      */
+
+        if (scroll == 0) {
+          $("ul.navigator li").removeClass("active");
+          $("#sec1").addClass("active");
+        } else $("#sec1").removeClass("active");
+        
+        if (scroll >= calculateOffset(".about") - 400) {
+          $("ul.navigator li").removeClass("active");
+          $("#sec2").addClass("active");
+        } else $("#sec2").removeClass("active");
+    
+        
+        if (scroll >= calculateOffset(".gallery") - 500) {
+          $("ul.navigator li").removeClass("active");
+          $("#sec3").addClass("active");
+        } else $("#sec3").removeClass("active");
+    
+        if (scroll >= calculateOffset(".Numbers") - 500) {
+          $("ul.navigator li").removeClass("active");
+          $("#sec4").addClass("active");
+        } else $("#sec4").removeClass("active");
+       
+        if (scroll >= calculateOffset(".map") - 400) {
+          $("ul.navigator li").removeClass("active");
+          $("#sec5").addClass("active");
+        } else $("#sec5").removeClass("active");
+    
+        if (scroll >= calculateOffset(".bgNews") - 400) {
+          $("ul.navigator li").removeClass("active");
+          $("#sec6").addClass("active");
+        } else $("#sec6").removeClass("active");
+    
+        if (scroll >= calculateOffset(".partners") - 400) {
+          $("ul.navigator li").removeClass("active");
+          $("#sec7").addClass("active");
+        } else $("#sec7").removeClass("active");
+     
+
+
+
+
+
+
+
+
+
+
     });  
   
     $(".search-toggle").on("click", function (e) {
@@ -85,7 +155,62 @@
         $(".search-box").toggleClass("open-search");
         $(".search-box input").val("");
       }
-    });    
+    });
+
+
+    // navigator clicks
+
+    $("#sec1 a").on("click", function () {
+      scrollTo(false, function () {
+        $("ul.navigator li").removeClass("active");
+        $("#sec1").addClass("active");
+      });
+    });
+    $("#sec2 a").on("click", function () {
+      scrollTo(".about", function () {
+        $("ul.navigator li").removeClass("active");
+        $("#sec2").addClass("active");
+      });
+    });
+    
+    $("#sec3 a").on("click", function () {
+      scrollTo(".gallery", function () {
+        $("ul.navigator li").removeClass("active");
+        $("#sec3").addClass("active");
+      });
+    });
+    $("#sec4 a").on("click", function () {
+      scrollTo(".Numbers", function () {
+        $("ul.navigator li").removeClass("active");
+        $("#sec4").addClass("active");
+      });
+    });
+    $("#sec5 a").on("click", function () {
+      scrollTo(".map", function () {
+        $("ul.navigator li").removeClass("active");
+        $("#sec5").addClass("active");
+      });
+    });
+    $("#sec6 a").on("click", function () {
+      scrollTo(".bgNews", function () {
+        $("ul.navigator li").removeClass("active");
+        $("#sec6").addClass("active");
+      });
+    });
+    $("#sec7 a").on("click", function () {
+      scrollTo(".partners", function () {
+        // $("ul.navigator li").removeClass("active");
+        $("#sec7").addClass("active");
+      });
+    });
+    
+
+
+
+
+
+
+
   });
  
  $( document ).ready(function() {
@@ -295,3 +420,22 @@
   //       console.log("Leaving section" + origin.index);
   //   },
   //   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
