@@ -3359,6 +3359,12 @@ html[lang="en"]{
         opacity: 1;
       }
     }
+    &.active{
+      a{ 
+        border: 2px solid #000000;
+        background-color: #fff;
+      }
+    }
   }
 }
 

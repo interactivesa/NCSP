@@ -14,7 +14,7 @@
       {
         scrollTop: sectionEl ? calculateOffset(sectionEl) : 0,
       },
-      300,
+      800,
       "swing",
       callback()
     );
@@ -85,33 +85,33 @@
           $("#sec1").addClass("active");
         } else $("#sec1").removeClass("active");
         
-        if (scroll >= calculateOffset(".about") - 400) {
+        if (scroll >= calculateOffset(".about") - 200) {
           $("ul.navigator li").removeClass("active");
           $("#sec2").addClass("active");
         } else $("#sec2").removeClass("active");
     
         
-        if (scroll >= calculateOffset(".gallery") - 500) {
+        if (scroll >= calculateOffset(".gallery") - 200) {
           $("ul.navigator li").removeClass("active");
           $("#sec3").addClass("active");
         } else $("#sec3").removeClass("active");
     
-        if (scroll >= calculateOffset(".Numbers") - 500) {
+        if (scroll >= calculateOffset(".Numbers") - 200) {
           $("ul.navigator li").removeClass("active");
           $("#sec4").addClass("active");
         } else $("#sec4").removeClass("active");
        
-        if (scroll >= calculateOffset(".map") - 400) {
+        if (scroll >= calculateOffset(".map") - 200) {
           $("ul.navigator li").removeClass("active");
           $("#sec5").addClass("active");
         } else $("#sec5").removeClass("active");
     
-        if (scroll >= calculateOffset(".bgNews") - 400) {
+        if (scroll >= calculateOffset(".bgNews") - 200) {
           $("ul.navigator li").removeClass("active");
           $("#sec6").addClass("active");
         } else $("#sec6").removeClass("active");
     
-        if (scroll >= calculateOffset(".partners") - 400) {
+        if (scroll >= calculateOffset(".partners") - 200) {
           $("ul.navigator li").removeClass("active");
           $("#sec7").addClass("active");
         } else $("#sec7").removeClass("active");

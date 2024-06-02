@@ -3811,6 +3811,11 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
   opacity: 1;
 }
 
+.navigator li.active a {
+  border: 2px solid #000000;
+  background-color: #fff;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: auto;
