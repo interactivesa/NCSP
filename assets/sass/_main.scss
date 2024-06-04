@@ -1075,7 +1075,7 @@ footer {
   .main-Nav {
     position: relative;
     background-color: $white;
-    box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.05);
+    box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.025);
     .bgNav {
       .topNav {
         padding-top: 10px;
@@ -1138,18 +1138,15 @@ footer {
 
 // Breadcrumb 
 .breadcrumb {
-  height: 250px;
-  background-color: $purple;
-  background-image: url(../images/bread-pattern.svg);
-  background-size: cover;
+  height: 70px;
+  background-color: #F8F8F8;
   margin-bottom: 0;
 
   .items {
     margin: 0;
-    // height: 60px;
     align-items: center;
     display: flex;
-    margin-top: 40px;
+    margin-top: 22px;
     padding: 0;
     li {
       .home {
@@ -1160,7 +1157,7 @@ footer {
       a {
         font-size: 16px;
         font-family: "NCSP-Regular";
-        color: $white;
+        color: $dark-blue;
         margin-#{$end-direction}: 5px;
         position: relative;
         padding-#{$end-direction}: 35px;
@@ -1180,24 +1177,32 @@ footer {
       span{
         font-size: 16px;
         font-family: "NCSP-Regular";
-        color: $white;
+        color: $dark-blue;
       }
     }
   }
+}
 
-  .pageTitle {
-    font-size: 40px;
+// Page Title 
+.pageTitle { 
+  height: 150px;
+  background-color: $dark-blue;
+  background-image: url(../images/shared/pageTitle.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-y: 25px;
+  h2 {
+    font-size: 30px;
     font-family: "NCSP-Regular";
     color: $white;
-    margin-top: 55px;
-    // padding-right: 40px;
+    padding-top: 50px;
   }
 }
 
 // Inner Pages Content 
 .inContent {
   height: auto;
-  background-color: $bg-color; 
+  background-color: $white; 
 
   // Coming Soon
   .soon {
@@ -1221,569 +1226,1287 @@ footer {
   // Inner Pages
   .container {
     padding: 65px 0;
-    .box-white {
-      padding: 70px 60px 65px;
-      background-color: $white;
-      box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.01);
+    // About Us
+    .aboutUs {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      line-height: 2.5;
 
-      // About Us
-      .aboutUs {
+      h4 {
+        font-size: 35px;
+        font-family: "NCSP-Medium";
+        color: $medium-blue;
+        text-align: center;
+        margin: 0;
+        text-align: #{$start-direction};
+        margin-bottom: 50px;
+      }
+      p {
+        font-size: 20px;
+        font-family: "NCSP-Regular";
+        color: #000000;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        text-align: justify;
+        & + p{
+          margin-top: 70px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }          
+      }
+      ul {
+        li {
+          font-size: 22px;
+        }
+      }
+      span img {
+        width: 27px;
+        margin-#{$end-direction}: 15px;
+      }
+      h5 {
+        font-size: 18px;
+        font-family: "NCSP-Medium";
+        color: $dark-blue;
+      }       
+    }
+    
+    // Leader Word
+    .content-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      position: relative;
+      padding: 40px;
+
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        #{$start-direction}:10px;
+        width: 35px;
+        height: 25px;
+        background-image: url(../images/internal/bxs-quote-alt-start.svg);
+        background-repeat: no-repeat;          
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        #{$end-direction}:0;
+        width: 35px;
+        height: 25px;
+        background-image: url(../images/internal/bxs-quote-alt-end.svg);
+        background-repeat: no-repeat;          
+      }
+      // Text 
+      .word-content {
         display: flex;
         flex-direction: column;
         height: 100%;
-        line-height: 2.5;
+        justify-content: space-around;
 
         h4 {
-          font-size: 35px;
+          font-size: 22px;
           font-family: "NCSP-Medium";
-          color: $medium-blue;
+          color: $dark-blue;
           text-align: center;
-          margin: 0;
-          text-align: #{$start-direction};
-          margin-bottom: 50px;
+          margin-bottom: 30px;
         }
         p {
           font-size: 20px;
           font-family: "NCSP-Regular";
           color: #000000;
-          margin-bottom: 0px;
-          margin-top: 0px;
+          margin-bottom: 50px;
           text-align: justify;
-          & + p{
-            margin-top: 70px;
-          }
           &:last-child{
             margin-bottom: 0;
-          }          
-        }
-        ul {
-          li {
-            font-size: 22px;
           }
         }
-        span img {
-          width: 27px;
-          margin-#{$end-direction}: 15px;
-        }
-        h5 {
+        h6 {
           font-size: 18px;
           font-family: "NCSP-Medium";
           color: $dark-blue;
-        }       
-      }
-      
-      // Leader Word
-      .content-box{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        position: relative;
-        padding: 40px;
-
-        &::before{
-          content: "";
-          position: absolute;
-          top: 0;
-          #{$start-direction}:10px;
-          width: 35px;
-          height: 25px;
-          background-image: url(../images/internal/bxs-quote-alt-start.svg);
-          background-repeat: no-repeat;          
-        }
-        &::after{
-          content: "";
-          position: absolute;
-          bottom: 0;
-          #{$end-direction}:0;
-          width: 35px;
-          height: 25px;
-          background-image: url(../images/internal/bxs-quote-alt-end.svg);
-          background-repeat: no-repeat;          
-        }
-        // Text 
-        .word-content {
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          justify-content: space-around;
-
-          h4 {
-            font-size: 22px;
-            font-family: "NCSP-Medium";
-            color: $dark-blue;
-            text-align: center;
-            margin-bottom: 30px;
-          }
-          p {
-            font-size: 20px;
-            font-family: "NCSP-Regular";
-            color: #000000;
-            margin-bottom: 50px;
-            text-align: justify;
-            &:last-child{
-              margin-bottom: 0;
-            }
-          }
-          h6 {
-            font-size: 18px;
-            font-family: "NCSP-Medium";
-            color: $dark-blue;
-            text-align: center;
-            margin-bottom: 60px;
-          }
-        }
-        .signature{
           text-align: center;
-          color: $dark-blue;
-          margin-bottom: 0;
-          align-self: flex-end;
-          h6 {
-            font-size: 20px;
-            margin-bottom: 20px;
-          }
-          h4 {
-            font-size: 24px;
-            font-family: "NCSP-Medium";
-          }
+          margin-bottom: 60px;
         }
       }
-
-      // Board Members 
-      .headBox {
-        height: 400px;
+      .signature{
         text-align: center;
-        background: #ECECEC;
-        background-image: url(../images/internal/about/headPattern.svg);
-        background-repeat: no-repeat;
-        background-position: bottom 0 left 0;
-        border-radius: 10px;
-        margin-bottom: 25px;
-        transition: 0.3s;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .headImg { 
-          text-align: center;
-          // padding-top: 0px;
-          margin-bottom: 40px;
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          overflow: hidden;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-        .headTitle {
-          color: $dark-blue;
-          h4 {
-            font-size: 28px;
-            font-family: "NCSP-Medium";
-          }
-          h6 {
-            font-size: 20px;
-          }
-        }                   
-      }
-      .boardBox {
-        height: 330px;
-        text-align: center;
-        background: $white;
-        border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
-        border-radius: 10px;
-        border-bottom: 8px solid $blue;
-        margin-bottom: 25px;
-        transition: 0.3s;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .boardImg {
-          text-align: center;
-          // padding-top: 30px;
-          margin-bottom: 20px;
-          width: 150px;
-          height: 150px;
-          border-radius: 50%;
-          overflow: hidden;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-        .boardTitle {
-          h4 {
-            font-size: 20px;
-            font-family: "NCSP-Medium";
-            color: $aqua
-          }
-          h6 {
-            font-size: 16px;
-            color: $grey;
-          }
-        } 
-      }
-      .boxTitle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      // Title
-      .section-header {
-        width: auto;
-        font-size: 30px;
-        font-family: "NCSP-Medium";
         color: $dark-blue;
-        position: relative;
-        padding: 0 20px;
-        padding-bottom: 15px;
+        margin-bottom: 0;
+        align-self: flex-end;
+        h6 {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        h4 {
+          font-size: 24px;
+          font-family: "NCSP-Medium";
+        }
+      }
+    }
+
+    // Board Members 
+    .headBox {
+      height: 400px;
+      text-align: center;
+      background: #ECECEC;
+      background-image: url(../images/internal/about/headPattern.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 0 left 0;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .headImg { 
+        text-align: center;
+        // padding-top: 0px;
         margin-bottom: 40px;
-        border-bottom: 2px solid $medium-grey;
-        text-align: center;
-
-        &::before, &::after {
-          content: '';
-          width: 22px;
-          height: 8px;
-          border-radius: 7px 0px 7px 0px;
-          border: 0 solid;
-          position: absolute;
-          transform: rotate(50deg);
-        }
-        &::before {
-          #{$end-direction}: -33px;
-          bottom: -2px;
-          background: $aqua;
-        }
-        &::after {
-          #{$end-direction}: -20px;
-          bottom: 0px;
-          background: $blue;
-        }
-      }
-
-      // Institutes
-      .InstBox {
-        height: 260px;
-        text-align: center;
-        background: rgb(122,106,247);
-        background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
-        border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
-        border-radius: 10px;
-        width: 100%;
-        border: 0;
-        border-bottom: 10px solid transparent;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        transition: 0.3s;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
         overflow: hidden;
-        position: relative;
-        // Hover View
-        &:before{
-          content:"";
-          position: absolute;
-          #{$start-direction}:0;
-          top: 0;
-          transition: .3s;
-        }
-        &:hover {
-          &:before{
-            width: 100%;
-            height: calc(100% );
-            background: $dark-blue;
-          }
-          .InstLogo {
-            opacity: 0.15;
-          }
-          .detailsHidden {
-            display: block;
-            top: 70px;
-            #{$start-direction}:0;
-            position: absolute;
-            padding: 40px;
-            width: 100%;
-            button {
-              background-color: $aqua;
-              border: 0px solid;
-              border-radius: 30px;
-              height: 40px;
-              color: $dark-blue;
-              font-size: 14px;
-              font-family: "NCSP-Medium";
-              padding: 0px 25px;
-              &.Apply{
-                color: $aqua;
-                border: 1px solid $aqua;
-                background-color: transparent;
-                border-radius: 22px;
-              }        
-            }
-          }
-        }
-        // Normal View
-        .detailsHidden {
-          display: none;          
-        }
-        .InstLogo {
-          height: 250px;
+        img {
           width: 100%;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }          
-        }          
+          height: 100%;
+          object-fit: cover;
+        }
       }
-      .InstTitle {
+      .headTitle {
+        color: $dark-blue;
+        h4 {
+          font-size: 28px;
+          font-family: "NCSP-Medium";
+        }
+        h6 {
+          font-size: 20px;
+        }
+      }                   
+    }
+    .boardBox {
+      height: 330px;
+      text-align: center;
+      background: $white;
+      border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
+      border-radius: 10px;
+      border-bottom: 8px solid $blue;
+      margin-bottom: 25px;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .boardImg {
+        text-align: center;
+        // padding-top: 30px;
+        margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .boardTitle {
         h4 {
           font-size: 20px;
           font-family: "NCSP-Medium";
-          color: #000000;
-          text-align: center;
-          margin-bottom: 30px;
+          color: $aqua
         }
-      }
+        h6 {
+          font-size: 16px;
+          color: $grey;
+        }
+      } 
+    }
+    .boxTitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-      .new-progCard{
-        border: 1px solid rgba($color: #6A787F, $alpha: 0.2);
-        border-bottom: 0;
-        box-shadow: 0 10px 50px rgba($color: #000000, $alpha: 0.07);
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 15px;
-        position: relative;
-        height: 200px;
-        width: 100%;
-        overflow: hidden;
-        &::before{
-          content: "";
-          position: absolute;
+    // Title
+    .section-header {
+      width: auto;
+      font-size: 30px;
+      font-family: "NCSP-Medium";
+      color: $dark-blue;
+      position: relative;
+      padding: 0 20px;
+      padding-bottom: 15px;
+      margin-bottom: 40px;
+      border-bottom: 2px solid $medium-grey;
+      text-align: center;
+
+      &::before, &::after {
+        content: '';
+        width: 22px;
+        height: 8px;
+        border-radius: 7px 0px 7px 0px;
+        border: 0 solid;
+        position: absolute;
+        transform: rotate(50deg);
+      }
+      &::before {
+        #{$end-direction}: -33px;
+        bottom: -2px;
+        background: $aqua;
+      }
+      &::after {
+        #{$end-direction}: -20px;
+        bottom: 0px;
+        background: $blue;
+      }
+    }
+
+    // Institutes
+    .InstBox {
+      height: 260px;
+      text-align: center;
+      background: rgb(122,106,247);
+      background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
+      border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
+      border-radius: 10px;
+      width: 100%;
+      border: 0;
+      border-bottom: 10px solid transparent;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      overflow: hidden;
+      position: relative;
+      // Hover View
+      &:before{
+        content:"";
+        position: absolute;
+        #{$start-direction}:0;
+        top: 0;
+        transition: .3s;
+      }
+      &:hover {
+        &:before{
           width: 100%;
-          height: 10px;
-          #{$start-direction}:0;
-          bottom: 0;
-          background: rgb(122,106,247);
-          background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
-          z-index: 5;         
+          height: calc(100% );
+          background: $dark-blue;
         }
-        .content-boxx{
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          h4{
-            font-size: 22px;
+        .InstLogo {
+          opacity: 0.15;
+        }
+        .detailsHidden {
+          display: block;
+          top: 70px;
+          #{$start-direction}:0;
+          position: absolute;
+          padding: 40px;
+          width: 100%;
+          button {
+            background-color: $aqua;
+            border: 0px solid;
+            border-radius: 30px;
+            height: 40px;
+            color: $dark-blue;
+            font-size: 14px;
             font-family: "NCSP-Medium";
-            color: #000000;
-            text-align: center;
+            padding: 0px 25px;
+            &.Apply{
+              color: $aqua;
+              border: 1px solid $aqua;
+              background-color: transparent;
+              border-radius: 22px;
+            }        
           }
         }
       }
+      // Normal View
+      .detailsHidden {
+        display: none;          
+      }
+      .InstLogo {
+        height: 250px;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }          
+      }          
+    }
+    .InstTitle {
+      h4 {
+        font-size: 20px;
+        font-family: "NCSP-Medium";
+        color: #000000;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
 
-      .new-prog-a{
+    .new-progCard{
+      border: 1px solid rgba($color: #6A787F, $alpha: 0.2);
+      border-bottom: 0;
+      box-shadow: 0 10px 50px rgba($color: #000000, $alpha: 0.07);
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      position: relative;
+      height: 200px;
+      width: 100%;
+      overflow: hidden;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        #{$start-direction}:0;
+        bottom: 0;
+        background: rgb(122,106,247);
+        background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
+        z-index: 5;         
+      }
+      .content-boxx{
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 105px;
-        a{
-          background-color: $blue;
-          font-size: 20px;
+        h4{
+          font-size: 22px;
           font-family: "NCSP-Medium";
-          color: #fff;
-          width: 480px;
-          height: 80px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-end;
-          border-radius: 40px;
-          padding: 20px 35px;
+          color: #000000;
+          text-align: center;
+        }
+      }
+    }
+
+    .new-prog-a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 105px;
+      a{
+        background-color: $blue;
+        font-size: 20px;
+        font-family: "NCSP-Medium";
+        color: #fff;
+        width: 480px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        border-radius: 40px;
+        padding: 20px 35px;
+        img{
+          width: 40px;
+          height: 40px;
+          transition: .3s;
+          margin-#{$start-direction}: 55px;
+        }
+        &:hover{
           img{
-            width: 40px;
-            height: 40px;
-            transition: .3s;
-            margin-#{$start-direction}: 55px;
-          }
-          &:hover{
-            img{
-              transform: translateX(-5px);
-            }
+            transform: translateX(-5px);
           }
         }
       }
+    }
 
-      form {
-        .form-control {
-          font-size: 14px;
-          font-family: "NCSP-Regular";
-          color: $grey;
+    form {
+      .form-control {
+        font-size: 14px;
+        font-family: "NCSP-Regular";
+        color: $grey;
+      }
+      label {
+        font-size: 18px;
+        font-family: "NCSP-Medium";
+        color: $dark-text; 
+        margin-bottom: 20px;
+        .red {
+          color: red;
         }
-        label {
-          font-size: 18px;
+      }
+      input {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0;
+        border-radius: 5px;
+        border: 1.5px solid $medium-grey;
+        height: 44px;
+        box-shadow: none;
+        background-color: #F7F7F7;
+        height: 60px;
+        border-radius: 0;
+        border: 0;
+        font-size: 16px !important;
+        &:focus {
+          border-color: $blue;
+        }
+      }
+      select {
+        margin:  0;
+        border-radius: 5px;
+        border: 1.5px solid $medium-grey;
+        height: 44px;
+        box-shadow: none;
+        display: inline-block;
+        background-color: #F7F7F7;
+        background-image: url(../images/shared/select-Arrow.svg);
+        background-position: 15px 13px ;
+        background-size: 35px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        height: 60px;
+        border-radius: 0;
+        border: 0;
+        font-size: 16px !important;
+        
+        &:focus {
+          border-color: $blue;
+        }
+      }
+      Button {
+        font-size: 14px;
+        font-family: "NCSP-Medium";
+        height: 44px;
+        border: 0;
+        border-radius: 22px;
+        padding: 0 40px;
+        background-color: $blue;
+        float: $end-direction;
+        &:hover {
+          color: $dark-blue;
+          background-color: $aqua;
+        }
+      }
+    }  
+
+    // Tabs  
+    ul.nav {
+      color: $white;
+      width: max-content;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      padding: 0;
+      background-color: transparent;     
+
+      // Items 
+      li {
+        width: auto;
+        height: 40px;
+        margin-#{$end-direction}: 10px;
+        background-color: transparent;
+        font-family: "NCSP-Medium";
+        border-radius: 25px;
+
+        button {
+          width: 100%;
+          height: 100%;
+          font-size: 13px;
           font-family: "NCSP-Medium";
-          color: $dark-text; 
+          font-weight: inherit;
+          color: $blue;
+          transition: 300ms;
+          border-radius: 25px;
+          border: 1px solid $blue;
+          padding: 0 30px;
+
+          // Active 
+          &.active {
+            color: $white;
+            border: 0px solid;
+            background: linear-gradient(90deg, $purple 0%, $aqua 0%, $blue 100%);
+          }
+        }
+
+        &:last-child {
+          margin-#{$end-direction}: 0;
+        }
+      }
+    }
+
+    // Search Form
+    .search-top {
+      margin-bottom: 40px;
+      text-align: center;
+      .right {
+        float: $start-direction;
+      }
+      .left {
+        float: $end-direction;
+      }
+      input {
+        height: 44px;
+        border: 1.5px solid $medium-grey;
+        border-radius: 4px;
+        font-size: 15px;
+        transition: 300ms;
+        &:focus{
+          border-color: $blue;
+        }
+      }
+      input[type=search]{
+        padding: 10px 20px;
+        width: 300px;
+        background-image: url(../images/shared/Search-b.svg);
+        background-repeat: no-repeat;
+        background-position: 13px 13px;
+        background-size: 20px;
+      }
+      select{
+        height: 44px;
+        border: 1.5px solid $medium-grey;
+        border-radius: 4px;
+        font-size: 15px;
+        width: 200px;
+        margin-#{$start-direction}: 10px;        
+        display: inline-block;
+        background-image: url(../images/shared/nav-arrow-b.svg);
+        background-position: 10px 20px ;
+        background-size: 10px;
+        cursor: pointer;
+        transition: 300ms;
+        &:focus {
+          border-color: $blue;
+          box-shadow: none;
+        }
+      }
+      option {
+        font-size: 14px;
+        font-family: "NCSP-Regular";
+      }
+      button {
+        font-family: "NCSP-Medium";
+        font-size: 13px;
+        color: $white; 
+        padding: 10px 25px;
+        border: 0px solid;
+        border-radius: 4px;
+        background-color: $blue;
+        margin-#{$start-direction}: 10px;
+        &:hover {
+          color: $dark-blue;
+          background-color: $aqua;
+        }
+      }
+    }
+
+    // Services
+    .serviceBox {
+      height: 290px;
+      text-align: center;
+      background: $white;
+      border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
+      border-radius: 10px;
+      border-bottom: 8px solid $blue;
+      margin-bottom: 25px;
+      transition: 0.3s;
+      position: relative;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+      // position: relative;
+
+      // Hover View
+      &:hover {
+        background: $dark-blue;
+        .SrvLogo {
+          opacity: 0.15;
+        }
+        .SrvIcon {
+          display: none;
+        } 
+        .srvTitle{
+          display: none;
+        }
+        .detailsHidden {
+          display: block;
+          top: 20px;
+          position: absolute;
+          width: 100%;
+          h4 {
+            font-size: 18px;
+            font-family: "NCSP-Medium";
+            color: $aqua;
+            text-align: center;
+            margin-bottom: 28px;
+            padding: 0 15px;
+          }
+          p {
+            color: $white;
+            font-size: 16px;
+            font-family: "NCSP-Regular";
+            padding: 0px 28px;
+            line-height: 2;
+          }
+          button {
+            background-color: $aqua;
+            border: 0px solid;
+            border-radius: 30px;
+            height: 40px;
+            color: $dark-blue;
+            font-size: 14px;
+            font-family: "NCSP-Medium";
+            padding: 0px 25px;              
+          }
+        }
+      }
+      // Normal View
+      .detailsHidden {
+        display: none;          
+      }
+      .SrvIcon {
+        padding: 30px 30px 20px 30px;
+      }
+      &.servBx2{
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .srvTitle {
+          h4{
+            font-size: 17px;
+            margin-bottom: 0;
+            padding: 0 15px;
+          }
+        }
+        .detailsHidden {
+          p{
+            line-height: 35px;
+            max-height: calc(35px * 3);
+            overflow: hidden;
+          }
+        }
+      }   
+    }
+    .srvTitle {
+      h4 {
+        font-size: 20px;
+        font-family: "NCSP-Medium";
+        color: #000000;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    // Details
+    .serviceDetails{
+      .desc {
+        h3 {
+          font-size: 24px;
+          font-family: "NCSP-Regular";
+          color: $medium-blue;
+          padding-top: 30px;
+        }
+        p {
+          font-size: 16px;
+          font-family: "NCSP-Regular";
+          line-height: 1.5;
+          text-align: justify;
+        }
+      }
+      .srvStart {
+        background: $white;
+        box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.1);
+        padding: 50px;
+        h3 {
+          font-size: 24px;
+          font-family: "NCSP-Regular";
+          color: $medium-blue;
+          text-align: center;
           margin-bottom: 20px;
-          .red {
-            color: red;
-          }
-        }
-        input {
-          padding-top: 15px;
-          padding-bottom: 15px;
-          margin: 0;
-          border-radius: 5px;
-          border: 1.5px solid $medium-grey;
-          height: 44px;
-          box-shadow: none;
-          background-color: #F7F7F7;
-          height: 60px;
-          border-radius: 0;
-          border: 0;
-          font-size: 16px !important;
-          &:focus {
-            border-color: $blue;
-          }
-        }
-        select {
-          margin:  0;
-          border-radius: 5px;
-          border: 1.5px solid $medium-grey;
-          height: 44px;
-          box-shadow: none;
-          display: inline-block;
-          background-color: #F7F7F7;
-          background-image: url(../images/shared/select-Arrow.svg);
-          background-position: 15px 13px ;
-          background-size: 35px;
-          background-repeat: no-repeat;
-          cursor: pointer;
-          height: 60px;
-          border-radius: 0;
-          border: 0;
-          font-size: 16px !important;
-          
-          &:focus {
-            border-color: $blue;
-          }
         }
         Button {
-          font-size: 14px;
+          color: $white;
+          font-size: 15px;
           font-family: "NCSP-Medium";
-          height: 44px;
+          height: 40px;
+          width: 100%;
           border: 0;
-          border-radius: 22px;
-          padding: 0 40px;
-          background-color: $blue;
-          float: $end-direction;
+          padding: 0 25px;
+          background-color: $medium-blue;
           &:hover {
             color: $dark-blue;
             background-color: $aqua;
           }
         }
-      }  
+      }
+      .srvList {
+        .list {
+          display: flex;
+          flex: 0 0 auto;
+          margin-bottom: 36px;
 
-      // Tabs  
-      ul.nav {
-        color: $white;
-        width: max-content;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        padding: 0;
-        background-color: transparent;     
-
-        // Items 
-        li {
-          width: auto;
-          height: 40px;
-          margin-#{$end-direction}: 10px;
-          background-color: transparent;
-          font-family: "NCSP-Medium";
-          border-radius: 25px;
-
-          button {
-            width: 100%;
-            height: 100%;
-            font-size: 13px;
+          .listIcon {
+            width: 36px;
+            margin-#{$end-direction}: 15px;
+            flex-shrink: 0;
+          }
+          .listText {
+            h3 {
+              font-size: 24px;
+              font-family: "NCSP-Regular";
+              color: $blue;
+            }
+            p {
+              margin-bottom: 12px;
+            }
+            ul {
+              padding-#{$start-direction}: 15px;
+              list-style: decimal;
+            }
+            .ulIcons {
+              list-style: none;
+              padding: 0;
+              display: flex;
+              padding: 50px;
+              li {
+                width: 210px;
+                padding-#{$end-direction}: 45px;
+                text-align: center;
+                position: relative;
+                z-index: 9;
+                &:last-of-type {
+                  &::after {
+                    display: none;
+                  }
+                }
+                &::after {
+                  position: absolute;
+                  content: "";
+                  #{$end-direction}: -25px;
+                  top: 67px;
+                  width: 50%;
+                  height: 10px;
+                  background: #eee;
+                  z-index: -1;
+                }
+                img {
+                  max-width: 125px;
+                }
+                p {
+                  height: 60px;
+                  overflow: hidden;
+                  margin-bottom: 0;
+                  margin-top: 25px;
+                  text-align: center;
+                }
+              }
+            }
+          }            
+          Button {
+            color: $white;
+            font-size: 15px;
             font-family: "NCSP-Medium";
-            font-weight: inherit;
-            color: $blue;
-            transition: 300ms;
-            border-radius: 25px;
-            border: 1px solid $blue;
-            padding: 0 30px;
-
-            // Active 
-            &.active {
-              color: $white;
-              border: 0px solid;
-              background: linear-gradient(90deg, $purple 0%, $aqua 0%, $blue 100%);
+            height: 40px;
+            border: 0;
+            padding: 0 25px;
+            background-color: $blue;
+            &:hover {
+              color: $dark-blue;
+              background-color: $aqua;
             }
           }
+        }
+      }
+    }
 
-          &:last-child {
-            margin-#{$end-direction}: 0;
+    // Pagination 
+    .pagination {
+      .page-link {
+        position: relative;
+        display: block;
+        color: $dark-text;
+        background: $white;
+        box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.05);
+        border: 0px solid;
+        border-radius: 50%;
+        padding: 11px 18px;
+        margin-#{$end-direction}: 10px;
+        width: 44px;
+        height: 44px;
+        font-size: 14px;
+        &:hover, &.active {
+          background: $blue;
+          color: $white;
+        }
+      }
+    }
+
+    // News
+    .cardNews {
+      transition: 0.3s;
+      height: 590px;
+      margin-bottom: 50px;
+      position: relative;
+      border-radius: 20px;
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 96%;
+        height: 50%;
+        bottom: 5px;
+        #{$start-direction}: -3px;
+        border-radius: 50px;
+        background-color: $blue;
+        z-index: -1;
+        transform: rotate(0deg);
+      }        
+      // Link 
+      .forClick {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      // Image
+      .CardImg {
+        height: 300px;
+        transition: 0.3s;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+        img {
+          height: 100%;
+          max-width: 100%;
+          transition: 0.3s;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      // Hover 
+      &:hover {
+        .CardImg {
+          // height: 240px; 
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+      // Text 
+      .cardText {
+        padding: 30px 20px 20px;
+        background-color: $white;
+        box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.1);
+        border-radius: 0 0 20px 20px;
+        height: 282px;
+        .title {
+          color: $dark-blue;
+          font-size: 18px;
+          font-family: "NCSP-Medium";
+          margin-bottom: 20px;
+          line-height: 27px;
+          height: calc(27px * 2);
+          overflow: hidden;
+        }
+        .date {
+          margin-bottom: 10px;
+          display: flex;
+          line-height: 18px;
+          height: calc(18px * 1);
+          span {
+            color: $blue;
+            font-size: 14px;
+            font-family: "NCSP-Regular";
+            padding-#{$start-direction}: 5px;
+            line-height: 18px;
+            height: calc(18px * 1);
+          }
+          img {
+            max-width: 16px;
+          }
+        }
+        .paraghCard {
+          font-size: 16px;
+          color: $dark-text;
+          line-height: 24px;
+          height: calc(24px * 4);
+          overflow: hidden;
+        }
+      }    
+    }
+
+    // Details
+    .newsDetails {
+      .newsTitle {
+        font-family: "NCSP-Regular";
+        font-size: 36px;
+        color: $medium-blue;
+      }
+      .newsDate {
+        display: flex;
+        .date {
+          padding-#{$end-direction}: 30px;
+          display: flex;
+          align-items: center;
+          padding: 15px 0;
+          margin-bottom: 0;
+          img {
+            width: 24px;
+          }
+          span {
+            font-size: 13px;
+            font-family: "NCSP-Medium";
+            color: $blue;
+            padding-#{$start-direction}: 5px;
+          }
+        }
+      }
+      .newsImage {
+        max-height: 700px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .newsText {
+        padding: 30px 0;
+        p {
+          text-align: justify;
+          margin-bottom: 30px;
+        }
+      }
+      .relateNews {
+        h4 {
+          font-size: 20px;
+          font-family: "NCSP-Medium";
+          color: $medium-blue;
+          padding-bottom: 15px;
+        }
+        .cardNews {
+          height: 375px;
+          &::before{
+            bottom: 1px;
+          }
+          // Image
+          .CardImg {
+            height: 240px;
+          }
+          // Text 
+          .cardText {
+            padding: 10px 15px;
+            height: 130px;
+            .title {
+              font-size: 16px;
+              text-align: #{$start-direction};
+              height: calc(27px* 3);
+            }
+          }    
+        }
+      }
+      .location {
+        padding-bottom: 15px;
+        span {
+          color: $grey;
+        }
+      }
+    }
+
+    // Events
+    .events {
+      .event-banner{
+        position: relative;
+        .event-img{
+          width: 100%;
+          height: 585px;
+          margin-bottom: 40px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .content {
+          position: absolute;
+          padding-#{$start-direction}: 7%;
+          padding-top: 10%;
+          width: 60%;
+          h2 {
+            font-size: 40px;
+            font-family: "NCSP-Medium";
+            color: $white;
+            line-height: 1.4;
+            padding-#{$end-direction}: 40px;
+            margin-bottom: 28px;
+          }
+          p {
+            font-size: 16px;
+            font-family: "NCSP-Regular";
+            color: $white;
+            margin-bottom: 37px;
+          }
+          .more {
+            font-size: 18px;
+            font-family: "NCSP-Regular";
+            color: $white; 
+            border-radius: 8px;
+            border: 1px solid $aqua;
+            background-color: $aqua;
+            padding: 10px 20px;
+            // margin-top: 20px;
+            transition: 300ms;
+            img{
+              margin-#{$start-direction}: 20px;
+            }
+            &:hover {              
+              border: 1px solid $medium-blue;
+              background-color: $medium-blue;
+            }
+          }
+        }
+      }
+      .eventBox {
+        display: flex;
+        flex: 0 0 auto;
+        background-color: $white;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;
+        position: relative;
+        .dateShape{
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          justify-content: center;
+          background-image: url(../images/internal/events/dateShape.svg);
+          background-size: cover;
+          width: 135px;
+          height: 135px;
+          flex: 0 0 135px;
+    
+          .days{
+            font-size: 24px;
+            font-family: "NCSP-Medium";
+            color: $blue;
+            padding-#{$end-direction}: 10px;
+          }
+          .month{
+            font-size: 13px;
+            font-family: "NCSP-Medium";
+            color: $blue;
+            padding-#{$end-direction}: 10px;
+          }
+        }
+        .eventText {
+          width: 70%;
+          margin-#{$start-direction}: 30px;
+
+          h3 {
+            color: $medium-blue;
+            font-size: 16px;
+            font-family: "NCSP-Medium";
+            margin-bottom: 10px;
+            line-height: 22px;
+            max-height: 44px;
+            overflow: hidden;
+          }
+          .location {
+            padding: 10px 0;
+            span {
+              color: $grey;
+              margin-#{$start-direction}: 10px;
+              font-size: 14px;
+              line-height: 20px;
+              max-height: 40px;
+              overflow: hidden;
+            }
+          }
+          p {
+            font-size: 14px;
+            margin-bottom: 0;
+            line-height: 20px;
+            max-height: 40px;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+
+    // Media Gallery 
+    .galleryBox {
+      position: relative;
+      margin-bottom: 40px;
+      background: $white;
+      border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
+      border-radius: 10px;
+      border-bottom: 8px solid $blue;        
+      overflow: hidden;
+      height: calc(100% - 40px);
+
+      // Image
+      .glImage {
+        width: auto;
+        overflow: hidden;
+        position: relative;
+        img {
+          height: 100%;
+          transition: 0.4s;
+          // border-radius: 8px 8px 0 0;
+        }
+      }
+      &:hover {
+        .glImage {
+          img {
+            transform: scale(1.1);
           }
         }
       }
 
-      // Search Form
-      .search-top {
-        margin-bottom: 40px;
-        text-align: center;
-        .right {
-          float: $start-direction;
+      // Count 
+      .glCount {
+        height: auto;
+        background: $white;
+        position: relative;
+        padding: 25px 10px 15px;
+        a {
+          font-size: 14px;
+          font-family: "NCSP-Medium";
+          color: $blue;
+          background: $white;
+          min-width: 150px;
+          height: 40px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 0 10px;
+          border-radius: 20px;
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+          position: absolute;
+          top: -25px;
+          #{$start-direction}: 20px;
         }
-        .left {
-          float: $end-direction;
+        h2 {
+          font-size: 16px;
+          font-family: "NCSP-Medium";
+          color: #001F5E;
+          text-align: center;
+          line-height: 22px;
+          // height: 44px;
         }
+        p{
+          font-size: 14px;
+          font-family: "NCSP-Regular";
+          margin-bottom: 0;
+          text-align: center;
+        }
+      }
+    }
+    .videoIcon {
+      position: absolute;
+      top: 30%;
+      #{$start-direction}: 40%;
+      z-index: 999;
+    }
+
+    // Download Center
+    .downloadCenter {
+      height: auto !important;
+      .SrvLogo {
+        width: 100px;
+        display: inline-flex;
+        padding: 30px 0;
+      }
+      // Hover View
+      &:hover {
+        .detailsHidden {
+          display: block;
+          top: 25%;
+          #{$start-direction}: 0;
+          position: absolute;
+          button {
+            background-color: $aqua;
+            border: 0px solid;
+            border-radius: 30px;
+            height: 40px;
+            color: $dark-blue;
+            font-size: 14px;
+            font-family: "NCSP-Medium";
+            padding: 0px 25px;              
+          }
+        }
+      }
+    }
+    .downloadTitle{
+      h4{
+        font-size: 16px;
+      }
+    }
+
+    // Contact Us
+    .contactBox {
+      h3 {
+        font-size: 26px; 
+        font-family: "NCSP-Regular";
+        color: $medium-blue;
+        padding-bottom: 15px;
+      }
+      .address {
+        font-size: 16px;
+        font-family: "NCSP-Regular";
+        color: $dark-text;
+        margin: 5px 0 20px; 
+        span {
+          padding-#{$end-direction}: 10px;
+          img {
+            width: 32px;
+          }
+        }
+      }
+    }
+    .contactMap {
+      margin-top: 40px;
+      .col-md-6 {
+        &:first-of-type {
+          padding-#{$end-direction}: 0px;
+        }
+        &:last-of-type {
+          padding-#{$start-direction}: 0px;
+        }
+      }
+      h3 {
+        font-size: 26px; 
+        font-family: "NCSP-Regular";
+        color: $medium-blue;
+        padding-bottom: 15px;
+      }
+      .contactForm {
+        background: #F4F4F4;
+        padding: 60px;
+
         input {
+          font-size: 15px;
           height: 44px;
+          width: 100%;
+          padding: 10px 20px;
+          margin-bottom: 15px;
           border: 1.5px solid $medium-grey;
           border-radius: 4px;
-          font-size: 15px;
           transition: 300ms;
           &:focus{
             border-color: $blue;
           }
         }
-        input[type=search]{
+        textarea {
+          width: 100%;
           padding: 10px 20px;
-          width: 300px;
-          background-image: url(../images/shared/Search-b.svg);
-          background-repeat: no-repeat;
-          background-position: 13px 13px;
-          background-size: 20px;
-        }
-        select{
-          height: 44px;
+          margin-bottom: 15px;
           border: 1.5px solid $medium-grey;
           border-radius: 4px;
-          font-size: 15px;
-          width: 200px;
-          margin-#{$start-direction}: 10px;        
-          display: inline-block;
-          background-image: url(../images/shared/nav-arrow-b.svg);
-          background-position: 10px 20px ;
-          background-size: 10px;
-          cursor: pointer;
           transition: 300ms;
-          &:focus {
+          &:focus{
             border-color: $blue;
-            box-shadow: none;
           }
         }
-        option {
-          font-size: 14px;
-          font-family: "NCSP-Regular";
-        }
+        
         button {
           font-family: "NCSP-Medium";
           font-size: 13px;
@@ -1792,864 +2515,140 @@ footer {
           border: 0px solid;
           border-radius: 4px;
           background-color: $blue;
-          margin-#{$start-direction}: 10px;
+          float: $end-direction;
           &:hover {
             color: $dark-blue;
             background-color: $aqua;
           }
         }
       }
-
-      // Services
-      .serviceBox {
-        height: 290px;
-        text-align: center;
-        background: $white;
-        border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
-        border-radius: 10px;
-        border-bottom: 8px solid $blue;
-        margin-bottom: 25px;
-        transition: 0.3s;
-        position: relative;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
-        // position: relative;
-
-        // Hover View
-        &:hover {
-          background: $dark-blue;
-          .SrvLogo {
-            opacity: 0.15;
-          }
-          .SrvIcon {
-            display: none;
-          } 
-          .srvTitle{
-            display: none;
-          }
-          .detailsHidden {
-            display: block;
-            top: 20px;
-            position: absolute;
-            width: 100%;
-            h4 {
-              font-size: 18px;
-              font-family: "NCSP-Medium";
-              color: $aqua;
-              text-align: center;
-              margin-bottom: 28px;
-              padding: 0 15px;
-            }
-            p {
-              color: $white;
-              font-size: 16px;
-              font-family: "NCSP-Regular";
-              padding: 0px 28px;
-              line-height: 2;
-            }
-            button {
-              background-color: $aqua;
-              border: 0px solid;
-              border-radius: 30px;
-              height: 40px;
-              color: $dark-blue;
-              font-size: 14px;
-              font-family: "NCSP-Medium";
-              padding: 0px 25px;              
-            }
-          }
-        }
-        // Normal View
-        .detailsHidden {
-          display: none;          
-        }
-        .SrvIcon {
-          padding: 30px 30px 20px 30px;
-        }
-        &.servBx2{
-          height: 260px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          .srvTitle {
-            h4{
-              font-size: 17px;
-              margin-bottom: 0;
-              padding: 0 15px;
-            }
-          }
-          .detailsHidden {
-            p{
-              line-height: 35px;
-              max-height: calc(35px * 3);
-              overflow: hidden;
-            }
-          }
-        }   
-      }
-      .srvTitle {
-        h4 {
-          font-size: 20px;
-          font-family: "NCSP-Medium";
-          color: #000000;
-          text-align: center;
-          margin-bottom: 40px;
+      .mapIframe {
+        iframe {
+          width: 100%;
+          height: 608px;
         }
       }
+    }
 
-      // Details
-      .serviceDetails{
-        .desc {
-          h3 {
-            font-size: 24px;
-            font-family: "NCSP-Regular";
-            color: $medium-blue;
-            padding-top: 30px;
-          }
-          p {
-            font-size: 16px;
-            font-family: "NCSP-Regular";
-            line-height: 1.5;
-            text-align: justify;
-          }
-        }
-        .srvStart {
-          background: $white;
-          box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.1);
-          padding: 50px;
-          h3 {
-            font-size: 24px;
-            font-family: "NCSP-Regular";
-            color: $medium-blue;
-            text-align: center;
-            margin-bottom: 20px;
-          }
-          Button {
-            color: $white;
-            font-size: 15px;
-            font-family: "NCSP-Medium";
-            height: 40px;
-            width: 100%;
-            border: 0;
-            padding: 0 25px;
-            background-color: $medium-blue;
-            &:hover {
-              color: $dark-blue;
-              background-color: $aqua;
-            }
-          }
-        }
-        .srvList {
-          .list {
-            display: flex;
-            flex: 0 0 auto;
-            margin-bottom: 36px;
-
-            .listIcon {
-              width: 36px;
-              margin-#{$end-direction}: 15px;
-              flex-shrink: 0;
-            }
-            .listText {
-              h3 {
-                font-size: 24px;
-                font-family: "NCSP-Regular";
-                color: $blue;
-              }
-              p {
-                margin-bottom: 12px;
-              }
-              ul {
-                padding-#{$start-direction}: 15px;
-                list-style: decimal;
-              }
-              .ulIcons {
-                list-style: none;
-                padding: 0;
-                display: flex;
-                padding: 50px;
-                li {
-                  width: 210px;
-                  padding-#{$end-direction}: 45px;
-                  text-align: center;
-                  position: relative;
-                  z-index: 9;
-                  &:last-of-type {
-                    &::after {
-                      display: none;
-                    }
-                  }
-                  &::after {
-                    position: absolute;
-                    content: "";
-                    #{$end-direction}: -25px;
-                    top: 67px;
-                    width: 50%;
-                    height: 10px;
-                    background: #eee;
-                    z-index: -1;
-                  }
-                  img {
-                    max-width: 125px;
-                  }
-                  p {
-                    height: 60px;
-                    overflow: hidden;
-                    margin-bottom: 0;
-                    margin-top: 25px;
-                    text-align: center;
-                  }
-                }
-              }
-            }            
-            Button {
-              color: $white;
-              font-size: 15px;
-              font-family: "NCSP-Medium";
-              height: 40px;
-              border: 0;
-              padding: 0 25px;
-              background-color: $blue;
-              &:hover {
-                color: $dark-blue;
-                background-color: $aqua;
-              }
-            }
-          }
-        }
+    /* neeeeeeeeeeeeeeew */
+    .section-header2{
+      font-size: 35px;
+      font-family: "NCSP-Medium";
+      color: $medium-blue;
+      margin-bottom: 30px;      
+    }
+    .main-p{
+      font-size: 20px;
+      color: #646262;
+      margin-bottom: 27px ;
+      text-align: center;
+    }  
+    .CompetenciesTop{
+      margin: 0 200px;
+      margin-bottom: 40px;
+      padding: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ECEFFF;
+      border-radius: 10px;
+      select{
+        width: 330px;
+        height: 50px;
+        font-size: 16px;
+        background-image: url(../images/shared/selectArrow.svg);
+        background-position: 13px 22px;
+        background-size: 12px;
       }
-
-      // Pagination 
-      .pagination {
-        .page-link {
-          position: relative;
-          display: block;
-          color: $dark-text;
-          background: $white;
-          box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.05);
-          border: 0px solid;
-          border-radius: 50%;
-          padding: 11px 18px;
-          margin-#{$end-direction}: 10px;
-          width: 44px;
-          height: 44px;
-          font-size: 14px;
-          &:hover, &.active {
-            background: $blue;
-            color: $white;
-          }
-        }
-      }
-
-      // News
-      .cardNews {
-        transition: 0.3s;
-        height: 590px;
-        margin-bottom: 50px;
-        position: relative;
-        border-radius: 20px;
-        position: relative;
-        &::before{
-          content: "";
-          position: absolute;
-          width: 96%;
-          height: 50%;
-          bottom: 5px;
-          #{$start-direction}: -3px;
-          border-radius: 50px;
+      button{
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+        font-family: "NCSP-Regular";
+        transition: .3s;
+        &:hover{
+          color: $white;
           background-color: $blue;
-          z-index: -1;
-          transform: rotate(0deg);
-        }        
-        // Link 
-        .forClick {
-          position: absolute;
-          width: 100%;
-          height: 100%;
+          box-shadow: 0 10px 25px rgba($color: #000000, $alpha: 0.3);
         }
-        // Image
-        .CardImg {
-          height: 300px;
-          transition: 0.3s;
+      }
+    }      
+    .CompetenciesList{     
+      .CompetenciesCard{
+        .serviceBox{
+          border: 1px solid #dddddd;
+          border-bottom: 0;
+          background: rgb(122,106,247);
+          background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
+          padding-bottom: 10px;
           overflow: hidden;
-          border-radius: 20px 20px 0 0;
-          img {
-            height: 100%;
-            max-width: 100%;
-            transition: 0.3s;
-            width: 100%;
-            object-fit: cover;
-          }
-        }
-        // Hover 
-        &:hover {
-          .CardImg {
-            // height: 240px; 
-            img {
-              transform: scale(1.2);
-            }
-          }
-        }
-        // Text 
-        .cardText {
-          padding: 30px 20px 20px;
-          background-color: $white;
-          box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.1);
-          border-radius: 0 0 20px 20px;
-          height: 282px;
-          .title {
-            color: $dark-blue;
-            font-size: 18px;
-            font-family: "NCSP-Medium";
-            margin-bottom: 20px;
-            line-height: 27px;
-            height: calc(27px * 2);
-            overflow: hidden;
-          }
-          .date {
-            margin-bottom: 10px;
-            display: flex;
-            line-height: 18px;
-            height: calc(18px * 1);
-            span {
-              color: $blue;
-              font-size: 14px;
-              font-family: "NCSP-Regular";
-              padding-#{$start-direction}: 5px;
-              line-height: 18px;
-              height: calc(18px * 1);
-            }
-            img {
-              max-width: 16px;
-            }
-          }
-          .paraghCard {
-            font-size: 16px;
-            color: $dark-text;
-            line-height: 24px;
-            height: calc(24px * 4);
-            overflow: hidden;
-          }
-        }    
-      }
-
-      // Details
-      .newsDetails {
-        .newsTitle {
-          font-family: "NCSP-Regular";
-          font-size: 36px;
-          color: $medium-blue;
-        }
-        .newsDate {
-          display: flex;
-          .date {
-            padding-#{$end-direction}: 30px;
-            display: flex;
-            align-items: center;
-            padding: 15px 0;
-            margin-bottom: 0;
-            img {
-              width: 24px;
-            }
-            span {
-              font-size: 13px;
-              font-family: "NCSP-Medium";
-              color: $blue;
-              padding-#{$start-direction}: 5px;
-            }
-          }
-        }
-        .newsImage {
-          max-height: 700px;
-          width: 100%;
-          object-fit: cover;
-        }
-        .newsText {
-          padding: 30px 0;
-          p {
-            text-align: justify;
-            margin-bottom: 30px;
-          }
-        }
-        .relateNews {
-          h4 {
-            font-size: 20px;
-            font-family: "NCSP-Medium";
-            color: $medium-blue;
-            padding-bottom: 15px;
-          }
-          .cardNews {
-            height: 375px;
-            &::before{
-              bottom: 1px;
-            }
-            // Image
-            .CardImg {
-              height: 240px;
-            }
-            // Text 
-            .cardText {
-              padding: 10px 15px;
-              height: 130px;
-              .title {
-                font-size: 16px;
-                text-align: #{$start-direction};
-                height: calc(27px* 3);
-              }
-            }    
-          }
-        }
-        .location {
-          padding-bottom: 15px;
-          span {
-            color: $grey;
-          }
-        }
-      }
-
-      // Events
-      .events {
-        .event-banner{
           position: relative;
-          .event-img{
+          .SrvLogo{
             width: 100%;
-            height: 585px;
-            margin-bottom: 40px;
+            height: 100%;
+            background-color: #fff;
             img{
               width: 100%;
               height: 100%;
-              object-fit: cover;
+              object-fit: contain;
             }
           }
-          .content {
-            position: absolute;
-            padding-#{$start-direction}: 7%;
-            padding-top: 10%;
-            width: 60%;
-            h2 {
-              font-size: 40px;
-              font-family: "NCSP-Medium";
-              color: $white;
-              line-height: 1.4;
-              padding-#{$end-direction}: 40px;
-              margin-bottom: 28px;
-            }
-            p {
-              font-size: 16px;
-              font-family: "NCSP-Regular";
-              color: $white;
-              margin-bottom: 37px;
-            }
-            .more {
-              font-size: 18px;
-              font-family: "NCSP-Regular";
-              color: $white; 
-              border-radius: 8px;
-              border: 1px solid $aqua;
-              background-color: $aqua;
-              padding: 10px 20px;
-              // margin-top: 20px;
-              transition: 300ms;
+          .detailsHidden{
+            .websiteLink{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
               img{
-                margin-#{$start-direction}: 20px;
+                margin-bottom: 20px;
               }
-              &:hover {              
-                border: 1px solid $medium-blue;
-                background-color: $medium-blue;
-              }
-            }
-          }
-        }
-        .eventBox {
-          display: flex;
-          flex: 0 0 auto;
-          background-color: $white;
-          border: 1px solid #eee;
-          border-radius: 10px;
-          padding: 20px;
-          margin-bottom: 30px;
-          position: relative;
-          .dateShape{
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            justify-content: center;
-            background-image: url(../images/internal/events/dateShape.svg);
-            background-size: cover;
-            width: 135px;
-            height: 135px;
-            flex: 0 0 135px;
-      
-            .days{
-              font-size: 24px;
-              font-family: "NCSP-Medium";
-              color: $blue;
-              padding-#{$end-direction}: 10px;
-            }
-            .month{
-              font-size: 13px;
-              font-family: "NCSP-Medium";
-              color: $blue;
-              padding-#{$end-direction}: 10px;
-            }
-          }
-          .eventText {
-            width: 70%;
-            margin-#{$start-direction}: 30px;
-
-            h3 {
-              color: $medium-blue;
-              font-size: 16px;
-              font-family: "NCSP-Medium";
-              margin-bottom: 10px;
-              line-height: 22px;
-              max-height: 44px;
-              overflow: hidden;
-            }
-            .location {
-              padding: 10px 0;
-              span {
-                color: $grey;
-                margin-#{$start-direction}: 10px;
-                font-size: 14px;
-                line-height: 20px;
-                max-height: 40px;
-                overflow: hidden;
+              span{
+                font-size: 15px;
+                font-family: "NCSP-Medium";
+                color: #fff;
               }
             }
-            p {
-              font-size: 14px;
-              margin-bottom: 0;
-              line-height: 20px;
-              max-height: 40px;
-              overflow: hidden;
-            }
           }
-        }
-      }
-
-      // Media Gallery 
-      .galleryBox {
-        position: relative;
-        margin-bottom: 40px;
-        background: $white;
-        border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
-        border-radius: 10px;
-        border-bottom: 8px solid $blue;        
-        overflow: hidden;
-        height: calc(100% - 40px);
-
-        // Image
-        .glImage {
-          width: auto;
-          overflow: hidden;
-          position: relative;
-          img {
-            height: 100%;
-            transition: 0.4s;
-            // border-radius: 8px 8px 0 0;
-          }
-        }
-        &:hover {
-          .glImage {
-            img {
-              transform: scale(1.1);
-            }
-          }
-        }
-
-        // Count 
-        .glCount {
-          height: auto;
-          background: $white;
-          position: relative;
-          padding: 25px 10px 15px;
-          a {
-            font-size: 14px;
-            font-family: "NCSP-Medium";
-            color: $blue;
-            background: $white;
-            min-width: 150px;
-            height: 40px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 0 10px;
-            border-radius: 20px;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-            position: absolute;
-            top: -25px;
-            #{$start-direction}: 20px;
-          }
-          h2 {
-            font-size: 16px;
-            font-family: "NCSP-Medium";
-            color: #001F5E;
-            text-align: center;
-            line-height: 22px;
-            // height: 44px;
-          }
-          p{
-            font-size: 14px;
-            font-family: "NCSP-Regular";
-            margin-bottom: 0;
-            text-align: center;
-          }
-        }
-      }
-      .videoIcon {
-        position: absolute;
-        top: 30%;
-        #{$start-direction}: 40%;
-        z-index: 999;
-      }
-
-      // Download Center
-      .downloadCenter {
-        height: auto !important;
-        .SrvLogo {
-          width: 100px;
-          display: inline-flex;
-          padding: 30px 0;
-        }
-        // Hover View
-        &:hover {
-          .detailsHidden {
-            display: block;
-            top: 25%;
-            #{$start-direction}: 0;
-            position: absolute;
-            button {
-              background-color: $aqua;
-              border: 0px solid;
-              border-radius: 30px;
-              height: 40px;
-              color: $dark-blue;
-              font-size: 14px;
-              font-family: "NCSP-Medium";
-              padding: 0px 25px;              
-            }
-          }
-        }
-      }
-      .downloadTitle{
-        h4{
-          font-size: 16px;
-        }
-      }
-
-      // Contact Us
-      .contactBox {
-        h3 {
-          font-size: 26px; 
-          font-family: "NCSP-Regular";
-          color: $medium-blue;
-          padding-bottom: 15px;
-        }
-        .address {
-          font-size: 16px;
-          font-family: "NCSP-Regular";
-          color: $dark-text;
-          margin: 5px 0 20px; 
-          span {
-            padding-#{$end-direction}: 10px;
-            img {
-              width: 32px;
-            }
-          }
-        }
-      }
-      .contactMap {
-        margin-top: 40px;
-        .col-md-6 {
-          &:first-of-type {
-            padding-#{$end-direction}: 0px;
-          }
-          &:last-of-type {
-            padding-#{$start-direction}: 0px;
-          }
-        }
-        h3 {
-          font-size: 26px; 
-          font-family: "NCSP-Regular";
-          color: $medium-blue;
-          padding-bottom: 15px;
-        }
-        .contactForm {
-          background: #F4F4F4;
-          padding: 60px;
-
-          input {
-            font-size: 15px;
-            height: 44px;
-            width: 100%;
-            padding: 10px 20px;
-            margin-bottom: 15px;
-            border: 1.5px solid $medium-grey;
-            border-radius: 4px;
-            transition: 300ms;
-            &:focus{
-              border-color: $blue;
-            }
-          }
-          textarea {
-            width: 100%;
-            padding: 10px 20px;
-            margin-bottom: 15px;
-            border: 1.5px solid $medium-grey;
-            border-radius: 4px;
-            transition: 300ms;
-            &:focus{
-              border-color: $blue;
-            }
-          }
-          
-          button {
-            font-family: "NCSP-Medium";
-            font-size: 13px;
-            color: $white; 
-            padding: 10px 25px;
-            border: 0px solid;
-            border-radius: 4px;
-            background-color: $blue;
-            float: $end-direction;
-            &:hover {
-              color: $dark-blue;
-              background-color: $aqua;
-            }
-          }
-        }
-        .mapIframe {
-          iframe {
-            width: 100%;
-            height: 608px;
-          }
-        }
-      }
-
-      /* neeeeeeeeeeeeeeew */
-      .section-header2{
-        font-size: 35px;
-        font-family: "NCSP-Medium";
-        color: $medium-blue;
-        margin-bottom: 30px;      
-      }
-      .main-p{
-        font-size: 20px;
-        color: #646262;
-        margin-bottom: 27px ;
-        text-align: center;
-      }  
-      .CompetenciesTop{
-        margin: 0 200px;
-        margin-bottom: 40px;
-        padding: 42px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #ECEFFF;
-        border-radius: 10px;
-        select{
-          width: 330px;
-          height: 50px;
-          font-size: 16px;
-          background-image: url(../images/shared/selectArrow.svg);
-          background-position: 13px 22px;
-          background-size: 12px;
-        }
-        button{
-          width: 100px;
-          height: 50px;
-          font-size: 16px;
-          font-family: "NCSP-Regular";
-          transition: .3s;
           &:hover{
-            color: $white;
-            background-color: $blue;
-            box-shadow: 0 10px 25px rgba($color: #000000, $alpha: 0.3);
-          }
-        }
-      }      
-      .CompetenciesList{     
-        .CompetenciesCard{
-          .serviceBox{
-            border: 1px solid #dddddd;
-            border-bottom: 0;
-            background: rgb(122,106,247);
-            background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
-            padding-bottom: 10px;
-            overflow: hidden;
-            position: relative;
-            .SrvLogo{
-              width: 100%;
-              height: 100%;
-              background-color: #fff;
-              img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-              }
-            }
             .detailsHidden{
+              width: 100%;
+              height: calc(100% - 10px);
+              top: 0;
+              #{$start-direction}:0;
+              background-color: rgba($color: $dark-blue , $alpha: 0.85);
               .websiteLink{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                img{
-                  margin-bottom: 20px;
-                }
-                span{
-                  font-size: 15px;
-                  font-family: "NCSP-Medium";
-                  color: #fff;
-                }
-              }
-            }
-            &:hover{
-              .detailsHidden{
-                width: 100%;
-                height: calc(100% - 10px);
-                top: 0;
-                #{$start-direction}:0;
-                background-color: rgba($color: $dark-blue , $alpha: 0.85);
-                .websiteLink{
-                  height: 100%;
-                }
+                height: 100%;
               }
             }
           }
-          .srvTitle{
-            h4{
-              font-size: 17px;
-            }
-          }      
         }
+        .srvTitle{
+          h4{
+            font-size: 17px;
+          }
+        }      
       }
-      .triangelShape{
-        position: relative;
-        &::after{
-          content: "";
-          position: absolute;
-          background-image: url(../images/internal/Shape.png);
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
-          top: 0;
-          #{$end-direction}:0;
-          width: 100%;
-          height: 100%;
-        }
+    }
+    .triangelShape{
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../images/internal/Shape.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        top: 0;
+        #{$end-direction}:0;
+        width: 100%;
+        height: 100%;
       }
     }    
   }
 
   // Share 
   .share {
-    background: $white;
+    background: #F8F8F8;
     width: 280px;
     height: 70px;
     margin-top: 50px;
