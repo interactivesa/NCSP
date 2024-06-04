@@ -1035,21 +1035,6 @@ footer .bottom-footer .copyright p {
   height: auto;
   background-color: #FFFFFF;
 }
-.inContent .soon h2 {
-  text-align: center;
-  font-size: 40px;
-  font-family: "NCSP-Medium";
-  color: #003391;
-  padding: 50px 0;
-}
-.inContent .soon img {
-  max-height: 500px;
-  width: auto;
-  padding-bottom: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .inContent .container {
   padding: 65px 0;
   /* neeeeeeeeeeeeeeew */
@@ -2383,7 +2368,7 @@ footer .bottom-footer .copyright p {
   background-image: none !important;
 }
 .careers .about .section-header {
-  width: 85% !important;
+  width: 70% !important;
 }
 .careers .SrvIcon img {
   width: 120px;
