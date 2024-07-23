@@ -659,6 +659,71 @@
     .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .nav-item .nav-link::after{
         background-image: url(../images/shared/nav-arrow-b.svg);
     }
+
+    .nashaa .nashaa-art .nashaa-card .content-bxx h4::before {
+        display: none;
+    }
+    
+    .nashaa .nashaa-art .nashaa-card .year {
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    
+    .nashaa .nashaa-art::before {
+        display: none;
+    }
+    
+    .nashaa .nashaa-art .nashaa-card .bullet-shape {
+        display: none;
+    }
+    
+    .nashaa .nashaa-art .nashaa-card .content-bxx {
+        padding: 0 !important;
+        width: 100% !important;
+    }
+    
+    .nashaa .nashaa-art .nashaa-card {
+        flex-direction: column-reverse !important;
+    }
+    
+    .nashaa .nashaa-art .nashaa-card .content-bxx p {
+        font-size: 16px;
+    }
+    
+    .aboutNew-2 p {
+        font-size: 16px;
+    }
+    
+    .aboutNew-2 h3 {
+        font-size: 25px;
+    }
+    
+    .aboutNew-3 h3 {
+        font-size: 25px;
+    }
+    
+    .aboutNew-3 p {
+        font-size: 16px;
+    }
+    
+    .aboutNew-4 h3 {
+        font-size: 25px;
+    }
+    
+    .aboutNew-4 ul li::before {
+        font-size: 18px;
+        margin-left: 15px;
+        width: 40px;
+        height: 40px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+        flex: 0 0 40px;
+    }
+    
+    .aboutNew-4 ul li {
+        font-size: 16px;
+    }
 }
 
 // Small Sizes 
@@ -753,7 +818,7 @@
 
 
     .breadcrumb{
-        min-height: 180px;
+        min-height: auto;
         height: auto;
     }
     .breadcrumb .pageTitle{
@@ -949,7 +1014,7 @@
     }
 
     .breadcrumb {
-        min-height: 180px;
+        min-height: auto;
         height: auto;
         padding-bottom: 20px;
     }
