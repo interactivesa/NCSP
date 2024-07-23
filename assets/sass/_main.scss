@@ -400,7 +400,7 @@ ul {
       // Title 
       .section-header {
         width: 18%;
-        font-size: 26px;
+        font-size: 25px;
         font-family: "NCSP-Medium";
         color: $dark-blue;
         position: relative;
@@ -410,8 +410,8 @@ ul {
         &::after {
           content: url("../images/TitleArrow.png");
           position: absolute;
-          top: 30px;
-          left: -25px;
+          bottom: -20px;
+          #{$end-direction}: -25px;
         }
       }
       p {
@@ -446,7 +446,7 @@ ul {
   // Title
   .section-header {
     width: 13%;
-    font-size: 26px;
+    font-size: 25px;
     font-family: "NCSP-Medium";
     color: $dark-blue;
     position: relative;
@@ -544,7 +544,7 @@ ul {
   // Title
   .section-header {
     width: 15%;
-    font-size: 26px;
+    font-size: 25px;
     font-family: "NCSP-Medium";
     color: $aqua;
     position: relative;
@@ -906,7 +906,7 @@ ul {
   // Title
   .section-header {
     width: 10%;
-    font-size: 26px;
+    font-size: 25px;
     font-family: "NCSP-Medium";
     color: $dark-blue;
     position: relative;
@@ -1334,7 +1334,7 @@ footer {
       justify-content: space-between;
       height: 100%;
       position: relative;
-      padding: 40px;
+      padding: 40px 0;
 
       &::before{
         content: "";
@@ -2661,10 +2661,11 @@ footer {
         padding-bottom: 15px;
       }
       .address {
-        font-size: 16px;
+        font-size: 20px;
         font-family: "NCSP-Regular";
         color: $dark-text;
         margin: 5px 0 20px; 
+        text-align: justify;
         span {
           padding-#{$end-direction}: 10px;
           img {
@@ -3610,7 +3611,7 @@ html[lang="en"]{
   }
   p{
     font-size: 20px;
-    line-height: 3;
+    line-height: 2;
     color: #fff;
     margin-bottom: 30px;
     text-align: center;
@@ -3749,6 +3750,7 @@ html[lang="en"]{
       display: flex;
       align-items: flex-start;
       line-height: 2;
+      text-align: justify;
       &::before {
         counter-increment: li;
         content: counter(li);

@@ -397,8 +397,8 @@ body {
   width: 100%;
   background: transparent url(../images/shared/accordion-expanded.svg) left center no-repeat;
   text-align: #{$start-direction};
-  font-size: 20px;
-  font-family:"NCSP-Regular" ;
+  font-size: 22px;
+  font-family:"NCSP-Medium" ;
   color: #18754D;
   text-decoration: none!important;
   min-height: 60px;
@@ -419,6 +419,13 @@ body {
 }
 .innerpages .accordion .card .card-header h2 .btn-link.collapsed {
   color: $medium-blue !important;
+}
+
+.innerpages .accordion .card .card-body p ,
+.innerpages .accordion .card .card-body ul li {
+  font-size: 20px;
+  line-height: 2;
+  font-family: "NCSP-Regular";
 }
 
 

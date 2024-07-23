@@ -443,7 +443,7 @@ ul {
 
 .about .container .content .section-header {
   width: 18%;
-  font-size: 26px;
+  font-size: 25px;
   font-family: "NCSP-Medium";
   color: #001F5E;
   position: relative;
@@ -455,8 +455,8 @@ ul {
 .about .container .content .section-header::after {
   content: url("../images/TitleArrow.png");
   position: absolute;
-  top: 30px;
-  left: -25px;
+  bottom: -20px;
+  right: -25px;
 }
 
 .about .container .content p {
@@ -493,7 +493,7 @@ ul {
 
 .gallery .section-header {
   width: 13%;
-  font-size: 26px;
+  font-size: 25px;
   font-family: "NCSP-Medium";
   color: #001F5E;
   position: relative;
@@ -586,7 +586,7 @@ ul {
 
 .Numbers .section-header {
   width: 15%;
-  font-size: 26px;
+  font-size: 25px;
   font-family: "NCSP-Medium";
   color: #35CCDE;
   position: relative;
@@ -995,7 +995,7 @@ ul {
 
 .partners .section-header {
   width: 10%;
-  font-size: 26px;
+  font-size: 25px;
   font-family: "NCSP-Medium";
   color: #001F5E;
   position: relative;
@@ -1470,7 +1470,7 @@ footer .bottom-footer .copyright p {
           justify-content: space-between;
   height: 100%;
   position: relative;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .inContent .container .content-box::before {
@@ -3045,10 +3045,11 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .contactBox .address {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "NCSP-Regular";
   color: #333333;
   margin: 5px 0 20px;
+  text-align: justify;
 }
 
 .inContent .container .contactBox .address span {
@@ -4126,7 +4127,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 
 .st-goals p {
   font-size: 20px;
-  line-height: 3;
+  line-height: 2;
   color: #fff;
   margin-bottom: 30px;
   text-align: center;
@@ -4286,6 +4287,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
       -ms-flex-align: start;
           align-items: flex-start;
   line-height: 2;
+  text-align: justify;
 }
 
 .aboutNew-4 ul li::before {
@@ -5140,8 +5142,8 @@ body .owl-theme .owl-dots .owl-dot.active {
   width: 100%;
   background: transparent url(../images/shared/accordion-expanded.svg) left center no-repeat;
   text-align: left;
-  font-size: 20px;
-  font-family: "NCSP-Regular";
+  font-size: 22px;
+  font-family: "NCSP-Medium";
   color: #18754D;
   text-decoration: none !important;
   min-height: 60px;
@@ -5165,6 +5167,13 @@ body .owl-theme .owl-dots .owl-dot.active {
 
 .innerpages .accordion .card .card-header h2 .btn-link.collapsed {
   color: #003391 !important;
+}
+
+.innerpages .accordion .card .card-body p,
+.innerpages .accordion .card .card-body ul li {
+  font-size: 20px;
+  line-height: 2;
+  font-family: "NCSP-Regular";
 }
 
 /*
@@ -5251,6 +5260,12 @@ section.sitemap ul.level-2 > li .level-3 li a {
   }
   .home .custom-cont2 {
     max-width: 1440px;
+  }
+}
+
+@media (max-width: 1699.98px) {
+  .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item {
+    margin-right: 25px;
   }
 }
 
@@ -5361,6 +5376,16 @@ section.sitemap ul.level-2 > li .level-3 li a {
   }
   .inContent .container .box-white .search-top .left {
     margin-bottom: 20px;
+  }
+  .inner .main-Nav .bgNav .topNav .left-Icons .search-toggle {
+    padding-left: 0;
+    width: 28px;
+  }
+  .inner .main-Nav .bgNav .topNav .left-Icons .lang {
+    width: 38px;
+  }
+  .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item {
+    margin-right: 15px;
   }
 }
 
@@ -5551,6 +5576,9 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .breadcrumb .pageTitle {
     font-size: 30px;
   }
+  .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 991.68px) {
@@ -5683,8 +5711,32 @@ section.sitemap ul.level-2 > li .level-3 li a {
     padding: 0 15px;
     font-size: 14px;
   }
+  .inContent .container .serviceDetails .desc {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .inContent .container .serviceDetails .desc h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
   .inContent .container .box-white .serviceDetails .desc p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .inContent .container .serviceDetails .list-title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .inContent .container .serviceDetails .srvList ul li::before {
+    width: 40px;
+    height: 40px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40px;
+            flex: 0 0 40px;
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  .inContent .container .serviceDetails .srvList ul li {
+    font-size: 16px;
   }
   .inContent .container .box-white .serviceDetails .srvList .list .listText h3 {
     font-size: 20px;
@@ -5821,7 +5873,6 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .main-Nav.fixedTop .bgNav .topNav .a-logo,
   .main-Nav .bgNav .topNav .a-logo {
     margin: 0;
-    max-width: 135px;
   }
   .main-Nav .bgNav .topNav .top-links a {
     font-size: 12px;
@@ -5847,7 +5898,7 @@ section.sitemap ul.level-2 > li .level-3 li a {
     background-color: #fff;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -20px;
     z-index: 5;
   }
   .main-Nav .bgNav .topNav {
@@ -5932,15 +5983,69 @@ section.sitemap ul.level-2 > li .level-3 li a {
   }
   .aboutNew-4 ul li::before {
     font-size: 18px;
-    margin-left: 15px;
+    margin-right: 15px;
     width: 40px;
     height: 40px;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 50px;
-    flex: 0 0 40px;
+        -ms-flex: 0 0 40px;
+            flex: 0 0 40px;
   }
   .aboutNew-4 ul li {
     font-size: 16px;
+  }
+  .inContent .container .aboutUs.new-about {
+    padding: 0;
+  }
+  .inContent .container .box-white .imgBox {
+    max-width: 350px;
+    margin-top: 20px;
+  }
+  .nashaa .nashaa-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .nashaa .nashaa-art .nashaa-card .year {
+    font-size: 30px;
+  }
+  .nashaa .nashaa-art .nashaa-card .content-bxx h4 {
+    font-size: 20px;
+  }
+  .nashaa .nashaa-title .nashaa-border span {
+    width: 65px;
+  }
+  .st-goals p {
+    font-size: 16px;
+  }
+  .st-goals h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .pageTitle h2 {
+    font-size: 20px;
+  }
+  .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .left-Icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav {
+    background-color: #001F5E;
+  }
+  .main-Nav.fixedTop .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav,
+  .inner .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav {
+    background-color: #fff;
+  }
+  .main-Nav .bgNav .topNav .left-Icons .search-box {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    padding: 130px 40px;
+  }
+  .main-Nav .bgNav .topNav .left-Icons .search-box .search-full-area input[type="text"] {
+    padding-right: 7%;
+    padding-left: 10%;
   }
 }
 
@@ -6369,6 +6474,13 @@ section.sitemap ul.level-2 > li .level-3 li a {
     right: 40%;
     left: auto;
   }
+  .aboutNew-2 p,
+  .nashaa .nashaa-art .nashaa-card .content-bxx p,
+  .aboutNew-3 p,
+  .aboutNew-4 ul li,
+  .st-goals p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 399.68px) {
@@ -6445,6 +6557,26 @@ section.sitemap ul.level-2 > li .level-3 li a {
   }
   .interactive-map .map-cont .tags-content .details {
     width: auto;
+  }
+  .main-Nav.fixedTop .bgNav .topNav .a-logo, .main-Nav .bgNav .topNav .a-logo {
+    width: 75%;
+    margin-top: 15px;
+  }
+  .main-Nav .bgNav .topNav .left-Icons .search-box .search-full-area input[type="text"] {
+    padding-right: 11%;
+    padding-left: 12%;
+    font-size: 12px;
+  }
+  .main-Nav .bgNav .topNav .left-Icons .search-box {
+    padding: 130px 15px;
+  }
+  .main-Nav .bgNav .topNav .left-Icons .search-box .search-full-area .search-btn {
+    top: 15px;
+    left: 1%;
+  }
+  .main-Nav .bgNav .topNav .left-Icons .search-box .search-full-area .exit-btn {
+    top: 15px;
+    max-width: 22px;
   }
 }
 /*# sourceMappingURL=styleLTR.css.map */
