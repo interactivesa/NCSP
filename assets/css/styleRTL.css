@@ -1701,12 +1701,19 @@ footer .bottom-footer .copyright p {
   left: -33px;
   bottom: -2px;
   background: #35CCDE;
+  display: none;
 }
 
 .inContent .container .section-header::after {
-  left: -20px;
-  bottom: 0px;
-  background: #145FFF;
+  content: url(../images/TitleArrow.png);
+  background: none;
+  position: absolute;
+  top: 34px;
+  left: -24px;
+  width: auto;
+  height: auto;
+  -webkit-transform: none;
+  transform: none;
 }
 
 .inContent .container .InstBox {
@@ -4084,11 +4091,13 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
   transition: .5s;
   -webkit-filter: drop-shadow(0 4px 15px #f8f8f869);
           filter: drop-shadow(0 4px 15px #f8f8f869);
+  display: none;
 }
 
 .navigator li:hover span {
   width: auto;
   opacity: 1;
+  display: inline;
 }
 
 .navigator li.active a {
@@ -5579,6 +5588,10 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item .nav-link {
     font-size: 14px;
   }
+  .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item .nav-link:not(.dropdown-toggle) {
+    padding-left: 0;
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 991.68px) {
@@ -6046,6 +6059,9 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .main-Nav .bgNav .topNav .left-Icons .search-box .search-full-area input[type="text"] {
     padding-left: 7%;
     padding-right: 10%;
+  }
+  .navigator li:hover span {
+    display: none;
   }
 }
 

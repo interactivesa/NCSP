@@ -1517,12 +1517,19 @@ footer {
       &::before {
         #{$end-direction}: -33px;
         bottom: -2px;
-        background: $aqua;
+        background: $aqua;;
+        display: none;
       }
       &::after {
-        #{$end-direction}: -20px;
-        bottom: 0px;
-        background: $blue;
+        content: url(../images/TitleArrow.png);
+        background: none;
+        position: absolute;
+        top: 34px;
+        #{$end-direction}: -24px;
+        width: auto;
+        height: auto;
+        -webkit-transform: none;
+        transform: none;
       }
     }
 
@@ -3564,12 +3571,14 @@ html[lang="en"]{
       margin-#{$start-direction}: 8px;
       transition: .5s;
       filter: drop-shadow(0 4px 15px #f8f8f869);
+      display: none;
     }
 
     &:hover{
       span{
         width: auto;
         opacity: 1;
+        display: inline;
       }
     }
     &.active{

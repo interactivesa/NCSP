@@ -350,6 +350,10 @@
     .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item .nav-link{
         font-size: 14px;
     }
+    .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item .nav-link:not(.dropdown-toggle) {
+        padding-left: 0;
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 991.68px){
@@ -817,6 +821,10 @@
     .main-Nav .bgNav .topNav .left-Icons .search-box .search-full-area input[type="text"]{
         padding-#{$end-direction}: 7%;
         padding-#{$start-direction}: 10%;
+    }
+
+    .navigator li:hover span{
+        display: none;
     }
 }
 
