@@ -826,6 +826,25 @@
     .navigator li:hover span{
         display: none;
     }
+
+
+    .content-details{
+        &.PageContent_vw {
+          p {
+            font-size: 16px;
+            line-height: 2;
+            margin-bottom: 25px;
+          }
+          ul{
+            margin: 0;
+            li{
+              font-size: 18px;
+            }
+          }
+        }
+      
+      }
+
 }
 
 // Small Sizes 

@@ -581,9 +581,9 @@ ul {
         width: 170px;
         .centered {
           position: absolute;
-          top: 45%;
+          top: 110px;
           #{$end-direction}: 45%;
-          transform: translate(-50%, -50%);
+          transform: translateX(-50%);
           h4 {
             font-size: 25px;
             font-family: "NCSP-Medium";
@@ -961,6 +961,21 @@ ul {
           filter: none;
           // transition: all  0.5s;
         }
+      }
+    }
+  }
+
+
+
+  &.inner-partners{
+    .owl-stage-outer {
+      // display: flex;
+      // flex-direction: row;
+      // align-items: center;
+      // justify-content: center;
+      text-align: center;
+      .owl-stage{
+        margin: 0 auto;
       }
     }
   }
@@ -1537,13 +1552,14 @@ footer {
     .InstBox {
       height: 260px;
       text-align: center;
-      background: rgb(122,106,247);
-      background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
+      // background: rgb(122,106,247);
+      // background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
+      background-color:#fff ;
       border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
       border-radius: 10px;
       width: 100%;
-      border: 0;
-      border-bottom: 10px solid transparent;
+      // border: 0;
+      // border-bottom: 10px solid transparent;
       border-radius: 10px;
       margin-bottom: 20px;
       transition: 0.3s;
@@ -1556,6 +1572,16 @@ footer {
         #{$start-direction}:0;
         top: 0;
         transition: .3s;
+      }
+      &::after{
+        content:"";
+        position: absolute;
+        #{$start-direction}:0;
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+        background: rgb(122,106,247);
+        background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
       }
       &:hover {
         &:before{
@@ -1598,6 +1624,7 @@ footer {
       .InstLogo {
         height: 250px;
         width: 100%;
+
         img {
           width: 100%;
           height: 100%;
@@ -1658,6 +1685,7 @@ footer {
         border: 0;
         box-shadow: none;
         position: relative;
+        height: 100%;
         &::before{
           display: none;
         }
@@ -2031,6 +2059,13 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        .SrvIcon {
+          max-width: 170px;
+          max-height: 160px;
+          img{
+            max-height: 100%;
+          }
+        }
         .srvTitle {
           h4{
             font-size: 17px;
@@ -2110,15 +2145,15 @@ footer {
         position: relative;
         margin: 50px 0 30px;
         padding: 30px;
-        &::before{
-          content: "";
-          position: absolute;
-          top: 0;
-          #{$start-direction}:-50%;
-          width: 200%;
-          height: 100%;
-          background-color: rgba($color: $grey, $alpha: .2);
-        }
+        // &::before{
+        //   content: "";
+        //   position: absolute;
+        //   top: 0;
+        //   #{$start-direction}:-50%;
+        //   width: 200%;
+        //   height: 100%;
+        //   background-color: rgba($color: $grey, $alpha: .2);
+        // }
       }
       .list-title{
         font-size: 35px;
@@ -2673,8 +2708,13 @@ footer {
         color: $dark-text;
         margin: 5px 0 20px; 
         text-align: justify;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
         span {
-          padding-#{$end-direction}: 10px;
+          flex: 0 0 32px;
           img {
             width: 32px;
           }
@@ -2998,7 +3038,7 @@ footer {
   .content-area{
     position: absolute;
     #{$start-direction}:240px;
-    top: 330px;
+    top: 400px;
     z-index: 55;
     max-width: 640px;
 
@@ -3128,7 +3168,7 @@ footer {
   .content-area{
     position: absolute;
     #{$start-direction}:0;
-    top: 310px;
+    top: 400px;
     z-index: 999999;
     z-index: 55;
     max-width: 235px;
@@ -4046,6 +4086,26 @@ html[lang="en"]{
 }
 
 
+
+.content-details{
+  &.PageContent_vw {
+    p {
+      font-size: 20px;
+      line-height: 2;
+      font-family: "NCSP-Regular";
+      color: #000000;
+      margin-bottom: 50px;
+      text-align: justify;
+    }
+    ul{
+      margin: 0;
+      li{
+        font-size: 22px;
+      }
+    }
+  }
+
+}
 
 @media (prefers-reduced-motion:no-preference) {
   :root {
