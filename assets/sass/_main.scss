@@ -415,7 +415,7 @@ ul {
         }
       }
       p {
-        font-size: 20px; 
+        font-size: 18px; 
         line-height: 2;
         font-family: "NCSP-Regular";
         color: $dark-text;
@@ -530,6 +530,14 @@ ul {
         }
       }
     }
+  }
+
+
+  &.inner-gallery{
+    margin-top: 40px;
+    background-color: transparent;
+    height: auto;
+    padding: 0;
   }
 }
 
@@ -994,11 +1002,14 @@ footer {
     }
     .social-media {
       display: flex;
+      gap: 25px;
+      padding-#{$start-direction}: 15%;
       a {
         display: flex;
-        margin-#{$end-direction}: 28px;
         align-items: center;
         justify-content: center;
+        width: 30px;
+        height: 30px;
         &:last-child{
           margin-#{$end-direction}: 0;
         }
@@ -1227,11 +1238,12 @@ footer {
     .aboutUs {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       height: 100%;
       line-height: 2;
 
       h4 {
-        font-size: 35px;
+        font-size: 25px;
         font-family: "NCSP-Medium";
         color: $medium-blue;
         text-align: center;
@@ -1240,14 +1252,14 @@ footer {
         margin-bottom: 50px;
       }
       p {
-        font-size: 20px;
+        font-size: 18px;
         font-family: "NCSP-Regular";
         color: #000000;
         margin-bottom: 0px;
         margin-top: 0px;
         text-align: justify;
         & + p{
-          margin-top: 70px;
+          margin-top: 40px;
         }
         &:last-child{
           margin-bottom: 0;
@@ -1269,16 +1281,17 @@ footer {
       }
       &.new-about{
         justify-content: center;
-        padding-#{$end-direction}: 50px;
+        padding-#{$end-direction}: 10%;
         p{
-          font-size: 20px;
+          font-size: 18px;
           line-height: 2;
 
         }
       }
     }
     .institutes-cont{
-      margin-#{$end-direction}: 30px;
+      margin-#{$end-direction}: 10%;
+      justify-content: center;
     }
     .left-cont{
       .institutes-img{
@@ -1302,14 +1315,20 @@ footer {
       }
       .details{
         margin-top: 40px;
-          h5{
+          h5 , a{
             font-size: 17px;
             font-family: 'NCSP-Medium';
             color: $medium-blue;
             margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
             span{
-              margin-#{$end-direction}: 15px;
+              // margin-#{$end-direction}: 15px;
               display: inline-block;
+              flex: 0 0 auto;
               img{
                 width: 27px;
               }
@@ -1379,7 +1398,7 @@ footer {
         justify-content: space-around;
 
         h4 {
-          font-size: 22px;
+          font-size: 20px;
           font-family: "NCSP-Medium";
           color: $dark-blue;
           text-align: center;
@@ -1387,7 +1406,7 @@ footer {
           line-height: 2;
         }
         p {
-          font-size: 20px;
+          font-size: 18px;
           line-height: 2;
           font-family: "NCSP-Regular";
           color: #000000;
@@ -1398,7 +1417,7 @@ footer {
           }
         }
         h6 {
-          font-size: 18px;
+          font-size: 16px;
           font-family: "NCSP-Medium";
           color: $dark-blue;
           text-align: center;
@@ -1411,11 +1430,11 @@ footer {
         margin-bottom: 0;
         align-self: flex-end;
         h6 {
-          font-size: 20px;
+          font-size: 18px;
           margin-bottom: 20px;
         }
         h4 {
-          font-size: 24px;
+          font-size: 20px;
           font-family: "NCSP-Medium";
         }
       }
@@ -1550,7 +1569,7 @@ footer {
 
     // Institutes
     .InstBox {
-      height: 260px;
+      height: 200px;
       text-align: center;
       // background: rgb(122,106,247);
       // background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
@@ -1622,13 +1641,13 @@ footer {
         display: none;          
       }
       .InstLogo {
-        height: 250px;
+        height: 100%;
         width: 100%;
 
         img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain;
         }          
       }          
     }
@@ -1671,7 +1690,7 @@ footer {
         align-items: center;
         justify-content: center;
         h4{
-          font-size: 20px;
+          font-size: 18px;
           font-family: "NCSP-Medium";
           color: #000000;
           text-align: center;
@@ -1679,94 +1698,43 @@ footer {
       }
 
       &.new-progCard2{
-        padding: 0;
-        min-height: 315px;
-        background-color: transparent;
+        background-color: #fff;
         border: 0;
         box-shadow: none;
         position: relative;
         height: 100%;
-        &::before{
-          display: none;
-        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        min-height: auto;
+        border: 1px solid rgba($color: $medium-grey, $alpha: 0.5);
+        padding: 15px;
+
         .img-box{
-          width: 100%;
-          height: 260px;
+          width: auto;
+          height: auto;
           padding: 0;
           padding-bottom: 10px;
           position: relative;
           border-radius: 10px;
           overflow: hidden;
+          flex: 0 0 auto;
           img{
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
-          &::before{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 10px;
-            #{$start-direction}:0;
-            bottom: 0;
-            background: rgb(122,106,247);
-            background: linear-gradient(90deg, rgba(122,106,247,1) 0%, rgba(53,204,222,1) 100%);
-            z-index: 5; 
-          }
-          .hidden-cont{
-            position: absolute;
-            z-index: -5;
-            transition: .5s;  
-            .btns-area{
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: center;
-              a{
-                height: 44px;
-                font-size: 14px;
-                font-family: 'NCSP-Medium';
-                border-radius: 22px;
-                padding: 13px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                &.btn1{
-                  background-color: $aqua;
-                  border: 1px solid $aqua;
-                  color: $dark-blue;
-                  width: 160px;
-                }
-                &.btn2{
-                  margin-#{$start-direction}: 10px;
-                  background-color: transparent;
-                  border: 1px solid $aqua;
-                  color: $aqua;
-                  width: 140px;
-                }
-              }
-            }
-          }
 
-
-          &:hover{
-              .hidden-cont{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: calc(100% - 10px);
-                top: 0;
-                #{$start-direction}:0;
-                background-color: rgba($color: $dark-blue, $alpha: .9);
-                z-index: 5;
-              }
-          }
 
         }
         .content-boxx{
           height: auto;
-          margin-top: 20px;
+          margin-top: 0;
+          h4{
+            margin-bottom: 0;
+          }
         }
 
       }
@@ -2079,6 +2047,20 @@ footer {
             max-height: calc(35px * 3);
             overflow: hidden;
           }
+          a{
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #35CCDE;
+            border: 0px solid;
+            border-radius: 30px;
+            height: 40px;
+            color: $dark-blue;
+            font-size: 14px;
+            font-family: "NCSP-Medium";
+            padding: 0px 25px;
+          }
         }
       }   
     }
@@ -2095,16 +2077,16 @@ footer {
     // Details
     .serviceDetails{
       .desc {
-        padding-#{$end-direction}: 50px;
+        padding-#{$end-direction}: 10%;
         h3 {
-          font-size: 35px;
+          font-size: 25px;
           font-family: "NCSP-Medium";
           color: $medium-blue;
           padding-top: 30px;
           margin-bottom: 50px;
         }
         p {
-          font-size: 20px;
+          font-size: 18px;
           font-family: "NCSP-Regular";
           line-height: 2;
           text-align: justify;
@@ -2120,7 +2102,7 @@ footer {
         align-items: center;
         justify-content: center;
         h3 {
-          font-size: 24px;
+          font-size: 22px;
           font-family: "NCSP-Regular";
           color: $medium-blue;
           text-align: center;
@@ -2156,7 +2138,7 @@ footer {
         // }
       }
       .list-title{
-        font-size: 35px;
+        font-size: 25px;
         font-family: "NCSP-Medium";
         color: $medium-blue;
         margin-bottom: 40px;
@@ -2244,12 +2226,12 @@ footer {
           padding: 0;
           margin: 0;
           li{
-            font-size: 20px;
+            font-size: 18px;
             font-family: "NCSP-Regular";
             color: #000000;
             margin-bottom: 20px;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             line-height: 2;
             &::before {
               counter-increment: li;
@@ -2420,7 +2402,7 @@ footer {
       .newsText {
         padding: 30px 0;
         p {
-          font-size: 20px;
+          font-size: 18px;
           line-height: 2;
           font-family: 'NCSP-Regular';
           text-align: justify;
@@ -2703,7 +2685,7 @@ footer {
         padding-bottom: 15px;
       }
       .address {
-        font-size: 20px;
+        font-size: 18px;
         font-family: "NCSP-Regular";
         color: $dark-text;
         margin: 5px 0 20px; 
@@ -3632,7 +3614,8 @@ html[lang="en"]{
 
 
 .st-goals{
- 
+  max-width: 980px;
+  margin: auto;
   padding: 35px 0;
   margin-top: 85px;
   position: relative;
@@ -3652,14 +3635,14 @@ html[lang="en"]{
 
   }
   h3{
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'NCSP-Medium';
     color: #fff;
     margin-bottom: 40px;
     text-align: center;
   }
   p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2;
     color: #fff;
     margin-bottom: 30px;
@@ -3706,6 +3689,8 @@ html[lang="en"]{
 .aboutNew-2{
   position: relative;
   padding: 70px 0;
+  max-width: 950px;
+  margin: auto;
   margin-bottom: 50px;
   &::before{
     content: "";
@@ -3720,7 +3705,7 @@ html[lang="en"]{
     position: relative;
   }
   h3{
-    font-size: 30px;
+    font-size: 25px;
     line-height: 2;
     font-family: 'NCSP-Medium';
     color: $medium-blue;
@@ -3728,7 +3713,7 @@ html[lang="en"]{
     text-align: center;
   }
   p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2;
     font-family: 'NCSP-Regular';
     color: #000;
@@ -3738,6 +3723,8 @@ html[lang="en"]{
 
 .aboutNew-3{
   position: relative;
+  max-width: 980px;
+  margin: auto;
   padding: 70px 0;
   margin-top: 165px;
   margin-bottom: 70px;
@@ -3755,7 +3742,7 @@ html[lang="en"]{
     position: relative;
   }
   h3{
-    font-size: 30px;
+    font-size: 25px;
     line-height: 2;
     font-family: 'NCSP-Medium';
     color: $white;
@@ -3763,7 +3750,7 @@ html[lang="en"]{
     text-align: center;
   }
   p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2;
     font-family: 'NCSP-Regular';
     color: $white;
@@ -3780,7 +3767,7 @@ html[lang="en"]{
     position: relative;
   }
   h3{
-    font-size: 30px;
+    font-size: 25px;
     line-height: 2;
     font-family: 'NCSP-Medium';
     color: $blue;
@@ -3792,12 +3779,12 @@ html[lang="en"]{
     padding: 0;
     margin: 0;
     li{
-      font-size: 20px;
+      font-size: 18px;
       font-family: "NCSP-Regular";
       color: #000000;
       margin-bottom: 20px;
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       line-height: 2;
       text-align: justify;
       &::before {
@@ -3823,7 +3810,7 @@ html[lang="en"]{
 .nashaa{
   padding-top: 20px;
   .nashaa-title{
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'NCSP-Medium';
     color: $dark-blue;
     text-align: center;
@@ -3879,7 +3866,7 @@ html[lang="en"]{
         width: 45%;
         padding-#{$end-direction}: 50px;
         h4{
-          font-size: 25px;
+          font-size: 22px;
           font-family: 'NCSP-Regular';
           color: #fff;
           padding: 20px 10px ;
@@ -3901,7 +3888,7 @@ html[lang="en"]{
           }
         }
         p{
-          font-size: 20px;
+          font-size: 18px;
           line-height: 2;
           font-family: 'NCSP-Regular';
           color: $dark-blue ;

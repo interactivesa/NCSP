@@ -460,7 +460,7 @@ ul {
 }
 
 .about .container .content p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   font-family: "NCSP-Regular";
   color: #333333;
@@ -574,6 +574,13 @@ ul {
 
 .gallery .container .tabsImage .imgbox:hover p {
   opacity: 1;
+}
+
+.gallery.inner-gallery {
+  margin-top: 40px;
+  background-color: transparent;
+  height: auto;
+  padding: 0;
 }
 
 .Numbers {
@@ -1085,19 +1092,22 @@ footer .top-footer .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 25px;
+  padding-left: 15%;
 }
 
 footer .top-footer .social-media a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 28px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 30px;
+  height: 30px;
 }
 
 footer .top-footer .social-media a:last-child {
@@ -1337,12 +1347,15 @@ footer .bottom-footer .copyright p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   line-height: 2;
 }
 
 .inContent .container .aboutUs h4 {
-  font-size: 35px;
+  font-size: 25px;
   font-family: "NCSP-Medium";
   color: #003391;
   text-align: center;
@@ -1352,7 +1365,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .aboutUs p {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "NCSP-Regular";
   color: #000000;
   margin-bottom: 0px;
@@ -1361,7 +1374,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .aboutUs p + p {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .inContent .container .aboutUs p:last-child {
@@ -1387,16 +1400,19 @@ footer .bottom-footer .copyright p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 50px;
+  padding-right: 10%;
 }
 
 .inContent .container .aboutUs.new-about p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
 }
 
 .inContent .container .institutes-cont {
-  margin-right: 30px;
+  margin-right: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .inContent .container .left-cont .institutes-img {
@@ -1424,23 +1440,39 @@ footer .bottom-footer .copyright p {
   margin-top: 40px;
 }
 
-.inContent .container .left-cont .details h5 {
+.inContent .container .left-cont .details h5, .inContent .container .left-cont .details a {
   font-size: 17px;
   font-family: 'NCSP-Medium';
   color: #003391;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 15px;
 }
 
-.inContent .container .left-cont .details h5 span {
-  margin-right: 15px;
+.inContent .container .left-cont .details h5 span, .inContent .container .left-cont .details a span {
   display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
-.inContent .container .left-cont .details h5 span img {
+.inContent .container .left-cont .details h5 span img, .inContent .container .left-cont .details a span img {
   width: 27px;
 }
 
-.inContent .container .left-cont .details h5:last-child {
+.inContent .container .left-cont .details h5:last-child, .inContent .container .left-cont .details a:last-child {
   margin-bottom: 0;
 }
 
@@ -1517,7 +1549,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .content-box .word-content h4 {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "NCSP-Medium";
   color: #001F5E;
   text-align: center;
@@ -1526,7 +1558,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .content-box .word-content p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   font-family: "NCSP-Regular";
   color: #000000;
@@ -1539,7 +1571,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .content-box .word-content h6 {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "NCSP-Medium";
   color: #001F5E;
   text-align: center;
@@ -1555,12 +1587,12 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .content-box .signature h6 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
 .inContent .container .content-box .signature h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "NCSP-Medium";
 }
 
@@ -1725,7 +1757,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .InstBox {
-  height: 260px;
+  height: 200px;
   text-align: center;
   background-color: #fff;
   border: 1px solid rgba(205, 210, 217, 0.5);
@@ -1802,15 +1834,15 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .InstBox .InstLogo {
-  height: 250px;
+  height: 100%;
   width: 100%;
 }
 
 .inContent .container .InstBox .InstLogo img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .inContent .container .InstTitle h4 {
@@ -1866,65 +1898,19 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .new-progCard .content-boxx h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "NCSP-Medium";
   color: #000000;
   text-align: center;
 }
 
 .inContent .container .new-progCard.new-progCard2 {
-  padding: 0;
-  min-height: 315px;
-  background-color: transparent;
+  background-color: #fff;
   border: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   position: relative;
   height: 100%;
-}
-
-.inContent .container .new-progCard.new-progCard2::before {
-  display: none;
-}
-
-.inContent .container .new-progCard.new-progCard2 .img-box {
-  width: 100%;
-  height: 260px;
-  padding: 0;
-  padding-bottom: 10px;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.inContent .container .new-progCard.new-progCard2 .img-box img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.inContent .container .new-progCard.new-progCard2 .img-box::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  left: 0;
-  bottom: 0;
-  background: #7a6af7;
-  background: -webkit-gradient(linear, left top, right top, from(#7a6af7), to(#35ccde));
-  background: linear-gradient(90deg, #7a6af7 0%, #35ccde 100%);
-  z-index: 5;
-}
-
-.inContent .container .new-progCard.new-progCard2 .img-box .hidden-cont {
-  position: absolute;
-  z-index: -5;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.inContent .container .new-progCard.new-progCard2 .img-box .hidden-cont .btns-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1938,61 +1924,39 @@ footer .bottom-footer .copyright p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 15px;
+  min-height: auto;
+  border: 1px solid rgba(205, 210, 217, 0.5);
+  padding: 15px;
 }
 
-.inContent .container .new-progCard.new-progCard2 .img-box .hidden-cont .btns-area a {
-  height: 44px;
-  font-size: 14px;
-  font-family: 'NCSP-Medium';
-  border-radius: 22px;
-  padding: 13px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.inContent .container .new-progCard.new-progCard2 .img-box {
+  width: auto;
+  height: auto;
+  padding: 0;
+  padding-bottom: 10px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
-.inContent .container .new-progCard.new-progCard2 .img-box .hidden-cont .btns-area a.btn1 {
-  background-color: #35CCDE;
-  border: 1px solid #35CCDE;
-  color: #001F5E;
-  width: 160px;
-}
-
-.inContent .container .new-progCard.new-progCard2 .img-box .hidden-cont .btns-area a.btn2 {
-  margin-left: 10px;
-  background-color: transparent;
-  border: 1px solid #35CCDE;
-  color: #35CCDE;
-  width: 140px;
-}
-
-.inContent .container .new-progCard.new-progCard2 .img-box:hover .hidden-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.inContent .container .new-progCard.new-progCard2 .img-box img {
   width: 100%;
-  height: calc(100% - 10px);
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 31, 94, 0.9);
-  z-index: 5;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .inContent .container .new-progCard.new-progCard2 .content-boxx {
   height: auto;
-  margin-top: 20px;
+  margin-top: 0;
+}
+
+.inContent .container .new-progCard.new-progCard2 .content-boxx h4 {
+  margin-bottom: 0;
 }
 
 .inContent .container .new-prog-a {
@@ -2359,6 +2323,30 @@ footer .bottom-footer .copyright p {
   overflow: hidden;
 }
 
+.inContent .container .serviceBox.servBx2 .detailsHidden a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #35CCDE;
+  border: 0px solid;
+  border-radius: 30px;
+  height: 40px;
+  color: #001F5E;
+  font-size: 14px;
+  font-family: "NCSP-Medium";
+  padding: 0px 25px;
+}
+
 .inContent .container .srvTitle h4 {
   font-size: 20px;
   font-family: "NCSP-Medium";
@@ -2368,11 +2356,11 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .serviceDetails .desc {
-  padding-right: 50px;
+  padding-right: 10%;
 }
 
 .inContent .container .serviceDetails .desc h3 {
-  font-size: 35px;
+  font-size: 25px;
   font-family: "NCSP-Medium";
   color: #003391;
   padding-top: 30px;
@@ -2380,7 +2368,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .serviceDetails .desc p {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "NCSP-Regular";
   line-height: 2;
   text-align: justify;
@@ -2408,7 +2396,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .serviceDetails .srvStart h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "NCSP-Regular";
   color: #003391;
   text-align: center;
@@ -2438,7 +2426,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .serviceDetails .list-title {
-  font-size: 35px;
+  font-size: 25px;
   font-family: "NCSP-Medium";
   color: #003391;
   margin-bottom: 40px;
@@ -2543,16 +2531,16 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .serviceDetails .srvList ul li {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "NCSP-Regular";
   color: #000000;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 2;
 }
 
@@ -2751,7 +2739,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .newsDetails .newsText p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   font-family: 'NCSP-Regular';
   text-align: justify;
@@ -3068,7 +3056,7 @@ footer .bottom-footer .copyright p {
 }
 
 .inContent .container .contactBox .address {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "NCSP-Regular";
   color: #333333;
   margin: 5px 0 20px;
@@ -4138,6 +4126,8 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .st-goals {
+  max-width: 980px;
+  margin: auto;
   padding: 35px 0;
   margin-top: 85px;
   position: relative;
@@ -4159,7 +4149,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .st-goals h3 {
-  font-size: 35px;
+  font-size: 25px;
   font-family: 'NCSP-Medium';
   color: #fff;
   margin-bottom: 40px;
@@ -4167,7 +4157,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .st-goals p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   color: #fff;
   margin-bottom: 30px;
@@ -4219,6 +4209,8 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 .aboutNew-2 {
   position: relative;
   padding: 70px 0;
+  max-width: 950px;
+  margin: auto;
   margin-bottom: 50px;
 }
 
@@ -4237,7 +4229,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .aboutNew-2 h3 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 2;
   font-family: 'NCSP-Medium';
   color: #003391;
@@ -4246,7 +4238,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .aboutNew-2 p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   font-family: 'NCSP-Regular';
   color: #000;
@@ -4255,6 +4247,8 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 
 .aboutNew-3 {
   position: relative;
+  max-width: 980px;
+  margin: auto;
   padding: 70px 0;
   margin-top: 165px;
   margin-bottom: 70px;
@@ -4276,7 +4270,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .aboutNew-3 h3 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 2;
   font-family: 'NCSP-Medium';
   color: #FFFFFF;
@@ -4285,7 +4279,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .aboutNew-3 p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   font-family: 'NCSP-Regular';
   color: #FFFFFF;
@@ -4302,7 +4296,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .aboutNew-4 h3 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 2;
   font-family: 'NCSP-Medium';
   color: #145FFF;
@@ -4317,16 +4311,16 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .aboutNew-4 ul li {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "NCSP-Regular";
   color: #000000;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 2;
   text-align: justify;
 }
@@ -4361,7 +4355,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .nashaa .nashaa-title {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'NCSP-Medium';
   color: #001F5E;
   text-align: center;
@@ -4446,7 +4440,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .nashaa .nashaa-art .nashaa-card .content-bxx h4 {
-  font-size: 25px;
+  font-size: 22px;
   font-family: 'NCSP-Regular';
   color: #fff;
   padding: 20px 10px;
@@ -4469,7 +4463,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
 }
 
 .nashaa .nashaa-art .nashaa-card .content-bxx p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   font-family: 'NCSP-Regular';
   color: #001F5E;
@@ -5229,7 +5223,7 @@ body .owl-theme .owl-dots .owl-dot.active {
 
 .innerpages .accordion .card .card-body p,
 .innerpages .accordion .card .card-body ul li {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   font-family: "NCSP-Regular";
 }
@@ -5324,6 +5318,27 @@ section.sitemap ul.level-2 > li .level-3 li a {
 @media (max-width: 1699.98px) {
   .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item {
     margin-right: 25px;
+  }
+  .marker-with-popup.qasim {
+    right: 375px;
+  }
+  .marker-with-popup.gouf {
+    right: 505px;
+  }
+  .marker-with-popup.nagran {
+    right: 310px;
+    top: 555px;
+  }
+  .marker-with-popup.asser {
+    right: 390px;
+  }
+  .marker-with-popup.baaha {
+    right: 443px;
+    top: 493px;
+  }
+  .marker-with-popup.gazan {
+    right: 400px;
+    top: 590px;
   }
 }
 

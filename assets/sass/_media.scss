@@ -20,6 +20,28 @@
     .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item{
         margin-#{$end-direction}: 25px;
     }
+
+    .marker-with-popup.qasim {
+        right: 375px;
+    }
+    .marker-with-popup.gouf {
+        right: 505px;
+    }
+    .marker-with-popup.nagran {
+        right: 310px;
+        top: 555px;
+    }
+    .marker-with-popup.asser {
+        right: 390px;
+    }
+    .marker-with-popup.baaha {
+        right: 443px;
+        top: 493px;
+    }
+    .marker-with-popup.gazan {
+        right: 400px;
+        top: 590px;
+    }
 }
 
 
