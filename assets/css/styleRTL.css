@@ -1921,9 +1921,6 @@ footer .bottom-footer .copyright p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 15px;
   min-height: auto;
   border: 1px solid rgba(205, 210, 217, 0.5);
