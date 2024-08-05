@@ -1734,6 +1734,7 @@ footer {
           margin-top: 0;
           h4{
             margin-bottom: 0;
+            text-align: #{$start-direction};
           }
         }
 
@@ -4077,7 +4078,7 @@ html[lang="en"]{
 .content-details{
   &.PageContent_vw {
     p {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 2;
       font-family: "NCSP-Regular";
       color: #000000;

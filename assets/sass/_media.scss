@@ -166,6 +166,14 @@
     .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item {
         margin-#{$end-direction}: 15px;
     }
+
+
+    .inContent .container .InstBox:hover .detailsHidden a.button {
+        display: inline-block;
+        margin: 0 3px 5px;
+        padding: 10px 15px;
+    }
+
 }
 
 @media (max-width: 1199.68px){
@@ -860,7 +868,7 @@
           ul{
             margin: 0;
             li{
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
@@ -943,7 +951,7 @@
     footer {
         // Top 
         .top-footer {   
-            padding-#{$end-direction}: 30px;    
+            padding-#{$end-direction}: 0px;    
             .social-media {
                 margin-bottom: 20px;
             }
@@ -1087,21 +1095,22 @@
         max-width: 200px;
     }
     .mainSlider .content-area h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
     .mainSlider .content-area p{
-        font-size: 14px;
-        line-height: 22px;
-        height: 44px;
+        font-size: 12px;
+        line-height: 16px;
+        height: 32px;
+        margin-bottom: 15px;
     }
     .mainSlider .content-area a {
-        width: 150px;
-        height: 39px;
-        font-size: 14px;
+        width: 120px;
+        height: 30px;
+        font-size: 11px;
     }
     .mainSlider .content-area a img{
-        margin-#{$start-direction}: 10px;
-        max-width: 12px;
+        margin-#{$start-direction}: 7px;
+        max-width: 8px;
     }
 
     .thumbsSlider .content-area{
@@ -1174,6 +1183,93 @@
     .thumbsSlider .content-area [data-aos^=fade][data-aos^=fade].aos-init {
         opacity: 1;
         transform: translateZ(0);
+    }
+    .inContent .container .box-white .contactMap .contactForm {
+        height: 95%;
+    }
+    .innerpages .accordion .card .card-header{
+        padding: 0;
+    }
+    .innerpages .accordion .card .card-header h2 .btn-link{
+        background-size: 15px !important;
+    }
+    .gallery .section-header::after,
+    .partners .section-header::after{
+        top: 25px;
+    }
+    body .owl-theme .owl-dots .owl-dot{
+        margin: 0 3px;
+        margin-top: 50px;
+    }
+    .partners .centered{
+        margin-bottom: 50px;
+    }
+    .navigator {
+        #{$start-direction}:10px;
+        li{
+            margin: 0;
+            a{
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+
+
+    .Main-Banner {
+        height: 70vh;
+        .slide-down{
+            width: 25px;
+            height: 25px;
+            bottom: 15px;
+            #{$start-direction}: 33%;
+        }
+    }
+    .mainSlider{
+        width: 70%;
+        .content-area {
+            bottom: 20%;
+            top: auto;
+            width: auto;
+            max-width: 80%;
+    
+        }
+        .swiper-scrollbar{
+            bottom: 60px;
+            width: 80%;
+        }
+
+    }
+    .mainSlider .swiper-button-next, .mainSlider.swiper-rtl .swiper-button-prev{
+        bottom: 75px;
+        #{$end-direction}: 60px;
+    }
+    .mainSlider .swiper-button-prev, .mainSlider.swiper-rtl .swiper-button-next {
+        bottom: 75px;
+        left: 25px;
+    }
+    
+    .thumbsSlider {
+        width: 30%;
+        .content-area{
+            top: auto;
+            bottom: 22%;
+        }
+        .img-area.vid-area::after{
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            #{$start-direction}: -30px;
+            top: 40%;
+        }
+    }
+
+    .about .container .content{
+        padding: 0;
+    }
+    .about .container .content .section-header[data-aos^=fade][data-aos^=fade].aos-init{
+        opacity: 1 !important;
+        transform: translateZ(0) !important;
     }
 }
 
