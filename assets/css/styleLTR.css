@@ -2410,6 +2410,8 @@ footer .bottom-footer .copyright p {
   border: 0;
   padding: 0 25px;
   background-color: #003391;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .inContent .container .serviceDetails .srvStart Button:hover {
@@ -2616,6 +2618,9 @@ footer .bottom-footer .copyright p {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
 }
 
 .inContent .container .cardNews .CardImg {
@@ -3915,156 +3920,6 @@ section.inContent.merge .box-white .serviceBox .SrvIcon img {
      object-fit: cover;
 }
 
-/* EN version */
-html[lang="en"] .main-Nav .bgNav .topNav .top-links .lang {
-  background-position: 100%;
-}
-
-html[lang="en"] .mainSlider .swiper-button-prev, html[lang="en"] .mainSlider.swiper-rtl .swiper-button-next {
-  left: auto;
-}
-
-html[lang="en"] .about .container .imgBox img {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
-html[lang="en"] .bgNews .cardNews .cardText .date {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-html[lang="en"] .owl-carousel-news .owl-nav [class*="owl-"] {
-  -webkit-transform: scaleX(-1) !important;
-          transform: scaleX(-1) !important;
-}
-
-html[lang="en"] .Numbers .section-header,
-html[lang="en"] .gallery .section-header,
-html[lang="en"] .partners .section-header {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 0 15px 15px;
-}
-
-html[lang="en"] .partners .centered {
-  left: 0;
-  right: auto;
-  -webkit-transform: none;
-          transform: none;
-}
-
-html[lang="en"] .bgNews .centered {
-  left: 0;
-  right: auto;
-  -webkit-transform: none;
-          transform: none;
-}
-
-html[lang="en"] .about {
-  background-image: url(../images/pattern-color-en.svg);
-  background-position: 84% 0;
-}
-
-html[lang="en"] .about .container .content .section-header::before, html[lang="en"] .about .container .content .section-header::after,
-html[lang="en"] .gallery .section-header::before, html[lang="en"] .gallery .section-header::after,
-html[lang="en"] .Numbers .section-header::before, html[lang="en"] .Numbers .section-header::after,
-html[lang="en"] .partners .section-header::before, html[lang="en"] .partners .section-header::after,
-html[lang="en"] .inContent .container .box-white .section-header::before, html[lang="en"] .inContent .container .box-white .section-header::after {
-  -webkit-transform: rotate(-45deg) scaleX(-1);
-          transform: rotate(-45deg) scaleX(-1);
-}
-
-html[lang="en"] .about .container .content .section-header::after,
-html[lang="en"] .gallery .section-header::after,
-html[lang="en"] .Numbers .section-header::after,
-html[lang="en"] .partners .section-header::after,
-html[lang="en"] .inContent .container .box-white .section-header::after {
-  right: -21px;
-}
-
-html[lang="en"] .inContent .container .box-white .content-box::before, html[lang="en"] .inContent .container .box-white .content-box::after {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  background-size: contain;
-}
-
-html[lang="en"] .inContent .container .box-white .search-top input[type=search] {
-  background-position: 97%;
-}
-
-html[lang="en"] .inContent .container .box-white .search-top select {
-  padding: 0 10px;
-  background-position: 95%;
-}
-
-html[lang="en"] .inContent .container .box-white .events .event-banner .content .more img {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
-html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .days, html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .month {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
-html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .month {
-  font-size: 11px;
-}
-
-html[lang="en"] .Numbers .item .numCard .content-box .centered {
-  left: 45%;
-  right: auto;
-}
-
-html[lang="en"] .interactive-map .map-cont .tags-content .details ul li {
-  font-size: 18px;
-}
-
-html[lang="en"] .interactive-map .map-cont .tags-content .details ul {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-html[lang="en"] .interactive-map .map-cont .svg-map {
-  margin-left: 0;
-}
-
-html[lang="en"] .marker-with-popup .map-popup::after {
-  -webkit-transform: none;
-          transform: none;
-}
-
-html[lang="en"] .breadcrumb .items li a::after {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
-html[lang="en"] .mainSlider .content-area a img {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
-html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  margin-left: 8px;
-}
-
 .navigator {
   position: fixed;
   left: 20px;
@@ -4452,7 +4307,7 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
   content: "";
   width: 0;
   height: 0;
-  border-top: 35px solid transparent;
+  border-top: 33px solid transparent;
   border-bottom: 35px solid transparent;
   position: absolute;
   right: -25px;
@@ -4638,6 +4493,168 @@ html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
   :root {
     scroll-behavior: auto;
   }
+}
+
+/* EN version */
+html[lang="en"] .main-Nav .bgNav .topNav .top-links .lang {
+  background-position: 100%;
+}
+
+html[lang="en"] .mainSlider .swiper-button-prev, html[lang="en"] .mainSlider.swiper-rtl .swiper-button-next {
+  left: auto;
+}
+
+html[lang="en"] .about .container .imgBox img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .bgNews .cardNews .cardText .date {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+html[lang="en"] .owl-carousel-news .owl-nav [class*="owl-"] {
+  -webkit-transform: scaleX(-1) !important;
+          transform: scaleX(-1) !important;
+}
+
+html[lang="en"] .Numbers .section-header,
+html[lang="en"] .gallery .section-header,
+html[lang="en"] .partners .section-header {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 15px 15px;
+}
+
+html[lang="en"] .partners .centered {
+  left: 0;
+  right: auto;
+  -webkit-transform: none;
+          transform: none;
+}
+
+html[lang="en"] .bgNews .centered {
+  left: 0;
+  right: auto;
+  -webkit-transform: none;
+          transform: none;
+}
+
+html[lang="en"] .about {
+  background-image: url(../images/pattern-color-en.svg);
+  background-position: 84% 0;
+}
+
+html[lang="en"] .about .container .content .section-header::before, html[lang="en"] .about .container .content .section-header::after,
+html[lang="en"] .gallery .section-header::before, html[lang="en"] .gallery .section-header::after,
+html[lang="en"] .Numbers .section-header::before, html[lang="en"] .Numbers .section-header::after,
+html[lang="en"] .partners .section-header::before, html[lang="en"] .partners .section-header::after,
+html[lang="en"] .inContent .container .box-white .section-header::before, html[lang="en"] .inContent .container .box-white .section-header::after {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .about .container .content .section-header::after,
+html[lang="en"] .gallery .section-header::after,
+html[lang="en"] .Numbers .section-header::after,
+html[lang="en"] .partners .section-header::after,
+html[lang="en"] .inContent .container .box-white .section-header::after {
+  right: -24px;
+  left: auto;
+  top: 36px;
+}
+
+html[lang="en"] .inContent .container .box-white .content-box::before, html[lang="en"] .inContent .container .box-white .content-box::after {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-size: contain;
+}
+
+html[lang="en"] .inContent .container .box-white .search-top input[type=search] {
+  background-position: 97%;
+}
+
+html[lang="en"] .inContent .container .box-white .search-top select {
+  padding: 0 10px;
+  background-position: 95%;
+}
+
+html[lang="en"] .inContent .container .box-white .events .event-banner .content .more img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .days, html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .month {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .month {
+  font-size: 11px;
+}
+
+html[lang="en"] .Numbers .item .numCard .content-box .centered {
+  left: 45%;
+  right: auto;
+}
+
+html[lang="en"] .interactive-map .map-cont .tags-content .details ul li {
+  font-size: 18px;
+}
+
+html[lang="en"] .interactive-map .map-cont .tags-content .details ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html[lang="en"] .interactive-map .map-cont .svg-map {
+  margin-left: 0;
+}
+
+html[lang="en"] .marker-with-popup .map-popup::after {
+  -webkit-transform: none;
+          transform: none;
+}
+
+html[lang="en"] .breadcrumb .items li a::after {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .mainSlider .content-area a img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .banner .container-fluid .item .imgbox1 .content .more img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  margin-left: 8px;
+}
+
+html[lang="en"] .nashaa .nashaa-art::before {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html[lang="en"] .inContent .container .serviceBox.servBx2 .detailsHidden p {
+  line-height: 30px;
+  max-height: calc(30px* 3);
 }
 
 @font-face {

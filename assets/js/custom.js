@@ -9,7 +9,7 @@
     });
   });
 
-  var scrollTo = function (sectionEl = "", callback = function () {}) {
+  var scrollToo = function (sectionEl = "", callback = function () {}) {
     $("html, body").animate(
       {
         scrollTop: sectionEl ? calculateOffset(sectionEl) : 0,
@@ -161,44 +161,44 @@
     // navigator clicks
 
     $("#sec1 a").on("click", function () {
-      scrollTo(false, function () {
+      scrollToo(false, function () {
         $("ul.navigator li").removeClass("active");
         $("#sec1").addClass("active");
       });
     });
     $("#sec2 a").on("click", function () {
-      scrollTo(".about", function () {
+      scrollToo(".about", function () {
         $("ul.navigator li").removeClass("active");
         $("#sec2").addClass("active");
       });
     });
     
     $("#sec3 a").on("click", function () {
-      scrollTo(".gallery", function () {
+      scrollToo(".gallery", function () {
         $("ul.navigator li").removeClass("active");
         $("#sec3").addClass("active");
       });
     });
     $("#sec4 a").on("click", function () {
-      scrollTo(".Numbers", function () {
+      scrollToo(".Numbers", function () {
         $("ul.navigator li").removeClass("active");
         $("#sec4").addClass("active");
       });
     });
     $("#sec5 a").on("click", function () {
-      scrollTo(".map", function () {
+      scrollToo(".map", function () {
         $("ul.navigator li").removeClass("active");
         $("#sec5").addClass("active");
       });
     });
     $("#sec6 a").on("click", function () {
-      scrollTo(".bgNews", function () {
+      scrollToo(".bgNews", function () {
         $("ul.navigator li").removeClass("active");
         $("#sec6").addClass("active");
       });
     });
     $("#sec7 a").on("click", function () {
-      scrollTo(".partners", function () {
+      scrollToo(".partners", function () {
         // $("ul.navigator li").removeClass("active");
         $("#sec7").addClass("active");
       });
