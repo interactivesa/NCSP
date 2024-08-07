@@ -487,15 +487,20 @@ ul {
           margin-bottom: 0;
         }
       }
+      .imgbox:first-child {
+        background-color: $aqua;
+      }
       .imgbox:nth-child(2) {
         background-image: url(../images/gallery/gallery2.png);
         // background-size: cover;
         background-position: center;
+        background-color: $blue;
       }
       .imgbox:nth-child(3) {
         background-image: url(../images/gallery/gallery3.png);
         // background-size: cover;
         background-position: center;
+        background-color: $purple;
       }
 
       // Title
@@ -4141,5 +4146,7 @@ html[lang="en"]{
   .pageTitle .container {
       transform: scaleX(-1);
   }
+
+
   
 }

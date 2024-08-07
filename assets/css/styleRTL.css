@@ -532,14 +532,20 @@ ul {
   margin-bottom: 0;
 }
 
+.gallery .container .tabsImage .imgbox:first-child {
+  background-color: #35CCDE;
+}
+
 .gallery .container .tabsImage .imgbox:nth-child(2) {
   background-image: url(../images/gallery/gallery2.png);
   background-position: center;
+  background-color: #145FFF;
 }
 
 .gallery .container .tabsImage .imgbox:nth-child(3) {
   background-image: url(../images/gallery/gallery3.png);
   background-position: center;
+  background-color: #7A6AF7;
 }
 
 .gallery .container .tabsImage h4 {
@@ -5494,6 +5500,9 @@ section.sitemap ul.level-2 > li .level-3 li a {
     margin: 0 3px 5px;
     padding: 10px 15px;
   }
+  html[lang="en"] .interactive-map .map-cont .svg-map svg {
+    margin-right: -15px;
+  }
 }
 
 @media (max-width: 1199.68px) {
@@ -5689,6 +5698,12 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .main-Nav .bgNav .topNav .main-navbar .navbar .nav-wrapper .navbar-nav .nav-item .nav-link:not(.dropdown-toggle) {
     padding-left: 0;
     white-space: nowrap;
+  }
+  .gallery .container .tabsImage .imgbox {
+    background-position-y: center;
+    background-position-x: 20%;
+    background-size: 105%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -6175,6 +6190,9 @@ section.sitemap ul.level-2 > li .level-3 li a {
   html[lang="en"] .interactive-map .map-cont .svg-map {
     margin-left: 45px;
   }
+  html[lang="en"] .interactive-map .map-cont .svg-map svg {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 767.68px) {
@@ -6397,12 +6415,13 @@ section.sitemap ul.level-2 > li .level-3 li a {
   }
   .gallery .container .tabsImage p {
     font-size: 14px;
+    padding: 15px 30px;
   }
   .gallery .container .tabsImage .imgbox {
-    height: 150px;
+    height: 80px;
   }
   .gallery .container .tabsImage .imgbox:hover {
-    height: 380px;
+    height: 200px;
   }
   .gallery {
     height: 935px;
@@ -6520,6 +6539,14 @@ section.sitemap ul.level-2 > li .level-3 li a {
     opacity: 1 !important;
     -webkit-transform: translateZ(0) !important;
             transform: translateZ(0) !important;
+  }
+  html[lang="en"] .mainSlider .swiper-button-prev, .mainSlider.swiper-rtl .swiper-button-next {
+    bottom: 75px;
+    left: 60px;
+  }
+  html[lang="en"] .mainSlider .swiper-button-next, .mainSlider.swiper-rtl .swiper-button-prev {
+    bottom: 75px;
+    left: 25px;
   }
 }
 
