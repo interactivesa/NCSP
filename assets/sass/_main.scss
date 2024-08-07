@@ -4018,8 +4018,8 @@ html[lang="en"]{
       transform: scaleX(-1);
   }
   .bgNews .cardNews .cardText .date{
-      justify-content: flex-start;
-      flex-direction: row-reverse;
+      // justify-content: flex-start;
+      // flex-direction: row-reverse;
   }
   .owl-carousel-news .owl-nav [class*="owl-"] {
       transform: scaleX(-1) !important;
@@ -4062,7 +4062,6 @@ html[lang="en"]{
   .inContent .container .box-white .section-header::after{
           #{$end-direction}: -24px;
           #{$start-direction}:auto;
-          top: 36px;
   }  
   .inContent .container .box-white .content-box::before , .inContent .container .box-white .content-box::after {
       transform: scaleX(-1);
@@ -4089,7 +4088,7 @@ html[lang="en"]{
       font-size: 11px;
   }
   .Numbers .item .numCard .content-box .centered {
-      #{$start-direction}: 45%;
+      #{$start-direction}: 40%;
       #{$end-direction}: auto;
   }  
   .interactive-map .map-cont .tags-content .details ul li {
@@ -4123,4 +4122,24 @@ html[lang="en"]{
     line-height: 30px;
     max-height: calc(30px* 3);
   }
+
+  .interactive-map .map-cont .svg-map svg{
+    width: 98%;
+  }
+  .map-area .map-bg{
+    transform: scaleX(-1);
+  }
+  .interactive-map .map-cont .tags-content .details ul{
+    display: flex !important;
+  }
+
+
+  .pageTitle {
+    transform: scaleX(-1);
+  }
+
+  .pageTitle .container {
+      transform: scaleX(-1);
+  }
+  
 }

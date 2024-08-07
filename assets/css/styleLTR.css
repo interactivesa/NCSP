@@ -4509,16 +4509,6 @@ html[lang="en"] .about .container .imgBox img {
           transform: scaleX(-1);
 }
 
-html[lang="en"] .bgNews .cardNews .cardText .date {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
 html[lang="en"] .owl-carousel-news .owl-nav [class*="owl-"] {
   -webkit-transform: scaleX(-1) !important;
           transform: scaleX(-1) !important;
@@ -4568,7 +4558,6 @@ html[lang="en"] .partners .section-header::after,
 html[lang="en"] .inContent .container .box-white .section-header::after {
   right: -24px;
   left: auto;
-  top: 36px;
 }
 
 html[lang="en"] .inContent .container .box-white .content-box::before, html[lang="en"] .inContent .container .box-white .content-box::after {
@@ -4609,7 +4598,7 @@ html[lang="en"] .inContent .container .box-white .events .eventBox .dateShape .m
 }
 
 html[lang="en"] .Numbers .item .numCard .content-box .centered {
-  left: 45%;
+  left: 40%;
   right: auto;
 }
 
@@ -4655,6 +4644,31 @@ html[lang="en"] .nashaa .nashaa-art::before {
 html[lang="en"] .inContent .container .serviceBox.servBx2 .detailsHidden p {
   line-height: 30px;
   max-height: calc(30px* 3);
+}
+
+html[lang="en"] .interactive-map .map-cont .svg-map svg {
+  width: 98%;
+}
+
+html[lang="en"] .map-area .map-bg {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .interactive-map .map-cont .tags-content .details ul {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+html[lang="en"] .pageTitle {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .pageTitle .container {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 @font-face {
@@ -6158,6 +6172,9 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .content-details.PageContent_vw ul li {
     font-size: 16px;
   }
+  html[lang="en"] .interactive-map .map-cont .svg-map {
+    margin-left: 45px;
+  }
 }
 
 @media (max-width: 767.68px) {
@@ -6674,6 +6691,9 @@ section.sitemap ul.level-2 > li .level-3 li a {
   .aboutNew-4 ul li,
   .st-goals p {
     font-size: 14px;
+  }
+  html[lang="en"] .interactive-map .map-cont .svg-map {
+    margin-left: 0;
   }
 }
 

@@ -875,6 +875,11 @@
       
       }
 
+
+      html[lang="en"] .interactive-map .map-cont .svg-map{
+        margin-left: 45px;
+      }
+
 }
 
 // Small Sizes 
@@ -1456,7 +1461,9 @@
     font-size: 14px;
 }
 
-
+html[lang="en"] .interactive-map .map-cont .svg-map {
+    margin-left: 0;
+}
 
 }
 
