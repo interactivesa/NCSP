@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* LTR */
 body {
   overflow: hidden !important;
@@ -4501,6 +4502,24 @@ section.inContent.merge .box-white .serviceBox .SrvIcon img {
   }
 }
 
+body::before {
+  content: " نسخة تجريبية";
+  font-family: 'NCSP-Regular';
+  background-color: #001F5E;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 14px;
+  padding: 0 10px 5px;
+  position: fixed;
+  top: 22%;
+  right: -32px;
+  z-index: 999999;
+  -webkit-box-shadow: 0 5px 10px #0000008c;
+          box-shadow: 0 5px 10px #0000008c;
+}
+
 /* EN version */
 html[lang="en"] .main-Nav .bgNav .topNav .top-links .lang {
   background-position: 100%;
@@ -4675,6 +4694,12 @@ html[lang="en"] .pageTitle {
 html[lang="en"] .pageTitle .container {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+}
+
+html[lang="en"] body::before {
+  content: "Beta version";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 @font-face {

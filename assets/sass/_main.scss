@@ -4006,7 +4006,21 @@ section.inContent.merge .box-white .serviceBox .SrvIcon img {
 
 
 
-
+body::before {
+  content: " نسخة تجريبية";
+  font-family: 'NCSP-Regular';
+  background-color: #001F5E;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  padding: 0 10px 5px;
+  position: fixed;
+  top: 22%;
+  #{$end-direction}: -32px;
+  z-index: 999999;
+  box-shadow: 0 5px 10px #0000008c;
+}
 
 
 
@@ -4148,5 +4162,9 @@ html[lang="en"]{
   }
 
 
+  body::before {
+    content:"Beta version";
+    transform: rotate(90deg);
+  }
   
 }
