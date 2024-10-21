@@ -193,13 +193,24 @@ body {
               width: 95%;
               path{
                   transition: 500ms;
-                  fill: transparent;
+                  // fill: transparent;
                   &.active-sec{
-                    fill: rgba($color: #FFFFFF, $alpha: 0.35);
+                    // fill: rgba($color: #FFFFFF, $alpha: 0.35);
+                    // opacity: 1;
+
                   }
                 }
               #Map-Areas{
                    
+              }
+              #fill {
+                path {
+                  opacity: 0;
+
+                  &.active-sec{
+                    opacity: 1;
+                  }
+                }
               }
           }
       }
@@ -292,20 +303,20 @@ body {
     top: 400px;
   }
   &.nagran{
-    right: 325px;
-    top: 570px;
+    right: 285px;
+    top: 545px;
   }
   &.asser{
-    right: 420px;
-    top: 530px;
+    right: 410px;
+    top: 510px;
   }
   &.gazan{
-    right: 435px;
-    top: 605px;
+    right: 413px;
+    top: 575px;
   }
   &.baaha{
-    right: 475px;
-    top: 500px;
+    right: 463px;
+    top: 480px;
   }
 }
 .map-area{

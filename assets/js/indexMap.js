@@ -33,6 +33,7 @@ $(document).ready(function () {
       $('.tags-content .makkah-content').addClass("d-block")
       $('.marker-with-popup.makkah').addClass("d-block")
       $("#makkah-location").addClass("active-sec")
+      $("#makkah-location2").addClass("active-sec")
     }
 
      // madenah
@@ -182,7 +183,7 @@ $(document).ready(function () {
   })
 
   // SVG map locations hover
-  $(".interactive-map .map-cont .svg-map svg path").hover(
+  $(".interactive-map .map-cont .svg-map svg #fill path").hover(
     function () {
       $(".navigation-links a").removeClass("active");
       $(".interactive-map .map-cont .svg-map svg path").removeClass("active-sec");
@@ -214,6 +215,7 @@ $(document).ready(function () {
       $('.tags-content .makkah-content').removeClass("d-none").addClass("d-block");
       $('.marker-with-popup.makkah').removeClass("d-none").addClass("d-block");
       $("#makkah-location").addClass("active-sec");
+      $("#makkah-location2").addClass("active-sec");
       $(".navigation-links #makkah-link").addClass("active");
     } else if (id.includes("madenah")) {
       console.log("madenah");
