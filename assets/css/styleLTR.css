@@ -40,6 +40,7 @@ ul {
 .main-Nav .bgNav .topNav .a-logo {
   display: block;
   margin-left: 0px;
+  max-width: 305px;
 }
 
 .main-Nav .bgNav .topNav .a-logo .logo-color {
@@ -1093,6 +1094,7 @@ footer .top-footer {
 
 footer .top-footer .footer-logo {
   margin-bottom: 30px;
+  max-width: 300px;
 }
 
 footer .top-footer .social-media {
@@ -5993,11 +5995,14 @@ section.sitemap ul.level-2 > li .level-3 li a {
   }
   footer .top-footer .footer-logo {
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
   footer .top-footer .social-media {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0;
   }
   footer .top-footer h5 {
     text-align: center;

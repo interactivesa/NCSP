@@ -34,6 +34,7 @@ ul {
       .a-logo {
         display: block;
         margin-#{$start-direction}: 0px;
+        max-width: 305px;
         .logo-color{
           display: none;
         }
@@ -1004,6 +1005,7 @@ footer {
     padding: 70px 0;
     .footer-logo {
       margin-bottom: 30px;   
+      max-width: 300px;
     }
     .social-media {
       display: flex;
