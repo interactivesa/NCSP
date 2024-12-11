@@ -1056,7 +1056,7 @@
         font-size: 16px;
     }
     .inContent .container .box-white .new-progCard{
-        height: 150px;
+        height: calc(100% - 20px );
     }
     .inContent .container .box-white .new-prog-a{
         margin-top: 50px;
@@ -1162,9 +1162,10 @@
 
     .gallery .container .tabsImage h4 {
         font-size: 18px;
+        padding: 23px;
     }
     .gallery .container .tabsImage h4 span{
-        font-size: 18px;
+        max-width: 50px;
         padding-#{$end-direction}: 15px;
     }
     .gallery .container .tabsImage p {
