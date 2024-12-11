@@ -4212,4 +4212,7 @@ html[lang="en"]{
     transform: rotate(90deg);
   }
   
+  .inContent .container .new-progCard.new-progCard2 .content-boxx a.more img{
+    transform: scaleX(-1);
+  }
 }

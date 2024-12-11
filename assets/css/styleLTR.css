@@ -4747,6 +4747,11 @@ html[lang="en"] body::before {
           transform: rotate(90deg);
 }
 
+html[lang="en"] .inContent .container .new-progCard.new-progCard2 .content-boxx a.more img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 @font-face {
   font-family: "NCSP-Light";
   src: url("../fonts/NeoSansArabicLight.ttf");
